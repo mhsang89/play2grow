@@ -24,11 +24,18 @@ while ( have_posts() ) :
 				<div class="entry-content entry-content--flush">
 					<?php the_content(); ?>
 				</div>
-				<div class="contact-card">
-					<h2 class="contact-card__title"><?php esc_html_e( 'Thông tin liên hệ', 'play2grow-theme' ); ?></h2>
-					<?php p2g_company_info( 'card' ); ?>
-					<?php p2g_social_list(); ?>
-				</div>
+				<?php
+				ob_start();
+				p2g_company_info( 'card' );
+				p2g_social_list();
+				$p2g_contact_info = trim( ob_get_clean() );
+				if ( '' !== $p2g_contact_info ) :
+					?>
+					<div class="contact-card">
+						<h2 class="contact-card__title"><?php esc_html_e( 'Thông tin liên hệ', 'play2grow-theme' ); ?></h2>
+						<?php echo $p2g_contact_info; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped by the functions above. ?>
+					</div>
+				<?php endif; ?>
 			</div>
 			<?php if ( ! $p2g_inline_form ) : ?>
 				<div class="contact-layout__form">

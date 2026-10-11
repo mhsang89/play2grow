@@ -369,7 +369,7 @@ function p2gc_consent_label() {
 	}
 
 	$policy = get_privacy_policy_url();
-	$text   = __( 'Tôi là phụ huynh/người giám hộ hoặc người liên hệ từ đủ 18 tuổi, và đồng ý để Play2Grow sử dụng thông tin trên nhằm liên hệ phản hồi yêu cầu này.', 'play2grow-core' );
+	$text   = __( 'Tôi là phụ huynh/người giám hộ hoặc người liên hệ từ đủ 18 tuổi, và đồng ý để Play2Grow sử dụng thông tin trên để liên hệ phản hồi và gửi thông tin liên quan đến nội dung tôi quan tâm.', 'play2grow-core' );
 
 	if ( $policy ) {
 		$text .= ' ' . sprintf(
