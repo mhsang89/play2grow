@@ -47,15 +47,6 @@ function p2g_enqueue_assets() {
 				'closeMenu'   => __( 'Đóng menu', 'play2grow' ),
 				'openSub'     => __( 'Mở menu con', 'play2grow' ),
 				'closeSub'    => __( 'Đóng menu con', 'play2grow' ),
-				'sending'     => __( 'Đang gửi…', 'play2grow' ),
-				'networkErr'  => __( 'Không gửi được do lỗi kết nối. Vui lòng kiểm tra mạng và thử lại.', 'play2grow' ),
-				'fixErrors'   => __( 'Vui lòng kiểm tra lại các trường được đánh dấu.', 'play2grow' ),
-				'required'    => __( 'Vui lòng điền thông tin này.', 'play2grow' ),
-				'nameLen'     => __( 'Họ và tên cần từ 2 đến 80 ký tự.', 'play2grow' ),
-				'contactReq'  => __( 'Vui lòng nhập số điện thoại hoặc email để Play2Grow có thể liên hệ lại.', 'play2grow' ),
-				'phoneFormat' => __( 'Số điện thoại chưa đúng định dạng (ví dụ: 0912 345 678).', 'play2grow' ),
-				'emailFormat' => __( 'Email chưa đúng định dạng (ví dụ: ten@email.com).', 'play2grow' ),
-				'consentReq'  => __( 'Vui lòng đồng ý để Play2Grow xử lý thông tin để liên hệ lại.', 'play2grow' ),
 			)
 		) . ';',
 		'before'

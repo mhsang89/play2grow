@@ -23,7 +23,7 @@ while ( have_posts() ) :
 		<?php if ( ! $p2g_inline ) : ?>
 			<section class="section section--tight" aria-label="<?php esc_attr_e( 'Danh sách sản phẩm', 'play2grow' ); ?>">
 				<div class="container">
-					<?php echo do_shortcode( '[p2g_programs parent="' . get_the_ID() . '"]' ); ?>
+					<?php echo p2g_render_programs( get_the_ID() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the renderer. ?>
 				</div>
 			</section>
 		<?php endif; ?>

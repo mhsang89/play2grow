@@ -13,7 +13,7 @@ if ( ! get_theme_mod( 'p2g_show_floating', true ) ) {
 }
 
 $p2g_phone   = p2g_company( 'phone' );
-$p2g_zalo    = trim( (string) get_theme_mod( 'p2g_social_zalo', '' ) );
+$p2g_zalo    = p2g_social_url( 'zalo' );
 $p2g_cta_url = p2g_contact_url();
 $p2g_on_cta  = $p2g_cta_url && is_page() && untrailingslashit( get_permalink() ) === untrailingslashit( $p2g_cta_url );
 

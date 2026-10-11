@@ -32,7 +32,7 @@ while ( have_posts() ) :
 			</div>
 			<?php if ( ! $p2g_inline_form ) : ?>
 				<div class="contact-layout__form">
-					<?php echo do_shortcode( '[p2g_contact_form title="' . esc_attr__( 'Gửi thông tin cho Play2Grow', 'play2grow' ) . '"]' ); ?>
+					<?php echo p2g_contact_form( __( 'Gửi thông tin cho Play2Grow', 'play2grow' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- markup from the plugin shortcode. ?>
 				</div>
 			<?php endif; ?>
 		</div>

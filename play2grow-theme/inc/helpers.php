@@ -8,37 +8,6 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Default values for the theme settings page (Giao diện → Play2Grow).
- *
- * @return array
- */
-function p2g_settings_defaults() {
-	return array(
-		'lead_recipient'      => '',
-		'lead_store'          => 1,
-		'lead_retention_days' => 180,
-		'lead_interests'      => '',
-		'lead_age_field'      => 1,
-		'lead_success_text'   => '',
-		'consent_text'        => '',
-	);
-}
-
-/**
- * Read one theme setting.
- *
- * @param string $key Setting key.
- * @return mixed
- */
-function p2g_setting( $key ) {
-	$defaults = p2g_settings_defaults();
-	$settings = get_option( 'p2g_settings', array() );
-	$settings = is_array( $settings ) ? wp_parse_args( $settings, $defaults ) : $defaults;
-
-	return isset( $settings[ $key ] ) ? $settings[ $key ] : null;
-}
-
-/**
  * Whether a dedicated SEO plugin is active. When it is, the theme stops
  * printing its own meta description, Open Graph tags and JSON-LD to avoid duplicates.
  *

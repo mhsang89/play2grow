@@ -1,51 +1,12 @@
 <?php
 /**
- * Customizer: company information, CTA, social links, footer, colors.
- *
- * Every company field is empty by default. Empty fields are never shown to
- * visitors – the theme does not invent business data.
+ * Customizer: CTA, top bar, footer, colors. Company information and social links are
+ * managed by the Play2Grow Core plugin (stored as options, independent of the theme).
  *
  * @package Play2Grow
  */
 
 defined( 'ABSPATH' ) || exit;
-
-/**
- * Company information fields: key => [label, type, description].
- *
- * @return array
- */
-function p2g_company_fields() {
-	return array(
-		'p2g_legal_name'        => array( __( 'Tên pháp nhân đầy đủ', 'play2grow' ), 'text', __( 'Ghi đúng như trên Giấy chứng nhận đăng ký doanh nghiệp.', 'play2grow' ) ),
-		'p2g_tax_code'          => array( __( 'Mã số doanh nghiệp / Mã số thuế', 'play2grow' ), 'text', '' ),
-		'p2g_registration'      => array( __( 'Thông tin cấp đăng ký', 'play2grow' ), 'text', __( 'Ví dụ: "Do Sở Kế hoạch và Đầu tư ... cấp lần đầu ngày ...". Chỉ điền khi đã đối chiếu giấy tờ.', 'play2grow' ) ),
-		'p2g_hq_address'        => array( __( 'Địa chỉ trụ sở đăng ký', 'play2grow' ), 'textarea', '' ),
-		'p2g_operating_address' => array( __( 'Địa chỉ cơ sở hoạt động', 'play2grow' ), 'textarea', __( 'Mỗi cơ sở một dòng. Để trống nếu trùng trụ sở hoặc chưa có.', 'play2grow' ) ),
-		'p2g_representative'    => array( __( 'Người đại diện theo pháp luật', 'play2grow' ), 'text', __( 'Chỉ điền nếu doanh nghiệp đồng ý công bố.', 'play2grow' ) ),
-		'p2g_phone'             => array( __( 'Hotline / Số điện thoại', 'play2grow' ), 'text', '' ),
-		'p2g_email'             => array( __( 'Email liên hệ', 'play2grow' ), 'email', '' ),
-		'p2g_license'           => array( __( 'Giấy phép hoạt động / giấy phép chuyên ngành', 'play2grow' ), 'textarea', __( 'Chỉ điền khi đã được cấp và còn hiệu lực.', 'play2grow' ) ),
-		'p2g_hours'             => array( __( 'Thời gian làm việc', 'play2grow' ), 'text', __( 'Ví dụ: Thứ Hai – Thứ Bảy, 8:00 – 17:30', 'play2grow' ) ),
-		'p2g_map_url'           => array( __( 'Liên kết bản đồ (Google Maps…)', 'play2grow' ), 'url', __( 'Chỉ là liên kết; theme không nhúng bản đồ để tránh tải script bên thứ ba.', 'play2grow' ) ),
-	);
-}
-
-/**
- * Social profile fields.
- *
- * @return array key => [label, icon]
- */
-function p2g_social_fields() {
-	return array(
-		'p2g_social_facebook'  => array( 'Facebook', 'facebook' ),
-		'p2g_social_zalo'      => array( 'Zalo', 'chat' ),
-		'p2g_social_youtube'   => array( 'YouTube', 'youtube' ),
-		'p2g_social_tiktok'    => array( 'TikTok', 'tiktok' ),
-		'p2g_social_instagram' => array( 'Instagram', 'instagram' ),
-		'p2g_social_linkedin'  => array( 'LinkedIn', 'linkedin' ),
-	);
-}
 
 /**
  * Sanitize a multi-line plain text field.
@@ -89,50 +50,10 @@ function p2g_customize_register( $wp_customize ) {
 		'p2g_panel',
 		array(
 			'title'       => __( 'Play2Grow', 'play2grow' ),
-			'description' => __( 'Thông tin doanh nghiệp, nút đăng ký, mạng xã hội và chân trang.', 'play2grow' ),
+			'description' => __( 'Nút đăng ký, thanh trên cùng và chân trang. Thông tin doanh nghiệp và mạng xã hội nằm ở mục "Play2Grow – Thông tin doanh nghiệp" (plugin Play2Grow Core).', 'play2grow' ),
 			'priority'    => 30,
 		)
 	);
-
-	// Company info.
-	$wp_customize->add_section(
-		'p2g_company',
-		array(
-			'title'       => __( 'Thông tin doanh nghiệp', 'play2grow' ),
-			'description' => __( 'Chỉ điền thông tin đã được xác minh bằng giấy tờ chính thức. Trường để trống sẽ được ẩn khỏi website. Xem thêm file COMPANY_INFO_REQUIRED.md đi kèm theme.', 'play2grow' ),
-			'panel'       => 'p2g_panel',
-		)
-	);
-
-	foreach ( p2g_company_fields() as $key => $field ) {
-		list( $label, $type, $desc ) = $field;
-
-		$sanitize = 'sanitize_text_field';
-		if ( 'textarea' === $type ) {
-			$sanitize = 'p2g_sanitize_textarea';
-		} elseif ( 'email' === $type ) {
-			$sanitize = 'sanitize_email';
-		} elseif ( 'url' === $type ) {
-			$sanitize = 'esc_url_raw';
-		}
-
-		$wp_customize->add_setting(
-			$key,
-			array(
-				'default'           => '',
-				'sanitize_callback' => $sanitize,
-			)
-		);
-		$wp_customize->add_control(
-			$key,
-			array(
-				'label'       => $label,
-				'description' => $desc,
-				'section'     => 'p2g_company',
-				'type'        => $type,
-			)
-		);
-	}
 
 	// Header & CTA.
 	$wp_customize->add_section(
@@ -223,33 +144,6 @@ function p2g_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Social.
-	$wp_customize->add_section(
-		'p2g_social',
-		array(
-			'title'       => __( 'Mạng xã hội', 'play2grow' ),
-			'description' => __( 'Dán đường dẫn đầy đủ (https://…). Trường để trống sẽ không hiển thị.', 'play2grow' ),
-			'panel'       => 'p2g_panel',
-		)
-	);
-	foreach ( p2g_social_fields() as $key => $field ) {
-		$wp_customize->add_setting(
-			$key,
-			array(
-				'default'           => '',
-				'sanitize_callback' => 'esc_url_raw',
-			)
-		);
-		$wp_customize->add_control(
-			$key,
-			array(
-				'label'   => $field[0],
-				'section' => 'p2g_social',
-				'type'    => 'url',
-			)
-		);
-	}
-
 	// Footer.
 	$wp_customize->add_section(
 		'p2g_footer',
@@ -318,30 +212,3 @@ function p2g_customize_register( $wp_customize ) {
 	}
 }
 add_action( 'customize_register', 'p2g_customize_register' );
-
-/**
- * Get one company field value (trimmed).
- *
- * @param string $key Field key without the "p2g_" prefix, e.g. "phone".
- * @return string
- */
-function p2g_company( $key ) {
-	return trim( (string) get_theme_mod( 'p2g_' . $key, '' ) );
-}
-
-/**
- * Configured social links.
- *
- * @return array[] Each: [url, label, icon].
- */
-function p2g_social_links() {
-	$links = array();
-	foreach ( p2g_social_fields() as $key => $field ) {
-		$url = trim( (string) get_theme_mod( $key, '' ) );
-		if ( '' !== $url ) {
-			$links[] = array( $url, $field[0], $field[1] );
-		}
-	}
-
-	return $links;
-}

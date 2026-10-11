@@ -59,7 +59,7 @@ else :
 	<section class="section">
 		<div class="container">
 			<h2 class="section__title"><?php esc_html_e( 'Bài viết mới', 'play2grow' ); ?></h2>
-			<?php echo do_shortcode( '[p2g_latest_posts count="3"]' ); ?>
+			<?php echo p2g_render_latest_posts( 3 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the renderer. ?>
 		</div>
 	</section>
 	<?php
