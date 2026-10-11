@@ -13,6 +13,7 @@ define( 'P2G_URI', get_template_directory_uri() );
 
 $p2g_includes = array(
 	'inc/helpers.php',
+	'inc/multilingual.php',
 	'inc/setup.php',
 	'inc/enqueue.php',
 	'inc/customizer.php',

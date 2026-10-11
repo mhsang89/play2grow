@@ -9,42 +9,95 @@
 defined( 'ABSPATH' ) || exit;
 
 return array(
+	// Owner-provided contact details (11/10/2026). Written only into EMPTY fields of
+	// Tùy biến → Play2Grow – Thông tin doanh nghiệp when "Bước 2" runs.
+	'company'    => array(
+		'contact_person'    => 'Bui Thuy',
+		'email'             => 'buithuy@play2grow.edu.vn',
+		'operating_address' => 'Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Sơn Kỳ, quận Tân Phú, TP. Hồ Chí Minh',
+	),
+
 	'categories' => array(
 		'phuong-phap-hoc-ngon-ngu'    => array(
 			'name'        => 'Phương pháp học ngôn ngữ',
 			'description' => 'Hiểu đúng về học tiếng Anh qua trải nghiệm, vui chơi và ngữ cảnh thực tế.',
+			'en'          => array(
+				'slug'        => 'language-learning-methods',
+				'name'        => 'Language learning methods',
+				'description' => 'Understanding experiential, play-based and context-rich English learning.',
+			),
 		),
 		'hoc-qua-hoat-dong-hang-ngay' => array(
 			'name'        => 'Học qua hoạt động hằng ngày',
 			'description' => 'Biến bữa ăn, giờ tắm, việc nhà và những chuyến đi thành cơ hội dùng tiếng Anh.',
+			'en'          => array(
+				'slug'        => 'everyday-english',
+				'name'        => 'Everyday English activities',
+				'description' => 'Turning meals, bath time, chores and outings into chances to use English.',
+			),
 		),
 		'tro-choi-tieng-anh'          => array(
 			'name'        => 'Trò chơi tiếng Anh',
 			'description' => 'Trò chơi đơn giản giúp trẻ nghe và nói tiếng Anh một cách tự nhiên.',
+			'en'          => array(
+				'slug'        => 'english-games',
+				'name'        => 'English games',
+				'description' => 'Simple games that help children listen and speak English naturally.',
+			),
 		),
 		'kham-pha-thien-nhien'        => array(
 			'name'        => 'Khám phá thiên nhiên',
 			'description' => 'Hoạt động ngoài trời và quan sát thiên nhiên bằng tiếng Anh.',
+			'en'          => array(
+				'slug'        => 'exploring-nature',
+				'name'        => 'Exploring nature',
+				'description' => 'Outdoor activities and observing nature in English.',
+			),
 		),
 		'dong-hanh-cung-con'          => array(
 			'name'        => 'Đồng hành cùng con',
 			'description' => 'Kinh nghiệm giúp cha mẹ tự tin đồng hành cùng con học tiếng Anh.',
+			'en'          => array(
+				'slug'        => 'learning-together',
+				'name'        => 'Learning together',
+				'description' => 'Practical tips to help parents feel confident supporting their child’s English.',
+			),
 		),
 		'con-vat-quanh-em'            => array(
 			'name'        => 'Con vật quanh em',
 			'description' => 'Gọi tên, quan sát và kể về những con vật quen thuộc bằng tiếng Anh.',
+			'en'          => array(
+				'slug'        => 'animals-around-us',
+				'name'        => 'Animals around us',
+				'description' => 'Naming, observing and talking about familiar animals in English.',
+			),
 		),
 		'do-an-va-bua-an'             => array(
 			'name'        => 'Đồ ăn & bữa ăn',
 			'description' => 'Tiếng Anh trong bếp và trên bàn ăn: món ăn, hương vị, nấu nướng cùng con.',
+			'en'          => array(
+				'slug'        => 'food-and-mealtimes',
+				'name'        => 'Food & mealtimes',
+				'description' => 'English in the kitchen and at the table: food, tastes and cooking together.',
+			),
 		),
 		'dia-diem-quanh-ta'           => array(
 			'name'        => 'Địa điểm quanh ta',
 			'description' => 'Công viên, siêu thị, trường học… dùng tiếng Anh ở những nơi trẻ thường đến.',
+			'en'          => array(
+				'slug'        => 'places-around-us',
+				'name'        => 'Places around us',
+				'description' => 'Parks, supermarkets, schools… using English in the places children go.',
+			),
 		),
 		'cong-nghe-va-tre-em'         => array(
 			'name'        => 'Công nghệ & trẻ em',
 			'description' => 'Sử dụng thiết bị, ứng dụng và AI một cách có trách nhiệm trong việc học của trẻ.',
+			'en'          => array(
+				'slug'        => 'technology-and-children',
+				'name'        => 'Technology & children',
+				'description' => 'Using devices, apps and AI responsibly in children’s learning.',
+			),
 		),
 	),
 
@@ -57,6 +110,13 @@ return array(
 			'excerpt'     => '',
 			'description' => 'Play2Grow – trung tâm STEAM English, mỹ thuật, âm nhạc và nhảy cho trẻ. Học tiếng Anh qua vui chơi, khám phá và trải nghiệm thực tế.',
 			'order'       => 0,
+			'en'          => array(
+				'slug'        => 'home',
+				'title'       => 'Home',
+				'file'        => 'en/pages/trang-chu.html',
+				'excerpt'     => '',
+				'description' => 'Play2Grow – a centre for children with STEAM English, art, music and dance classes. Learning English through play, exploration and real experiences.',
+			),
 		),
 		array(
 			'slug'        => 'gioi-thieu',
@@ -65,6 +125,13 @@ return array(
 			'excerpt'     => 'Học qua khám phá. Trưởng thành qua trải nghiệm. Tìm hiểu sứ mệnh, triết lý giáo dục và cách Play2Grow tiếp cận việc học tiếng Anh của trẻ.',
 			'description' => 'Sứ mệnh, triết lý giáo dục và cách tiếp cận công nghệ có trách nhiệm của Play2Grow – thương hiệu học tiếng Anh qua trải nghiệm dành cho trẻ.',
 			'order'       => 1,
+			'en'          => array(
+				'slug'        => 'about-play2grow',
+				'title'       => 'About Play2Grow',
+				'file'        => 'en/pages/gioi-thieu.html',
+				'excerpt'     => 'Explore the world. Play with English. Grow every day. Our mission, educational philosophy and how we approach children’s English learning.',
+				'description' => 'Mission, educational philosophy and responsible approach to technology at Play2Grow – a centre where children learn English through experience.',
+			),
 		),
 		array(
 			'slug'        => 'phuong-phap-hoc',
@@ -73,6 +140,13 @@ return array(
 			'excerpt'     => 'Tiếng Anh trở nên gần gũi khi trẻ có lý do để dùng nó: quan sát, khám phá, sử dụng và kể lại trong những tình huống quen thuộc.',
 			'description' => 'Học tiếng Anh qua trải nghiệm là gì, bốn nhịp của một hoạt động ngôn ngữ, ví dụ cụ thể và những điểm mạnh, giới hạn phụ huynh nên biết.',
 			'order'       => 2,
+			'en'          => array(
+				'slug'        => 'our-approach',
+				'title'       => 'Learning English through experience',
+				'file'        => 'en/pages/phuong-phap-hoc.html',
+				'excerpt'     => 'English feels natural when children have a reason to use it: noticing, exploring, using and sharing in everyday situations.',
+				'description' => 'What experiential English learning is, the four rhythms of a language experience, practical examples, and the strengths and limits parents should know.',
+			),
 		),
 		array(
 			'slug'        => 'chuong-trinh',
@@ -82,6 +156,13 @@ return array(
 			'excerpt'     => 'STEAM English cùng các lớp mỹ thuật, âm nhạc và nhảy – học qua trải nghiệm trong từng buổi học.',
 			'description' => 'Các chương trình học tại Play2Grow: STEAM English, lớp vẽ, thủ công, đàn Piano, Keyboard, Tiktok Dance và nhảy hiện đại cho trẻ.',
 			'order'       => 3,
+			'en'          => array(
+				'slug'        => 'programs',
+				'title'       => 'Programs',
+				'file'        => 'en/pages/chuong-trinh.html',
+				'excerpt'     => 'STEAM English plus art, music and dance classes – learning through experience in every lesson.',
+				'description' => 'Programs at Play2Grow: STEAM English, drawing, arts and crafts, piano, keyboard, TikTok dance and modern dance classes for children.',
+			),
 		),
 		array(
 			'slug'        => 'steam-english',
@@ -96,6 +177,13 @@ return array(
 			'excerpt'     => 'Tiếng Anh qua các hoạt động khám phá Khoa học, Công nghệ, Kỹ thuật, Nghệ thuật và Toán – học bằng cách làm, thử và trình bày.',
 			'description' => 'Lớp STEAM English tại Play2Grow: học tiếng Anh qua hoạt động khoa học, công nghệ, kỹ thuật, nghệ thuật và toán. Xem độ tuổi, lịch học, học phí.',
 			'order'       => 1,
+			'en'          => array(
+				'slug'        => 'steam-english-program',
+				'title'       => 'STEAM English',
+				'file'        => 'en/pages/steam-english.html',
+				'excerpt'     => 'English through hands-on Science, Technology, Engineering, Art and Maths activities – learning by doing, trying and presenting.',
+				'description' => 'STEAM English at Play2Grow: learning English through science, technology, engineering, art and maths activities. Ages, schedule and fees.',
+			),
 		),
 		array(
 			'slug'        => 'lop-ve',
@@ -110,6 +198,13 @@ return array(
 			'excerpt'     => 'Quan sát, thử nhiều chất liệu và tự tay tạo nên những bức tranh theo ý tưởng riêng.',
 			'description' => 'Lớp Vẽ cho trẻ tại Play2Grow: quan sát, sáng tạo và thể hiện ý tưởng qua màu sắc. Xem độ tuổi, lịch học, học phí và đăng ký tư vấn.',
 			'order'       => 2,
+			'en'          => array(
+				'slug'        => 'drawing-class',
+				'title'       => 'Drawing class',
+				'file'        => 'en/pages/lop-ve.html',
+				'excerpt'     => 'Observe, try different materials and create pictures from their own ideas.',
+				'description' => 'Drawing class for children at Play2Grow: observing, creating and expressing ideas through colour. Ages, schedule, fees and enquiries.',
+			),
 		),
 		array(
 			'slug'        => 'lop-thu-cong',
@@ -124,6 +219,13 @@ return array(
 			'excerpt'     => 'Cắt, dán, gấp, nặn – biến vật liệu đơn giản thành sản phẩm của riêng con.',
 			'description' => 'Lớp thủ công cho trẻ tại Play2Grow: rèn sự khéo léo, kiên nhẫn và sáng tạo qua các sản phẩm tự làm. Đăng ký tư vấn.',
 			'order'       => 3,
+			'en'          => array(
+				'slug'        => 'arts-and-crafts-class',
+				'title'       => 'Arts and crafts class',
+				'file'        => 'en/pages/lop-thu-cong.html',
+				'excerpt'     => 'Cutting, gluing, folding and modelling – turning simple materials into something of their own.',
+				'description' => 'Arts and crafts class for children at Play2Grow: dexterity, patience and creativity through hand-made projects. Enquire now.',
+			),
 		),
 		array(
 			'slug'        => 'lop-dan-piano',
@@ -138,6 +240,13 @@ return array(
 			'excerpt'     => 'Làm quen âm nhạc qua đàn Piano: nghe, cảm nhận nhịp điệu, đọc nốt và phối hợp hai tay.',
 			'description' => 'Lớp đàn Piano cho trẻ tại Play2Grow: làm quen nhịp điệu, đọc nốt nhạc và chơi những bản nhạc đầu tiên. Đăng ký tư vấn.',
 			'order'       => 4,
+			'en'          => array(
+				'slug'        => 'piano-class',
+				'title'       => 'Piano class',
+				'file'        => 'en/pages/lop-dan-piano.html',
+				'excerpt'     => 'Discover music through the piano: listening, feeling the rhythm, reading notes and coordinating both hands.',
+				'description' => 'Piano class for children at Play2Grow: rhythm, reading notes and playing first pieces. Enquire about ages, schedule and fees.',
+			),
 		),
 		array(
 			'slug'        => 'lop-dan-keyboard',
@@ -152,6 +261,13 @@ return array(
 			'excerpt'     => 'Chơi những giai điệu quen thuộc trên đàn phím điện tử và cảm nhận niềm vui âm nhạc từ buổi đầu.',
 			'description' => 'Lớp đàn Keyboard cho trẻ tại Play2Grow: làm quen nhịp điệu, vị trí phím và đọc nốt nhạc. Đăng ký tư vấn.',
 			'order'       => 5,
+			'en'          => array(
+				'slug'        => 'keyboard-class',
+				'title'       => 'Keyboard class',
+				'file'        => 'en/pages/lop-dan-keyboard.html',
+				'excerpt'     => 'Play familiar melodies on an electronic keyboard and enjoy music from the very first lessons.',
+				'description' => 'Keyboard class for children at Play2Grow: rhythm, finding the keys and reading notes. Enquire about ages, schedule and fees.',
+			),
 		),
 		array(
 			'slug'        => 'tiktok-dance',
@@ -166,6 +282,13 @@ return array(
 			'excerpt'     => 'Vận động theo những giai điệu sôi động, ghi nhớ chuỗi động tác và tự tin thể hiện.',
 			'description' => 'Lớp Tiktok Dance cho trẻ tại Play2Grow: vận động, cảm nhận nhịp và tự tin biểu diễn cùng bạn bè. Đăng ký tư vấn.',
 			'order'       => 6,
+			'en'          => array(
+				'slug'        => 'tiktok-dance-class',
+				'title'       => 'TikTok Dance',
+				'file'        => 'en/pages/tiktok-dance.html',
+				'excerpt'     => 'Move to upbeat music, remember short routines and perform with confidence.',
+				'description' => 'TikTok Dance class for children at Play2Grow: movement, rhythm and confidence performing with friends. Enquire now.',
+			),
 		),
 		array(
 			'slug'        => 'nhay-hien-dai',
@@ -180,6 +303,13 @@ return array(
 			'excerpt'     => 'Làm quen các bước nhảy cơ bản, cảm nhận âm nhạc và ghép thành bài nhảy hoàn chỉnh.',
 			'description' => 'Lớp Nhảy hiện đại cho trẻ tại Play2Grow: bước nhảy cơ bản, nhịp điệu, sự dẻo dai và tự tin. Đăng ký tư vấn.',
 			'order'       => 7,
+			'en'          => array(
+				'slug'        => 'modern-dance-class',
+				'title'       => 'Modern dance',
+				'file'        => 'en/pages/nhay-hien-dai.html',
+				'excerpt'     => 'Learn basic steps, feel the music and put them together into complete routines.',
+				'description' => 'Modern dance class for children at Play2Grow: basic steps, rhythm, flexibility and confidence. Enquire now.',
+			),
 		),
 		array(
 			'slug'        => 'phu-huynh',
@@ -188,6 +318,13 @@ return array(
 			'excerpt'     => 'Cách đồng hành cùng con học tiếng Anh trong đời sống hằng ngày: chọn hoạt động theo độ tuổi, duy trì thói quen và cân bằng thời gian dùng thiết bị.',
 			'description' => 'Hướng dẫn phụ huynh đồng hành cùng con học tiếng Anh tại nhà: mẫu câu theo sinh hoạt, hoạt động theo độ tuổi, cân bằng màn hình.',
 			'order'       => 4,
+			'en'          => array(
+				'slug'        => 'for-parents',
+				'title'       => 'For parents',
+				'file'        => 'en/pages/phu-huynh.html',
+				'excerpt'     => 'How to support your child’s English in everyday life: age-appropriate activities, positive habits and a healthy balance with screens.',
+				'description' => 'A guide for parents on supporting children’s English at home: everyday phrases, activities by age, routines and screen-time balance.',
+			),
 		),
 		array(
 			'slug'        => 'goc-hoc-tap',
@@ -196,6 +333,13 @@ return array(
 			'excerpt'     => 'Ý tưởng hoạt động, trò chơi và kinh nghiệm giúp phụ huynh đồng hành cùng con học tiếng Anh qua trải nghiệm.',
 			'description' => 'Ý tưởng hoạt động tiếng Anh tại nhà, trò chơi cho trẻ, khám phá thiên nhiên và kinh nghiệm đồng hành cùng con từ Play2Grow.',
 			'order'       => 5,
+			'en'          => array(
+				'slug'        => 'learning-corner',
+				'title'       => 'Learning corner',
+				'file'        => 'en/pages/goc-hoc-tap.html',
+				'excerpt'     => 'Activity ideas, games and practical tips to help parents support children learning English through experience.',
+				'description' => 'English activity ideas, games for children, nature exploration and parenting tips from Play2Grow.',
+			),
 		),
 		array(
 			'slug'        => 'cau-hoi-thuong-gap',
@@ -204,6 +348,13 @@ return array(
 			'excerpt'     => 'Giải đáp những câu hỏi phổ biến về Play2Grow, phương pháp học tiếng Anh qua trải nghiệm, việc đồng hành tại nhà và quyền riêng tư.',
 			'description' => 'Câu hỏi thường gặp về Play2Grow, học tiếng Anh qua trải nghiệm, đồng hành cùng con tại nhà và cách website xử lý dữ liệu.',
 			'order'       => 6,
+			'en'          => array(
+				'slug'        => 'faq',
+				'title'       => 'Frequently asked questions',
+				'file'        => 'en/pages/cau-hoi-thuong-gap.html',
+				'excerpt'     => 'Answers to common questions about Play2Grow, our classes, experiential learning, supporting children at home and privacy.',
+				'description' => 'Frequently asked questions about Play2Grow classes, learning English through experience, supporting your child at home and how we handle data.',
+			),
 		),
 		array(
 			'slug'        => 'lien-he',
@@ -213,6 +364,13 @@ return array(
 			'excerpt'     => 'Đăng ký tư vấn chương trình, lịch học và học phí phù hợp cho con.',
 			'description' => 'Liên hệ Play2Grow: đăng ký tư vấn chương trình, lịch học và học phí cho con.',
 			'order'       => 7,
+			'en'          => array(
+				'slug'        => 'contact',
+				'title'       => 'Contact',
+				'file'        => 'en/pages/lien-he.html',
+				'excerpt'     => 'Ask about programs, schedules and fees for your child.',
+				'description' => 'Contact Play2Grow to ask about programs, schedules and fees for your child.',
+			),
 		),
 		array(
 			'slug'        => 'chinh-sach-quyen-rieng-tu',
@@ -221,6 +379,13 @@ return array(
 			'excerpt'     => '',
 			'description' => 'Cách website Play2Grow thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân, và quyền của anh/chị đối với dữ liệu của mình.',
 			'order'       => 8,
+			'en'          => array(
+				'slug'        => 'privacy',
+				'title'       => 'Privacy policy',
+				'file'        => 'en/pages/chinh-sach-quyen-rieng-tu.html',
+				'excerpt'     => '',
+				'description' => 'How the Play2Grow website collects, uses, stores and protects personal information, and your rights over your data.',
+			),
 		),
 		array(
 			'slug'        => 'dieu-khoan-su-dung',
@@ -229,6 +394,13 @@ return array(
 			'excerpt'     => '',
 			'description' => 'Điều khoản sử dụng website Play2Grow: nội dung tham khảo, an toàn khi thực hiện hoạt động cùng trẻ, quyền sở hữu trí tuệ.',
 			'order'       => 9,
+			'en'          => array(
+				'slug'        => 'terms-of-use',
+				'title'       => 'Terms of use',
+				'file'        => 'en/pages/dieu-khoan-su-dung.html',
+				'excerpt'     => '',
+				'description' => 'Terms of use for the Play2Grow website: informational content, safety when doing activities with children, and intellectual property.',
+			),
 		),
 	),
 
@@ -241,6 +413,13 @@ return array(
 			'tags'        => array( 'học qua trải nghiệm', 'phương pháp' ),
 			'excerpt'     => 'Học qua trải nghiệm không chỉ là dã ngoại hay lớp học ngoài trời. Tìm hiểu cách tiếp cận này, vì sao phù hợp với trẻ nhỏ và cách bắt đầu ngay tại nhà.',
 			'description' => 'Học tiếng Anh qua trải nghiệm là gì, vì sao phù hợp với trẻ nhỏ, những hiểu lầm thường gặp và 5 nguyên tắc để phụ huynh bắt đầu tại nhà.',
+			'en'          => array(
+				'slug'        => 'what-is-experiential-english-learning',
+				'title'       => 'What is experiential English learning? A guide for parents',
+				'file'        => 'en/posts/hoc-tieng-anh-qua-trai-nghiem-la-gi.html',
+				'excerpt'     => 'Experiential learning is more than field trips. What this approach means, why it suits young children and how to start at home.',
+				'description' => 'What experiential English learning is, why it suits young children, common misconceptions and five principles to start at home.',
+			),
 		),
 		array(
 			'slug'        => 'hoat-dong-tieng-anh-tai-nha-cho-tre',
@@ -250,6 +429,13 @@ return array(
 			'tags'        => array( 'hoạt động tại nhà', 'mẫu câu' ),
 			'excerpt'     => 'Ăn sáng, tắm, phơi quần áo, đi chợ – 15 hoạt động theo từng thời điểm trong ngày kèm mẫu câu tiếng Anh để phụ huynh áp dụng ngay.',
 			'description' => '15 hoạt động tiếng Anh tại nhà cho trẻ theo từng thời điểm trong ngày, kèm mẫu câu đơn giản để phụ huynh áp dụng ngay.',
+			'en'          => array(
+				'slug'        => 'english-activities-at-home',
+				'title'       => '15 English activities at home from everyday routines',
+				'file'        => 'en/posts/hoat-dong-tieng-anh-tai-nha-cho-tre.html',
+				'excerpt'     => 'Breakfast, bath time, laundry, shopping – 15 activities through the day with simple English phrases parents can use right away.',
+				'description' => '15 English activities for children at home, organised by time of day, with simple phrases parents can use straight away.',
+			),
 		),
 		array(
 			'slug'        => 'tro-choi-tieng-anh-cho-tre-khong-can-thiet-bi',
@@ -259,6 +445,13 @@ return array(
 			'tags'        => array( 'trò chơi', 'hoạt động tại nhà' ),
 			'excerpt'     => 'Simon says, I spy, truy tìm kho báu, đóng vai bán hàng… 10 trò chơi tiếng Anh chỉ cần vài món đồ trong nhà, kèm độ tuổi phù hợp và mẫu câu.',
 			'description' => '10 trò chơi tiếng Anh cho trẻ không cần điện thoại hay máy tính bảng, kèm độ tuổi phù hợp, mục tiêu ngôn ngữ và mẫu câu.',
+			'en'          => array(
+				'slug'        => 'english-games-for-kids-no-devices',
+				'title'       => '10 screen-free English games for kids you can play today',
+				'file'        => 'en/posts/tro-choi-tieng-anh-cho-tre-khong-can-thiet-bi.html',
+				'excerpt'     => 'Simon says, I spy, treasure hunts, shop role-play… 10 English games that only need a few things from around the house.',
+				'description' => '10 screen-free English games for children with suitable ages, language goals and example phrases.',
+			),
 		),
 		array(
 			'slug'        => 'kham-pha-thien-nhien-bang-tieng-anh',
@@ -268,6 +461,13 @@ return array(
 			'tags'        => array( 'thiên nhiên', 'hoạt động ngoài trời', 'từ vựng' ),
 			'excerpt'     => 'Từ công viên gần nhà đến ban công nhỏ: 6 hoạt động khám phá thiên nhiên giúp trẻ học tiếng Anh qua quan sát và trải nghiệm giác quan.',
 			'description' => '6 hoạt động khám phá thiên nhiên bằng tiếng Anh cho trẻ, bảng từ vựng theo chủ đề và lưu ý an toàn khi khám phá ngoài trời.',
+			'en'          => array(
+				'slug'        => 'exploring-nature-in-english',
+				'title'       => 'Exploring nature in English: 6 activities for the whole family',
+				'file'        => 'en/posts/kham-pha-thien-nhien-bang-tieng-anh.html',
+				'excerpt'     => 'From the local park to a small balcony: 6 nature activities that help children learn English through observation and the senses.',
+				'description' => '6 nature activities to explore in English with children, a themed word bank and safety tips for outdoor exploring.',
+			),
 		),
 		array(
 			'slug'        => 'cha-me-khong-gioi-tieng-anh-giup-con-hoc',
@@ -277,6 +477,13 @@ return array(
 			'tags'        => array( 'phụ huynh', 'đồng hành' ),
 			'excerpt'     => 'Cha mẹ không cần giỏi tiếng Anh mới đồng hành được cùng con. Vai trò thật sự của cha mẹ, chuyện phát âm và 8 việc có thể làm ngay từ hôm nay.',
 			'description' => 'Cha mẹ không giỏi tiếng Anh vẫn có thể đồng hành cùng con: vai trò của cha mẹ, chuyện phát âm, 8 việc làm ngay và những điều nên tránh.',
+			'en'          => array(
+				'slug'        => 'parents-who-are-not-fluent-in-english',
+				'title'       => 'Can parents who aren’t fluent in English help their children learn?',
+				'file'        => 'en/posts/cha-me-khong-gioi-tieng-anh-giup-con-hoc.html',
+				'excerpt'     => 'You don’t need to be fluent to support your child. The real role of parents, pronunciation worries and 8 things to start today.',
+				'description' => 'Parents who aren’t fluent in English can still support their children: your role, pronunciation, 8 practical steps and what to avoid.',
+			),
 		),
 		array(
 			'slug'        => 'thoi-gian-dung-thiet-bi-va-hoc-tieng-anh',
@@ -286,7 +493,55 @@ return array(
 			'tags'        => array( 'thời gian màn hình', 'công nghệ', 'AI' ),
 			'excerpt'     => 'WHO và AAP khuyến nghị gì về thời gian dùng màn hình của trẻ? Năm nguyên tắc cân bằng khi học tiếng Anh với thiết bị và những câu hỏi nên đặt ra với ứng dụng có AI.',
 			'description' => 'Khuyến nghị của WHO và AAP về thời gian dùng màn hình của trẻ, 5 nguyên tắc cân bằng khi học tiếng Anh với thiết bị và lưu ý về AI.',
+			'en'          => array(
+				'slug'        => 'screen-time-and-learning-english',
+				'title'       => 'Children’s screen time: guidelines and balance when learning English',
+				'file'        => 'en/posts/thoi-gian-dung-thiet-bi-va-hoc-tieng-anh.html',
+				'excerpt'     => 'What do WHO and AAP recommend on screen time? Five principles for balance when learning English with devices, and questions to ask about AI apps.',
+				'description' => 'WHO and AAP guidance on children’s screen time, 5 principles for balance when learning English with devices, and notes on AI.',
+			),
 		),
+	),
+
+	// English labels for menus created by "Bước 2" in the English language.
+	'menu_labels_en' => array(
+		'Liên kết nhanh' => 'Quick links',
+		'Góc học tập' => 'Learning corner',
+		'Hỏi đáp' => 'FAQ',
+		'Liên hệ' => 'Contact',
+		'Menu chính' => 'Main menu',
+		'Khám phá' => 'Explore',
+		'Về Play2Grow' => 'About Play2Grow',
+		'Phương pháp học qua trải nghiệm' => 'Learning through experience',
+		'Hoạt động tiếng Anh' => 'English activities',
+		'Khám phá thiên nhiên' => 'Exploring nature',
+		'Học qua hoạt động hằng ngày' => 'Everyday English',
+		'Trò chơi tiếng Anh' => 'English games',
+		'Con vật quanh em' => 'Animals around us',
+		'Đồ ăn & bữa ăn' => 'Food & mealtimes',
+		'Địa điểm quanh ta' => 'Places around us',
+		'Chương trình' => 'Programs',
+		'Tất cả chương trình' => 'All programs',
+		'STEAM English' => 'STEAM English',
+		'Lớp Vẽ' => 'Drawing',
+		'Lớp thủ công' => 'Arts & crafts',
+		'Lớp đàn Piano' => 'Piano',
+		'Lớp đàn Keyboard' => 'Keyboard',
+		'Tiktok Dance' => 'TikTok Dance',
+		'Nhảy hiện đại' => 'Modern dance',
+		'Phụ huynh' => 'Parents',
+		'Hướng dẫn đồng hành cùng con' => 'Supporting your child',
+		'Bài viết cho phụ huynh' => 'Articles for parents',
+		'Công nghệ & trẻ em' => 'Technology & children',
+		'Câu hỏi thường gặp' => 'FAQ',
+		'Giới thiệu Play2Grow' => 'About Play2Grow',
+		'Phương pháp học' => 'Our approach',
+		'Chương trình học' => 'Programs',
+		'Hỗ trợ' => 'Support',
+		'Dành cho phụ huynh' => 'For parents',
+		'Chính sách' => 'Policies',
+		'Chính sách quyền riêng tư' => 'Privacy policy',
+		'Điều khoản sử dụng' => 'Terms of use',
 	),
 
 	// location => [ name, items: [ page path | "cat:slug", label, parent label ] ].

@@ -156,6 +156,15 @@ function p2g_render_latest_posts( $count = 3, $category = '' ) {
  */
 function p2g_render_topics( $slugs = '' ) {
 	$icons = array(
+		'exploring-nature'            => 'spot-explore.svg',
+		'animals-around-us'           => 'spot-grow.svg',
+		'food-and-mealtimes'          => 'spot-home.svg',
+		'everyday-english'            => 'spot-home.svg',
+		'places-around-us'            => 'spot-talk.svg',
+		'english-games'               => 'spot-play.svg',
+		'learning-together'           => 'spot-talk.svg',
+		'language-learning-methods'   => 'spot-create.svg',
+		'technology-and-children'     => 'spot-create.svg',
 		'kham-pha-thien-nhien'        => 'spot-explore.svg',
 		'con-vat-quanh-em'            => 'spot-grow.svg',
 		'do-an-va-bua-an'             => 'spot-home.svg',
@@ -225,4 +234,20 @@ function p2g_render_topics( $slugs = '' ) {
 	}
 
 	return ob_get_clean();
+}
+
+/**
+ * Category slugs shown in "Khám phá theo chủ đề", per language (slugs differ per language).
+ *
+ * @param string $lang Language code.
+ * @return string Comma-separated slugs.
+ */
+function p2g_topic_slugs( $lang = '' ) {
+	$lang  = $lang ? $lang : p2g_current_lang();
+	$slugs = array(
+		'vi' => 'kham-pha-thien-nhien,con-vat-quanh-em,do-an-va-bua-an,hoc-qua-hoat-dong-hang-ngay,dia-diem-quanh-ta,tro-choi-tieng-anh,dong-hanh-cung-con',
+		'en' => 'exploring-nature,animals-around-us,food-and-mealtimes,everyday-english,places-around-us,english-games,learning-together',
+	);
+
+	return (string) apply_filters( 'p2g_topic_slugs', isset( $slugs[ $lang ] ) ? $slugs[ $lang ] : $slugs['vi'], $lang );
 }

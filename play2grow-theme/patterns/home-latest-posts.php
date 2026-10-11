@@ -14,15 +14,15 @@ defined( 'ABSPATH' ) || exit;
 <!-- wp:group {"align":"full","className":"p2g-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull p2g-section"><!-- wp:group {"className":"p2g-section__head p2g-section__head--center","layout":{"type":"default"}} -->
 <div class="wp-block-group p2g-section__head p2g-section__head--center"><!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Góc học tập</p>
+<p class="eyebrow"><?php esc_html_e( 'Góc học tập', 'play2grow-theme' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Ý tưởng để tiếng Anh có mặt mỗi ngày</h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Ý tưởng để tiếng Anh có mặt mỗi ngày', 'play2grow-theme' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Hoạt động tại nhà, trò chơi ngôn ngữ và kinh nghiệm đồng hành cùng con – được viết để phụ huynh có thể áp dụng ngay.</p>
+<p><?php esc_html_e( 'Hoạt động tại nhà, trò chơi ngôn ngữ và kinh nghiệm đồng hành cùng con – được viết để phụ huynh có thể áp dụng ngay.', 'play2grow-theme' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 <?php
 echo p2g_pattern_buttons( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 	array(
-		array( 'Xem tất cả bài viết', p2g_posts_page_link(), 'outline' ),
+		array( __( 'Xem tất cả bài viết', 'play2grow-theme' ), p2g_posts_page_link(), 'outline' ),
 	),
 	'p2g-center'
 );

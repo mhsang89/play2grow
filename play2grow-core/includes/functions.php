@@ -49,8 +49,9 @@ function p2gc_company_fields() {
 		'tax_code'          => array( __( 'Mã số doanh nghiệp / Mã số thuế', 'play2grow-core' ), 'text', '' ),
 		'registration'      => array( __( 'Thông tin cấp đăng ký', 'play2grow-core' ), 'text', __( 'Ví dụ: "Do Sở … cấp lần đầu ngày …". Chỉ điền khi đã đối chiếu giấy tờ.', 'play2grow-core' ) ),
 		'hq_address'        => array( __( 'Địa chỉ trụ sở đăng ký', 'play2grow-core' ), 'textarea', '' ),
-		'operating_address' => array( __( 'Địa chỉ cơ sở hoạt động', 'play2grow-core' ), 'textarea', __( 'Mỗi cơ sở một dòng. Để trống nếu chưa có.', 'play2grow-core' ) ),
+		'operating_address' => array( __( 'Địa chỉ cơ sở / lớp học', 'play2grow-core' ), 'textarea', __( 'Địa chỉ nơi học viên đến học. Mỗi cơ sở một dòng.', 'play2grow-core' ) ),
 		'representative'    => array( __( 'Người đại diện theo pháp luật', 'play2grow-core' ), 'text', __( 'Chỉ điền nếu đồng ý công bố.', 'play2grow-core' ) ),
+		'contact_person'    => array( __( 'Người liên hệ', 'play2grow-core' ), 'text', __( 'Ví dụ: tên người sáng lập hoặc người phụ trách tư vấn.', 'play2grow-core' ) ),
 		'phone'             => array( __( 'Hotline / Số điện thoại', 'play2grow-core' ), 'text', '' ),
 		'email'             => array( __( 'Email liên hệ', 'play2grow-core' ), 'email', '' ),
 		'license'           => array( __( 'Giấy phép hoạt động / giấy phép chuyên ngành', 'play2grow-core' ), 'textarea', __( 'Chỉ điền khi đã được cấp và còn hiệu lực.', 'play2grow-core' ) ),
@@ -248,13 +249,17 @@ function p2gc_company_info( $variant = 'footer' ) {
 	if ( $rep ) {
 		$rows[] = array( 'user', __( 'Người đại diện:', 'play2grow-core' ), esc_html( $rep ) );
 	}
+	$contact_person = p2gc_company( 'contact_person' );
+	if ( $contact_person ) {
+		$rows[] = array( 'user', __( 'Người liên hệ:', 'play2grow-core' ), esc_html( $contact_person ) );
+	}
 	$hq = p2gc_company( 'hq_address' );
 	if ( $hq ) {
 		$rows[] = array( 'map-pin', __( 'Trụ sở:', 'play2grow-core' ), nl2br( esc_html( $hq ) ) );
 	}
 	$op = p2gc_company( 'operating_address' );
 	if ( $op ) {
-		$rows[] = array( 'map-pin', __( 'Cơ sở hoạt động:', 'play2grow-core' ), nl2br( esc_html( $op ) ) );
+		$rows[] = array( 'map-pin', __( 'Địa chỉ:', 'play2grow-core' ), nl2br( esc_html( $op ) ) );
 	}
 	$phone = p2gc_company( 'phone' );
 	if ( $phone ) {

@@ -18,42 +18,55 @@ $p2g_parent   = p2g_post_link( 'cha-me-khong-gioi-tieng-anh-giup-con-hoc' );
 <!-- wp:group {"align":"full","className":"p2g-section p2g-section--sky","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull p2g-section p2g-section--sky"><!-- wp:group {"className":"p2g-section__head p2g-section__head--center","layout":{"type":"default"}} -->
 <div class="wp-block-group p2g-section__head p2g-section__head--center"><!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Hỏi đáp</p>
+<p class="eyebrow"><?php esc_html_e( 'Hỏi đáp', 'play2grow-theme' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Câu hỏi thường gặp</h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Câu hỏi thường gặp', 'play2grow-theme' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"p2g-faq","layout":{"type":"default"}} -->
 <div class="wp-block-group p2g-faq"><!-- wp:details -->
-<details class="wp-block-details"><summary>Play2Grow là gì?</summary><!-- wp:paragraph -->
-<p>Play2Grow là trung tâm dành cho trẻ với các lớp STEAM English, mỹ thuật, âm nhạc và nhảy. Chúng tôi tập trung vào việc giúp trẻ học qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày.</p>
+<details class="wp-block-details"><summary><?php esc_html_e( 'Play2Grow là gì?', 'play2grow-theme' ); ?></summary><!-- wp:paragraph -->
+<p><?php esc_html_e( 'Play2Grow là trung tâm dành cho trẻ với các lớp STEAM English, mỹ thuật, âm nhạc và nhảy. Chúng tôi tập trung vào việc giúp trẻ học qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày.', 'play2grow-theme' ); ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
-<details class="wp-block-details"><summary>Học qua trải nghiệm có thay thế việc học từ vựng, ngữ pháp không?</summary><!-- wp:paragraph -->
-<p>Không. Từ vựng và ngữ pháp vẫn là nền tảng. Học qua trải nghiệm bổ sung thêm cơ hội để trẻ dùng những gì đã học trong tình huống có ý nghĩa, nhờ đó tiếng Anh trở nên gần gũi và dễ vận dụng hơn.</p>
+<details class="wp-block-details"><summary><?php esc_html_e( 'Học qua trải nghiệm có thay thế việc học từ vựng, ngữ pháp không?', 'play2grow-theme' ); ?></summary><!-- wp:paragraph -->
+<p><?php esc_html_e( 'Không. Từ vựng và ngữ pháp vẫn là nền tảng. Học qua trải nghiệm bổ sung thêm cơ hội để trẻ dùng những gì đã học trong tình huống có ý nghĩa, nhờ đó tiếng Anh trở nên gần gũi và dễ vận dụng hơn.', 'play2grow-theme' ); ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
-<details class="wp-block-details"><summary>Phụ huynh không giỏi tiếng Anh có đồng hành cùng con được không?</summary><!-- wp:paragraph -->
-<p>Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần cùng khám phá. <?php echo $p2g_parent ? '<a href="' . esc_url( $p2g_parent ) . '">Bài viết này</a> có những gợi ý cụ thể dành cho phụ huynh.' : 'Góc học tập có những gợi ý cụ thể dành cho phụ huynh.'; ?></p>
+<details class="wp-block-details"><summary><?php esc_html_e( 'Phụ huynh không giỏi tiếng Anh có đồng hành cùng con được không?', 'play2grow-theme' ); ?></summary><!-- wp:paragraph -->
+<p><?php
+echo wp_kses_post(
+	$p2g_parent
+		/* translators: %s: link to an article for parents. */
+		? sprintf( __( 'Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần cùng khám phá. %s có những gợi ý cụ thể dành cho phụ huynh.', 'play2grow-theme' ), p2g_maybe_link( $p2g_parent, __( 'Bài viết này', 'play2grow-theme' ) ) )
+		: __( 'Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần cùng khám phá. Góc học tập có những gợi ý cụ thể dành cho phụ huynh.', 'play2grow-theme' )
+);
+?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
-<details class="wp-block-details"><summary>Các lớp dành cho độ tuổi nào, học phí ra sao?</summary><!-- wp:paragraph -->
-<p>Mỗi lớp có độ tuổi, lịch học và học phí riêng, được ghi trên trang của từng chương trình. <?php echo $p2g_contact ? 'Anh/chị có thể <a href="' . esc_url( $p2g_contact ) . '">để lại thông tin</a> để được tư vấn lớp phù hợp với con.' : ''; ?></p>
+<details class="wp-block-details"><summary><?php esc_html_e( 'Các lớp dành cho độ tuổi nào, học phí ra sao?', 'play2grow-theme' ); ?></summary><!-- wp:paragraph -->
+<p><?php
+esc_html_e( 'Mỗi lớp có độ tuổi, lịch học và học phí riêng, được ghi trên trang của từng chương trình.', 'play2grow-theme' );
+if ( $p2g_contact ) {
+	/* translators: %s: link to the contact page. */
+	echo ' ' . wp_kses_post( sprintf( __( 'Anh/chị có thể %s để được tư vấn lớp phù hợp với con.', 'play2grow-theme' ), p2g_maybe_link( $p2g_contact, __( 'để lại thông tin', 'play2grow-theme' ) ) ) );
+}
+?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
-<details class="wp-block-details"><summary>Play2Grow có sử dụng AI không?</summary><!-- wp:paragraph -->
-<p>Hiện website chưa giới thiệu tính năng AI nào. Play2Grow xem AI là một công cụ có thể hỗ trợ việc học – chẳng hạn gợi ý hoạt động hay mẫu câu theo ngữ cảnh – chứ không phải giá trị cốt lõi. Mọi tính năng như vậy, nếu có, sẽ được giới thiệu rõ ràng khi thực sự sẵn sàng.</p>
+<details class="wp-block-details"><summary><?php esc_html_e( 'Play2Grow có sử dụng AI không?', 'play2grow-theme' ); ?></summary><!-- wp:paragraph -->
+<p><?php esc_html_e( 'Hiện website chưa giới thiệu tính năng AI nào. Play2Grow xem AI là một công cụ có thể hỗ trợ việc học – chẳng hạn gợi ý hoạt động hay mẫu câu theo ngữ cảnh – chứ không phải giá trị cốt lõi. Mọi tính năng như vậy, nếu có, sẽ được giới thiệu rõ ràng khi thực sự sẵn sàng.', 'play2grow-theme' ); ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details --></div>
 <!-- /wp:group -->
@@ -61,7 +74,7 @@ $p2g_parent   = p2g_post_link( 'cha-me-khong-gioi-tieng-anh-giup-con-hoc' );
 <?php
 echo p2g_pattern_buttons( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 	array(
-		array( 'Xem tất cả câu hỏi', $p2g_faq_page, 'outline' ),
+		array( __( 'Xem tất cả câu hỏi', 'play2grow-theme' ), $p2g_faq_page, 'outline' ),
 	),
 	'p2g-center'
 );

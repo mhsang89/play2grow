@@ -46,8 +46,13 @@ function p2g_can_see_notes() {
  */
 function p2g_page_id_by_path( $path ) {
 	$page = get_page_by_path( $path );
+	if ( ! $page || 'publish' !== $page->post_status ) {
+		return 0;
+	}
+	// Return the translation in the current language when a multilingual plugin is active.
+	$id = p2g_translate_id( $page->ID, 'page' );
 
-	return ( $page && 'publish' === $page->post_status ) ? (int) $page->ID : 0;
+	return 'publish' === get_post_status( $id ) ? (int) $id : (int) $page->ID;
 }
 
 /**
@@ -59,6 +64,9 @@ function p2g_page_id_by_path( $path ) {
  */
 function p2g_contact_url() {
 	$page_id = absint( get_theme_mod( 'p2g_cta_page', 0 ) );
+	if ( $page_id ) {
+		$page_id = p2g_translate_id( $page_id, 'page' );
+	}
 
 	if ( ! $page_id || 'publish' !== get_post_status( $page_id ) ) {
 		$page_id = p2g_page_id_by_path( 'lien-he' );
@@ -242,7 +250,11 @@ function p2g_page_link( $path ) {
 	// While the starter content importer runs, link to pages it just created (may be drafts).
 	if ( ! empty( $GLOBALS['p2g_importing'] ) && function_exists( 'p2g_starter_link' ) ) {
 		$page = get_page_by_path( $path );
-		return ( $page && 'trash' !== $page->post_status ) ? p2g_starter_link( $page->ID ) : '';
+		if ( ! $page || 'trash' === $page->post_status ) {
+			return '';
+		}
+		$id = p2g_translate_id( $page->ID, 'page' );
+		return p2g_starter_link( 'trash' === get_post_status( $id ) ? $page->ID : $id );
 	}
 
 	$id = p2g_page_id_by_path( $path );
@@ -269,7 +281,9 @@ function p2g_post_link( $slug ) {
 		return '';
 	}
 
-	return ! empty( $GLOBALS['p2g_importing'] ) && function_exists( 'p2g_starter_link' ) ? p2g_starter_link( $posts[0]->ID ) : (string) get_permalink( $posts[0] );
+	$id = p2g_translate_id( $posts[0]->ID, 'post' );
+
+	return ! empty( $GLOBALS['p2g_importing'] ) && function_exists( 'p2g_starter_link' ) ? p2g_starter_link( $id ) : (string) get_permalink( $id );
 }
 
 /**
@@ -353,4 +367,16 @@ function p2g_contact_url_any() {
 	}
 
 	return p2g_contact_url();
+}
+
+/**
+ * Optional link for translatable pattern text: returns an <a> tag, or plain text when
+ * the URL is empty (target page not published).
+ *
+ * @param string $url  URL.
+ * @param string $text Link text.
+ * @return string
+ */
+function p2g_maybe_link( $url, $text ) {
+	return $url ? '<a href="' . esc_url( $url ) . '">' . esc_html( $text ) . '</a>' : esc_html( $text );
 }

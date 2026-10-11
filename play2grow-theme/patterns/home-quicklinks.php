@@ -14,10 +14,10 @@
 defined( 'ABSPATH' ) || exit;
 
 $p2g_links = array(
-	array( 'spot-play.svg', 'Chương trình học', 'STEAM English, mỹ thuật, âm nhạc, nhảy', p2g_page_link( 'chuong-trinh' ) ),
-	array( 'spot-explore.svg', 'Phương pháp', 'Học tiếng Anh qua trải nghiệm', p2g_page_link( 'phuong-phap-hoc' ) ),
-	array( 'spot-home.svg', 'Phụ huynh', 'Đồng hành cùng con tại nhà', p2g_page_link( 'phu-huynh' ) ),
-	array( 'spot-create.svg', 'Góc học tập', 'Ý tưởng hoạt động và trò chơi', p2g_posts_page_link() ),
+	array( 'spot-play.svg', __( 'Chương trình học', 'play2grow-theme' ), __( 'STEAM English, mỹ thuật, âm nhạc, nhảy', 'play2grow-theme' ), p2g_page_link( 'chuong-trinh' ) ),
+	array( 'spot-explore.svg', __( 'Phương pháp', 'play2grow-theme' ), __( 'Học tiếng Anh qua trải nghiệm', 'play2grow-theme' ), p2g_page_link( 'phuong-phap-hoc' ) ),
+	array( 'spot-home.svg', __( 'Phụ huynh', 'play2grow-theme' ), __( 'Đồng hành cùng con tại nhà', 'play2grow-theme' ), p2g_page_link( 'phu-huynh' ) ),
+	array( 'spot-create.svg', __( 'Góc học tập', 'play2grow-theme' ), __( 'Ý tưởng hoạt động và trò chơi', 'play2grow-theme' ), p2g_posts_page_link() ),
 );
 $p2g_links = array_filter(
 	$p2g_links,

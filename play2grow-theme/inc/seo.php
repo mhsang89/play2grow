@@ -98,14 +98,8 @@ function p2g_share_image() {
 			return array( $img[0], $img[1], $img[2] );
 		}
 	}
-	if ( has_custom_logo() ) {
-		$img = wp_get_attachment_image_src( (int) get_theme_mod( 'custom_logo' ), 'full' );
-		if ( $img ) {
-			return array( $img[0], $img[1], $img[2] );
-		}
-	}
-
-	return null;
+	// Bundled 1200×630 share image (logo + tagline).
+	return array( p2g_image_url( 'og-default.jpg' ), 1200, 630 );
 }
 
 /**
@@ -135,7 +129,7 @@ function p2g_head_meta() {
 	$type  = is_singular( 'post' ) ? 'article' : 'website';
 
 	$tags = array(
-		'og:locale'    => 'vi_VN',
+		'og:locale'    => p2g_og_locale(),
 		'og:type'      => $type,
 		'og:site_name' => get_bloginfo( 'name' ),
 		'og:title'     => $title,
@@ -243,6 +237,12 @@ function p2g_schema_graph() {
 	if ( $tax ) {
 		$org['taxID'] = $tax;
 	}
+	$org['logo'] = array(
+		'@type'  => 'ImageObject',
+		'url'    => p2g_image_url( 'logo-square.png' ),
+		'width'  => 512,
+		'height' => 512,
+	);
 	if ( has_custom_logo() ) {
 		$logo = wp_get_attachment_image_src( (int) get_theme_mod( 'custom_logo' ), 'full' );
 		if ( $logo ) {
@@ -282,7 +282,7 @@ function p2g_schema_graph() {
 			'@id'             => $home . '#website',
 			'url'             => $home,
 			'name'            => get_bloginfo( 'name' ),
-			'inLanguage'      => 'vi-VN',
+			'inLanguage'      => get_bloginfo( 'language' ),
 			'publisher'       => array( '@id' => $home . '#organization' ),
 			'potentialAction' => array(
 				'@type'       => 'SearchAction',
@@ -303,7 +303,7 @@ function p2g_schema_graph() {
 			'headline'         => wp_strip_all_tags( get_the_title( $post ) ),
 			'datePublished'    => get_the_date( 'c', $post ),
 			'dateModified'     => get_the_modified_date( 'c', $post ),
-			'inLanguage'       => 'vi-VN',
+			'inLanguage'       => get_bloginfo( 'language' ),
 			'mainEntityOfPage' => get_permalink( $post ),
 			'author'           => array(
 				'@type' => 'Person',

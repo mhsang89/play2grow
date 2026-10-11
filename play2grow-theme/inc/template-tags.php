@@ -37,6 +37,22 @@ function p2g_site_branding( $context = 'header' ) {
 		return;
 	}
 
+	/**
+	 * Use the bundled Play2Grow logo when no custom logo is uploaded.
+	 * Return false from this filter to fall back to a text wordmark (e.g. after renaming the site).
+	 */
+	if ( apply_filters( 'p2g_use_default_logo', true ) ) {
+		printf(
+			'<a class="site-logo site-logo--image" href="%1$s" rel="home"%2$s><img class="site-logo__img" src="%3$s" alt="%4$s" width="559" height="122" decoding="async"%5$s></a>',
+			esc_url( home_url( '/' ) ),
+			is_front_page() && 'header' === $context ? ' aria-current="page"' : '',
+			esc_url( p2g_image_url( 'footer' === $context ? 'logo-white.svg' : 'logo.svg' ) ),
+			esc_attr( $name ),
+			'header' === $context ? ' fetchpriority="high"' : ' loading="lazy"'
+		);
+		return;
+	}
+
 	printf(
 		'<a class="site-logo site-logo--text" href="%1$s" rel="home"%2$s><span class="site-logo__mark" aria-hidden="true"></span><span class="site-logo__name">%3$s</span></a>',
 		esc_url( home_url( '/' ) ),

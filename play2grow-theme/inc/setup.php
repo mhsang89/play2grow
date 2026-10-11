@@ -224,3 +224,16 @@ function p2g_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'p2g_pingback_header' );
+
+/**
+ * Favicon / app icon from the bundled logo when no Site Icon is set
+ * (Giao diện → Tùy biến → Nhận diện website → Biểu tượng website).
+ */
+function p2g_default_site_icon() {
+	if ( has_site_icon() ) {
+		return;
+	}
+	printf( '<link rel="icon" href="%s" type="image/svg+xml">' . "\n", esc_url( p2g_image_url( 'site-icon.svg' ) ) );
+	printf( '<link rel="apple-touch-icon" href="%s">' . "\n", esc_url( p2g_image_url( 'apple-touch-icon.png' ) ) );
+}
+add_action( 'wp_head', 'p2g_default_site_icon', 99 );
