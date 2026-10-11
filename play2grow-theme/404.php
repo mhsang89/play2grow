@@ -16,7 +16,7 @@ get_header();
 		<p class="error-404__lead"><?php esc_html_e( 'Đường dẫn có thể đã thay đổi hoặc trang đã được gỡ. Bạn có thể tìm kiếm nội dung hoặc quay về trang chủ.', 'play2grow-theme' ); ?></p>
 		<?php get_search_form(); ?>
 		<p class="error-404__actions">
-			<a class="btn btn--primary" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Về trang chủ', 'play2grow-theme' ); ?></a>
+			<a class="btn btn--primary" href="<?php echo esc_url( p2g_home_url() ); ?>"><?php esc_html_e( 'Về trang chủ', 'play2grow-theme' ); ?></a>
 			<?php
 			$p2g_blog = (int) get_option( 'page_for_posts' );
 			if ( $p2g_blog ) :

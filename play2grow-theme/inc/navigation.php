@@ -57,7 +57,7 @@ function p2g_primary_menu_fallback() {
 	}
 	$posts_page = (int) get_option( 'page_for_posts' );
 	if ( ! $posts_page && ! $pages ) {
-		printf( '<li class="menu-item"><a href="%1$s">%2$s</a></li>', esc_url( home_url( '/' ) ), esc_html__( 'Trang chủ', 'play2grow-theme' ) );
+		printf( '<li class="menu-item"><a href="%1$s">%2$s</a></li>', esc_url( p2g_home_url() ), esc_html__( 'Trang chủ', 'play2grow-theme' ) );
 	}
 	echo '</ul>';
 

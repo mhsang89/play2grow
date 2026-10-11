@@ -19,7 +19,7 @@ if ( count( $p2g_categories ) < 2 ) {
 	return;
 }
 
-$p2g_blog_url = get_option( 'page_for_posts' ) ? get_permalink( (int) get_option( 'page_for_posts' ) ) : home_url( '/' );
+$p2g_blog_url = get_option( 'page_for_posts' ) ? get_permalink( (int) get_option( 'page_for_posts' ) ) : p2g_home_url();
 $p2g_current  = is_category() ? get_queried_object_id() : 0;
 ?>
 <nav class="chip-nav" aria-label="<?php esc_attr_e( 'Lọc theo chủ đề', 'play2grow-theme' ); ?>">

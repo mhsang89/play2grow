@@ -88,7 +88,7 @@ $p2g_topbar      = get_theme_mod( 'p2g_show_topbar', true ) && ( $p2g_phone || (
 			</nav>
 			<div class="site-nav__actions">
 				<?php p2g_language_switcher( 'nav' ); ?>
-				<a class="icon-button" href="<?php echo esc_url( home_url( '/?s=' ) ); ?>" data-search-toggle aria-controls="header-search" aria-expanded="false">
+				<a class="icon-button" href="<?php echo esc_url( p2g_home_url( '?s=' ) ); ?>" data-search-toggle aria-controls="header-search" aria-expanded="false">
 					<?php p2g_the_icon( 'search' ); ?><span class="screen-reader-text"><?php esc_html_e( 'Tìm kiếm', 'play2grow-theme' ); ?></span>
 				</a>
 				<?php p2g_cta_button( 'btn btn--primary btn--sm' ); ?>

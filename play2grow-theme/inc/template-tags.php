@@ -30,7 +30,7 @@ function p2g_site_branding( $context = 'header' ) {
 		);
 		printf(
 			'<a class="site-logo site-logo--image" href="%1$s" rel="home"%2$s>%3$s</a>',
-			esc_url( home_url( '/' ) ),
+			esc_url( p2g_home_url() ),
 			is_front_page() && 'header' === $context ? ' aria-current="page"' : '',
 			$img // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core-generated img markup.
 		);
@@ -44,7 +44,7 @@ function p2g_site_branding( $context = 'header' ) {
 	if ( apply_filters( 'p2g_use_default_logo', true ) ) {
 		printf(
 			'<a class="site-logo site-logo--image" href="%1$s" rel="home"%2$s><img class="site-logo__img" src="%3$s" alt="%4$s" width="559" height="122" decoding="async"%5$s></a>',
-			esc_url( home_url( '/' ) ),
+			esc_url( p2g_home_url() ),
 			is_front_page() && 'header' === $context ? ' aria-current="page"' : '',
 			esc_url( p2g_image_url( 'footer' === $context ? 'logo-white.svg' : 'logo.svg' ) ),
 			esc_attr( $name ),
@@ -55,7 +55,7 @@ function p2g_site_branding( $context = 'header' ) {
 
 	printf(
 		'<a class="site-logo site-logo--text" href="%1$s" rel="home"%2$s><span class="site-logo__mark" aria-hidden="true"></span><span class="site-logo__name">%3$s</span></a>',
-		esc_url( home_url( '/' ) ),
+		esc_url( p2g_home_url() ),
 		is_front_page() && 'header' === $context ? ' aria-current="page"' : '',
 		p2g_wordmark( $name ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 	);
@@ -89,7 +89,7 @@ function p2g_tel( $phone ) {
  * @return array[] Each item: [label, url]. Last item has an empty url.
  */
 function p2g_breadcrumb_items() {
-	$items = array( array( __( 'Trang chủ', 'play2grow-theme' ), home_url( '/' ) ) );
+	$items = array( array( __( 'Trang chủ', 'play2grow-theme' ), p2g_home_url() ) );
 
 	$blog_page = (int) get_option( 'page_for_posts' );
 	$blog_item = $blog_page ? array( get_the_title( $blog_page ), get_permalink( $blog_page ) ) : null;

@@ -25,6 +25,25 @@ function p2g_ml_plugin() {
 }
 
 /**
+ * Home URL of the current language (Polylang only filters home_url() in some
+ * contexts, so theme links use this helper).
+ *
+ * @param string $path Optional path or query relative to the home URL, e.g. "?s=".
+ * @return string
+ */
+function p2g_home_url( $path = '' ) {
+	$plugin = p2g_ml_plugin();
+	$home   = home_url( '/' );
+	if ( 'polylang' === $plugin && function_exists( 'pll_home_url' ) ) {
+		$home = pll_home_url();
+	} elseif ( 'wpml' === $plugin ) {
+		$home = apply_filters( 'wpml_home_url', $home );
+	}
+
+	return $path ? trailingslashit( $home ) . ltrim( $path, '/' ) : $home;
+}
+
+/**
  * Current language code ("vi", "en"…). During the starter import this is the
  * language being imported.
  *
