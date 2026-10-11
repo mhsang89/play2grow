@@ -6,10 +6,9 @@ Play2Grow là thương hiệu giáo dục được xây dựng quanh một niề
 Tên gọi Play2Grow nói lên điều đó: **chơi để lớn lên**. Trong mỗi trò chơi, mỗi câu hỏi “cái gì đây?”, mỗi lần tự tay làm ra một thứ gì đó, trẻ đều có cơ hội học thêm một chút – về thế giới xung quanh và về cách diễn đạt điều mình nghĩ.
 
 :::tagline
-- Play.
-- Explore.
-- Learn.
-- Grow.
+- Explore the world.
+- Play with English.
+- Grow every day.
 :::
 
 **Học qua khám phá. Trưởng thành qua trải nghiệm.**

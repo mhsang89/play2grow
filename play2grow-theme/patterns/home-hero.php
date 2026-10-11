@@ -29,14 +29,14 @@ defined( 'ABSPATH' ) || exit;
 <?php
 echo p2g_pattern_buttons( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 	array(
-		array( 'Tìm hiểu phương pháp', p2g_page_link( 'phuong-phap-hoc' ) ),
-		array( 'Đăng ký nhận thông tin', p2g_page_link( 'lien-he' ), 'outline' ),
+		array( 'Khám phá hoạt động', p2g_posts_page_link() ),
+		array( 'Tìm hiểu phương pháp', p2g_page_link( 'phuong-phap-hoc' ), 'outline' ),
 	)
 );
 ?>
 
 <!-- wp:paragraph {"className":"p2g-hero__tagline"} -->
-<p class="p2g-hero__tagline">Play. Explore. Learn. Grow.</p>
+<p class="p2g-hero__tagline">Explore the world. Play with English. Grow every day.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

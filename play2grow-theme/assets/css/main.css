@@ -978,3 +978,13 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; accent-
 .wp-caption-text, .gallery-caption { font-size: .88rem; color: var(--p2g-muted); text-align: center; margin-top: .5em; }
 /* Elementor-built content: let Elementor control widths */
 .entry-content--canvas > * { max-width: none; width: 100% !important; margin-inline: 0; }
+/* Topic cards */
+.topic-grid { list-style: none; padding: 0 !important; margin: 0 auto; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); max-width: var(--p2g-container); }
+.topic-card { position: relative; margin: 0; padding: 22px; background: #fff; border: 1px solid var(--p2g-line); border-radius: var(--p2g-radius-lg); transition: transform .2s ease, box-shadow .2s ease; }
+.topic-card:hover { transform: translateY(-3px); box-shadow: var(--p2g-shadow-lg); }
+.topic-card img { width: 56px; height: 56px; margin-bottom: 12px; }
+.topic-card__title { font-size: 1.1rem; margin: 0 0 .3em; }
+.topic-card__title a { color: var(--p2g-ink); text-decoration: none; }
+.topic-card__title a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.topic-card__desc { font-size: .93rem; color: var(--p2g-muted); line-height: 1.5; margin: 0 0 .6em; }
+.topic-card__count { font-size: .82rem; font-weight: 600; color: var(--p2g-primary); }

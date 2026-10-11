@@ -18,11 +18,11 @@ $p2g_contact = p2g_page_link( 'lien-he' );
 <!-- wp:group {"align":"full","className":"p2g-section p2g-section--dark","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull p2g-section p2g-section--dark"><!-- wp:group {"className":"p2g-section__head p2g-section__head--center","layout":{"type":"default"}} -->
 <div class="wp-block-group p2g-section__head p2g-section__head--center"><!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Bắt đầu từ đâu?</p>
+<p class="eyebrow">Cách bắt đầu</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Ba bước nhỏ để cùng con bắt đầu</h2>
+<h2 class="wp-block-heading">Ba bước nhỏ để cùng con khám phá tiếng Anh</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 

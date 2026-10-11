@@ -2,7 +2,7 @@
 ## Về Play2Grow
 
 :::details Play2Grow là gì?
-Play2Grow là thương hiệu giáo dục tập trung vào việc giúp trẻ học tiếng Anh thông qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày. Tinh thần của Play2Grow được tóm gọn trong câu: *Play. Explore. Learn. Grow.* – Học qua khám phá, trưởng thành qua trải nghiệm.
+Play2Grow là thương hiệu giáo dục tập trung vào việc giúp trẻ học tiếng Anh thông qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày. Tinh thần của Play2Grow được tóm gọn trong câu: *Explore the world. Play with English. Grow every day.* – Học qua khám phá, trưởng thành qua trải nghiệm.
 :::
 
 :::details Play2Grow có phải là trung tâm tiếng Anh không?

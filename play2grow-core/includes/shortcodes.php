@@ -9,6 +9,7 @@
  * [p2g_company_info]       – verified company details (Tùy biến → Play2Grow – Doanh nghiệp)
  * [p2g_note]…[/p2g_note]   – internal note visible only to logged-in editors
  * [p2g_retention]          – lead retention period from the settings
+ * [p2g_topics slugs=""]     – topic cards from post categories (theme rendering only)
  * [p2g_contact_form]       – see includes/contact-form.php
  *
  * When the Play2Grow theme is active, rendering is delegated to the theme's template
@@ -233,3 +234,27 @@ function p2gc_retention_shortcode() {
 	return esc_html( sprintf( _n( '%d ngày', '%d ngày', $days, 'play2grow-core' ), $days ) );
 }
 add_shortcode( 'p2g_retention', 'p2gc_retention_shortcode' );
+
+/**
+ * [p2g_topics slugs="a,b,c"] – topic cards. Needs the Play2Grow theme for the design;
+ * other themes get a plain list of non-empty categories.
+ *
+ * @param array $atts Attributes.
+ * @return string
+ */
+function p2gc_topics_shortcode( $atts ) {
+	$atts = shortcode_atts( array( 'slugs' => '' ), $atts, 'p2g_topics' );
+
+	if ( function_exists( 'p2g_render_topics' ) ) {
+		return p2g_render_topics( $atts['slugs'] );
+	}
+
+	return '<ul class="p2g-topics">' . wp_list_categories(
+		array(
+			'echo'       => false,
+			'title_li'   => '',
+			'hide_empty' => true,
+		)
+	) . '</ul>';
+}
+add_shortcode( 'p2g_topics', 'p2gc_topics_shortcode' );

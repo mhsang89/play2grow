@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 
 $p2g_phone = p2g_company( 'phone' );
 $p2g_email = p2g_company( 'email' );
-$p2g_topbar_text = trim( (string) get_theme_mod( 'p2g_topbar_text', 'Play. Explore. Learn. Grow.' ) );
+$p2g_topbar_text = trim( (string) get_theme_mod( 'p2g_topbar_text', 'Explore the world. Play with English. Grow every day.' ) );
 $p2g_topbar      = get_theme_mod( 'p2g_show_topbar', true ) && ( $p2g_phone || ( $p2g_email && is_email( $p2g_email ) ) || has_nav_menu( 'topbar' ) || '' !== $p2g_topbar_text );
 ?><!doctype html>
 <html <?php language_attributes(); ?> class="no-js">

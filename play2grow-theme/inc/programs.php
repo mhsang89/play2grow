@@ -139,3 +139,83 @@ function p2g_render_latest_posts( $count = 3, $category = '' ) {
 
 	return ob_get_clean();
 }
+
+/**
+ * Topic cards ("Khám phá theo chủ đề") built from post categories that have published
+ * posts. Empty topics stay hidden from visitors so no thin pages are promoted.
+ *
+ * @param string $slugs Comma-separated category slugs in display order ('' = all).
+ * @return string
+ */
+function p2g_render_topics( $slugs = '' ) {
+	$icons = array(
+		'kham-pha-thien-nhien'        => 'spot-explore.svg',
+		'con-vat-quanh-em'            => 'spot-grow.svg',
+		'do-an-va-bua-an'             => 'spot-home.svg',
+		'hoc-qua-hoat-dong-hang-ngay' => 'spot-home.svg',
+		'dia-diem-quanh-ta'           => 'spot-talk.svg',
+		'tro-choi-tieng-anh'          => 'spot-play.svg',
+		'dong-hanh-cung-con'          => 'spot-talk.svg',
+		'phuong-phap-hoc-ngon-ngu'    => 'spot-create.svg',
+		'cong-nghe-va-tre-em'         => 'spot-create.svg',
+	);
+
+	$wanted = array_filter( array_map( 'sanitize_title', explode( ',', (string) $slugs ) ) );
+	$terms  = array();
+	if ( $wanted ) {
+		foreach ( $wanted as $slug ) {
+			$term = get_category_by_slug( $slug );
+			if ( $term ) {
+				$terms[] = $term;
+			}
+		}
+	} else {
+		$terms = get_categories(
+			array(
+				'hide_empty' => false,
+				'exclude'    => array( (int) get_option( 'default_category' ) ),
+			)
+		);
+	}
+
+	$visible = array();
+	$empty   = array();
+	foreach ( $terms as $term ) {
+		if ( $term->count > 0 ) {
+			$visible[] = $term;
+		} else {
+			$empty[] = $term->name;
+		}
+	}
+
+	ob_start();
+	if ( $visible ) {
+		echo '<ul class="topic-grid">';
+		foreach ( $visible as $term ) {
+			$icon = isset( $icons[ $term->slug ] ) ? $icons[ $term->slug ] : 'spot-grow.svg';
+			printf(
+				'<li class="topic-card"><img src="%1$s" alt="" width="56" height="56" loading="lazy" decoding="async"><h3 class="topic-card__title"><a href="%2$s">%3$s</a></h3>%4$s<span class="topic-card__count">%5$s</span></li>',
+				esc_url( p2g_image_url( $icon ) ),
+				esc_url( get_category_link( $term ) ),
+				esc_html( $term->name ),
+				$term->description ? '<p class="topic-card__desc">' . esc_html( wp_strip_all_tags( $term->description ) ) . '</p>' : '',
+				/* translators: %d: number of articles. */
+				esc_html( sprintf( _n( '%d bài viết', '%d bài viết', $term->count, 'play2grow-theme' ), $term->count ) )
+			);
+		}
+		echo '</ul>';
+	}
+	if ( $empty ) {
+		echo p2g_editor_note( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
+			esc_html(
+				sprintf(
+					/* translators: %s: topic names. */
+					__( 'Các chủ đề chưa có bài viết nên đang được ẩn: %s. Chúng sẽ tự hiện khi có bài viết được xuất bản trong chuyên mục tương ứng.', 'play2grow-theme' ),
+					implode( ', ', $empty )
+				)
+			)
+		);
+	}
+
+	return ob_get_clean();
+}

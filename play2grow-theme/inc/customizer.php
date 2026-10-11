@@ -98,7 +98,7 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'p2g_topbar_text',
 		array(
-			'default'           => 'Play. Explore. Learn. Grow.',
+			'default'           => 'Explore the world. Play with English. Grow every day.',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
