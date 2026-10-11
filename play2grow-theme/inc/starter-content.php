@@ -162,9 +162,21 @@ function p2g_run_starter_import( $status ) {
 					'posts_per_page' => 1,
 				)
 			);
+		$replacement = false;
 		if ( $existing && ( ! is_array( $existing ) || ! empty( $existing ) ) ) {
-			$report['skipped'][] = sprintf( '"%s" (đường dẫn /%s/ đã tồn tại – giữ nguyên nội dung cũ)', $item['title'], $path );
-			continue;
+			if ( 'post' === $item['type'] ) {
+				$report['skipped'][] = sprintf( '"%s" (đường dẫn /%s/ đã tồn tại – giữ nguyên nội dung cũ)', $item['title'], $path );
+				continue;
+			}
+			// Never touch the existing page: create a separate draft the owner can review
+			// and then copy into the original page (keeping its URL).
+			$replacement     = true;
+			$item['slug']   .= '-ban-moi';
+			$item['title']   = '[Bản mới] ' . $item['title'];
+			$report['skipped'][] = sprintf( '/%1$s/ đã tồn tại – giữ nguyên trang cũ, tạo bản nháp "%2$s" để so sánh', $path, $item['title'] );
+			if ( get_page_by_path( ( ! empty( $item['parent'] ) ? $item['parent'] . '/' : '' ) . $item['slug'] ) ) {
+				continue;
+			}
 		}
 
 		$file = P2G_DIR . '/starter-content/' . $item['file'];
@@ -180,7 +192,7 @@ function p2g_run_starter_import( $status ) {
 
 		$postarr = array(
 			'post_type'    => $item['type'],
-			'post_status'  => $status,
+			'post_status'  => $replacement ? 'draft' : $status,
 			'post_title'   => $item['title'],
 			'post_name'    => $item['slug'],
 			'post_excerpt' => isset( $item['excerpt'] ) ? $item['excerpt'] : '',
@@ -327,7 +339,7 @@ function p2g_run_starter_finalize() {
  */
 function p2g_handle_starter_actions() {
 	if ( ! current_user_can( 'manage_options' ) ) {
-		wp_die( esc_html__( 'Bạn không có quyền thực hiện thao tác này.', 'play2grow' ), 403 );
+		wp_die( esc_html__( 'Bạn không có quyền thực hiện thao tác này.', 'play2grow-theme' ), 403 );
 	}
 	check_admin_referer( 'p2g_starter' );
 
@@ -363,12 +375,12 @@ function p2g_render_import_notice() {
 		return;
 	}
 	delete_transient( $key );
-	echo '<div class="notice notice-success"><p><strong>' . esc_html__( 'Kết quả:', 'play2grow' ) . '</strong></p><ul style="list-style:disc;padding-left:20px">';
+	echo '<div class="notice notice-success"><p><strong>' . esc_html__( 'Kết quả:', 'play2grow-theme' ) . '</strong></p><ul style="list-style:disc;padding-left:20px">';
 	foreach ( (array) $report['created'] as $line ) {
 		echo '<li>' . esc_html( $line ) . '</li>';
 	}
 	foreach ( (array) $report['skipped'] as $line ) {
-		echo '<li>' . esc_html__( 'Bỏ qua:', 'play2grow' ) . ' ' . esc_html( $line ) . '</li>';
+		echo '<li>' . esc_html__( 'Bỏ qua:', 'play2grow-theme' ) . ' ' . esc_html( $line ) . '</li>';
 	}
 	echo '</ul></div>';
 }
@@ -382,9 +394,9 @@ function p2g_render_import_section() {
 		return;
 	}
 	?>
-	<h2 id="p2g-starter"><?php esc_html_e( 'Nội dung khởi đầu (tùy chọn)', 'play2grow' ); ?></h2>
-	<p style="max-width:900px"><?php esc_html_e( 'Tạo các trang và bài viết tiếng Việt đã biên soạn sẵn cho Play2Grow. Thao tác này KHÔNG ghi đè hay xóa nội dung hiện có: trang/bài nào trùng đường dẫn sẽ được bỏ qua. Các đoạn cần chủ sở hữu xác nhận được đánh dấu bằng ghi chú nội bộ (chỉ người đăng nhập mới thấy).', 'play2grow' ); ?></p>
-	<details style="max-width:900px;margin-bottom:12px"><summary><?php esc_html_e( 'Danh sách sẽ được tạo', 'play2grow' ); ?></summary>
+	<h2 id="p2g-starter"><?php esc_html_e( 'Nội dung khởi đầu (tùy chọn)', 'play2grow-theme' ); ?></h2>
+	<p style="max-width:900px"><?php esc_html_e( 'Tạo các trang và bài viết tiếng Việt đã biên soạn sẵn cho Play2Grow. Thao tác này KHÔNG ghi đè hay xóa nội dung hiện có: trang/bài nào trùng đường dẫn sẽ được bỏ qua. Các đoạn cần chủ sở hữu xác nhận được đánh dấu bằng ghi chú nội bộ (chỉ người đăng nhập mới thấy).', 'play2grow-theme' ); ?></p>
+	<details style="max-width:900px;margin-bottom:12px"><summary><?php esc_html_e( 'Danh sách sẽ được tạo', 'play2grow-theme' ); ?></summary>
 		<ul style="list-style:disc;padding-left:20px">
 			<?php foreach ( (array) $manifest['pages'] as $page ) : ?>
 				<li><?php echo esc_html( sprintf( 'Trang: %1$s (/%2$s/)', $page['title'], ( ! empty( $page['parent'] ) ? $page['parent'] . '/' : '' ) . $page['slug'] ) ); ?></li>
@@ -399,17 +411,17 @@ function p2g_render_import_section() {
 		<input type="hidden" name="action" value="p2g_starter">
 		<input type="hidden" name="p2g_do" value="import">
 		<fieldset>
-			<label><input type="radio" name="p2g_status" value="draft" checked> <?php esc_html_e( 'Tạo dưới dạng bản nháp (khuyến nghị – rà soát rồi xuất bản từng trang)', 'play2grow' ); ?></label><br>
-			<label><input type="radio" name="p2g_status" value="publish"> <?php esc_html_e( 'Xuất bản ngay (chỉ dùng trên website thử nghiệm/staging)', 'play2grow' ); ?></label>
+			<label><input type="radio" name="p2g_status" value="draft" checked> <?php esc_html_e( 'Tạo dưới dạng bản nháp (khuyến nghị – rà soát rồi xuất bản từng trang)', 'play2grow-theme' ); ?></label><br>
+			<label><input type="radio" name="p2g_status" value="publish"> <?php esc_html_e( 'Xuất bản ngay (chỉ dùng trên website thử nghiệm/staging)', 'play2grow-theme' ); ?></label>
 		</fieldset>
-		<?php submit_button( __( 'Bước 1: Tạo nội dung khởi đầu', 'play2grow' ), 'secondary', 'submit', false ); ?>
+		<?php submit_button( __( 'Bước 1: Tạo nội dung khởi đầu', 'play2grow-theme' ), 'secondary', 'submit', false ); ?>
 	</form>
 	<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 		<?php wp_nonce_field( 'p2g_starter' ); ?>
 		<input type="hidden" name="action" value="p2g_starter">
 		<input type="hidden" name="p2g_do" value="finalize">
-		<p style="max-width:900px"><?php esc_html_e( 'Sau khi đã xuất bản các trang: tạo menu (chỉ cho vị trí chưa có menu), đặt Trang chủ / Góc học tập trong Cài đặt → Đọc và chọn trang Chính sách quyền riêng tư. Chỉ dùng các trang đã xuất bản.', 'play2grow' ); ?></p>
-		<?php submit_button( __( 'Bước 2: Tạo menu & cài đặt trang chủ', 'play2grow' ), 'secondary', 'submit', false ); ?>
+		<p style="max-width:900px"><?php esc_html_e( 'Sau khi đã xuất bản các trang: tạo menu (chỉ cho vị trí chưa có menu), đặt Trang chủ / Góc học tập trong Cài đặt → Đọc và chọn trang Chính sách quyền riêng tư. Chỉ dùng các trang đã xuất bản.', 'play2grow-theme' ); ?></p>
+		<?php submit_button( __( 'Bước 2: Tạo menu & cài đặt trang chủ', 'play2grow-theme' ), 'secondary', 'submit', false ); ?>
 	</form>
 	<?php
 }

@@ -63,6 +63,9 @@ function p2g_contact_url() {
 	if ( ! $page_id || 'publish' !== get_post_status( $page_id ) ) {
 		$page_id = p2g_page_id_by_path( 'lien-he' );
 	}
+	if ( ! $page_id ) {
+		$page_id = p2g_page_id_by_path( 'dang-ki' ); // Existing registration page on play2grow.edu.vn.
+	}
 
 	if ( ! $page_id ) {
 		$pages = get_posts(
@@ -91,7 +94,7 @@ function p2g_contact_url() {
 function p2g_cta_label() {
 	$label = trim( (string) get_theme_mod( 'p2g_cta_label', '' ) );
 
-	return '' !== $label ? $label : __( 'Đăng ký nhận thông tin', 'play2grow' );
+	return '' !== $label ? $label : __( 'Đăng ký nhận thông tin', 'play2grow-theme' );
 }
 
 /**
@@ -207,7 +210,7 @@ function p2g_editor_note( $text ) {
 		return '';
 	}
 
-	return '<div class="p2g-editor-note" role="note"><strong>' . esc_html__( 'Ghi chú nội bộ (khách truy cập không nhìn thấy):', 'play2grow' ) . '</strong> ' . wp_kses_post( $text ) . '</div>';
+	return '<div class="p2g-editor-note" role="note"><strong>' . esc_html__( 'Ghi chú nội bộ (khách truy cập không nhìn thấy):', 'play2grow-theme' ) . '</strong> ' . wp_kses_post( $text ) . '</div>';
 }
 
 /**
@@ -319,4 +322,17 @@ function p2g_pattern_buttons( $buttons, $class = '' ) {
  */
 function p2g_image_url( $file ) {
 	return P2G_URI . '/assets/images/' . $file;
+}
+
+/**
+ * Whether a post is built with Elementor. Such content gets a full-width, unconstrained
+ * container so Elementor sections keep their own layout.
+ *
+ * @param int|null $post_id Post ID.
+ * @return bool
+ */
+function p2g_is_elementor( $post_id = null ) {
+	$post_id = $post_id ? $post_id : get_the_ID();
+
+	return $post_id && 'builder' === get_post_meta( $post_id, '_elementor_edit_mode', true ) && defined( 'ELEMENTOR_VERSION' );
 }

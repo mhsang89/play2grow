@@ -25,14 +25,14 @@ while ( have_posts() ) :
 					<?php the_content(); ?>
 				</div>
 				<div class="contact-card">
-					<h2 class="contact-card__title"><?php esc_html_e( 'Thông tin liên hệ', 'play2grow' ); ?></h2>
+					<h2 class="contact-card__title"><?php esc_html_e( 'Thông tin liên hệ', 'play2grow-theme' ); ?></h2>
 					<?php p2g_company_info( 'card' ); ?>
 					<?php p2g_social_list(); ?>
 				</div>
 			</div>
 			<?php if ( ! $p2g_inline_form ) : ?>
 				<div class="contact-layout__form">
-					<?php echo p2g_contact_form( __( 'Gửi thông tin cho Play2Grow', 'play2grow' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- markup from the plugin shortcode. ?>
+					<?php echo p2g_contact_form( __( 'Gửi thông tin cho Play2Grow', 'play2grow-theme' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- markup from the plugin shortcode. ?>
 				</div>
 			<?php endif; ?>
 		</div>

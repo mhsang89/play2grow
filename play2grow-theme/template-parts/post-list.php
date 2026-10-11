@@ -35,7 +35,7 @@ $p2g_has_sidebar = is_active_sidebar( 'sidebar-blog' );
 			?>
 		</div>
 		<?php if ( $p2g_has_sidebar ) : ?>
-			<aside class="layout-sidebar__aside" aria-label="<?php esc_attr_e( 'Thanh bên', 'play2grow' ); ?>">
+			<aside class="layout-sidebar__aside" aria-label="<?php esc_attr_e( 'Thanh bên', 'play2grow-theme' ); ?>">
 				<?php dynamic_sidebar( 'sidebar-blog' ); ?>
 			</aside>
 		<?php endif; ?>

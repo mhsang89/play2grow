@@ -21,7 +21,7 @@ function p2g_submenu_toggle( $item_output, $item, $depth, $args ) {
 		$item_output .= sprintf(
 			'<button class="submenu-toggle" type="button" aria-expanded="false" aria-label="%1$s">%2$s</button>',
 			/* translators: %s: menu item title. */
-			esc_attr( sprintf( __( 'Mở menu con của %s', 'play2grow' ), wp_strip_all_tags( $item->title ) ) ),
+			esc_attr( sprintf( __( 'Mở menu con của %s', 'play2grow-theme' ), wp_strip_all_tags( $item->title ) ) ),
 			p2g_icon( 'chevron-down' )
 		);
 	}
@@ -57,7 +57,7 @@ function p2g_primary_menu_fallback() {
 	}
 	$posts_page = (int) get_option( 'page_for_posts' );
 	if ( ! $posts_page && ! $pages ) {
-		printf( '<li class="menu-item"><a href="%1$s">%2$s</a></li>', esc_url( home_url( '/' ) ), esc_html__( 'Trang chủ', 'play2grow' ) );
+		printf( '<li class="menu-item"><a href="%1$s">%2$s</a></li>', esc_url( home_url( '/' ) ), esc_html__( 'Trang chủ', 'play2grow-theme' ) );
 	}
 	echo '</ul>';
 
@@ -65,7 +65,7 @@ function p2g_primary_menu_fallback() {
 		printf(
 			'<p class="menu-admin-hint"><a href="%1$s">%2$s</a></p>',
 			esc_url( admin_url( 'nav-menus.php' ) ),
-			esc_html__( 'Gán menu cho vị trí "Menu chính"', 'play2grow' )
+			esc_html__( 'Gán menu cho vị trí "Menu chính"', 'play2grow-theme' )
 		);
 	}
 }

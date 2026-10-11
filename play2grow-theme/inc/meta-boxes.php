@@ -17,12 +17,12 @@ defined( 'ABSPATH' ) || exit;
  */
 function p2g_program_fields() {
 	return array(
-		'_p2g_prog_audience' => array( __( 'Độ tuổi phù hợp', 'play2grow' ), 'users', __( 'Ví dụ: Trẻ từ … đến … tuổi', 'play2grow' ) ),
-		'_p2g_prog_skills'   => array( __( 'Kỹ năng tiếng Anh', 'play2grow' ), 'book', __( 'Ví dụ: Nghe, nói, từ vựng theo chủ đề', 'play2grow' ) ),
-		'_p2g_prog_format'   => array( __( 'Hình thức / nền tảng', 'play2grow' ), 'monitor', __( 'Ví dụ: Ứng dụng di động, hoạt động in ra giấy…', 'play2grow' ) ),
-		'_p2g_prog_duration' => array( __( 'Thời lượng', 'play2grow' ), 'clock', __( 'Ví dụ: Mỗi hoạt động khoảng … phút', 'play2grow' ) ),
-		'_p2g_prog_require'  => array( __( 'Yêu cầu sử dụng', 'play2grow' ), 'info', __( 'Ví dụ: Cần tài khoản phụ huynh, kết nối Internet…', 'play2grow' ) ),
-		'_p2g_prog_fee'      => array( __( 'Chi phí', 'play2grow' ), 'tag', __( 'Chỉ điền mức phí đã được duyệt công bố', 'play2grow' ) ),
+		'_p2g_prog_audience' => array( __( 'Độ tuổi phù hợp', 'play2grow-theme' ), 'users', __( 'Ví dụ: Trẻ từ … đến … tuổi', 'play2grow-theme' ) ),
+		'_p2g_prog_skills'   => array( __( 'Kỹ năng tiếng Anh', 'play2grow-theme' ), 'book', __( 'Ví dụ: Nghe, nói, từ vựng theo chủ đề', 'play2grow-theme' ) ),
+		'_p2g_prog_format'   => array( __( 'Hình thức / nền tảng', 'play2grow-theme' ), 'monitor', __( 'Ví dụ: Ứng dụng di động, hoạt động in ra giấy…', 'play2grow-theme' ) ),
+		'_p2g_prog_duration' => array( __( 'Thời lượng', 'play2grow-theme' ), 'clock', __( 'Ví dụ: Mỗi hoạt động khoảng … phút', 'play2grow-theme' ) ),
+		'_p2g_prog_require'  => array( __( 'Yêu cầu sử dụng', 'play2grow-theme' ), 'info', __( 'Ví dụ: Cần tài khoản phụ huynh, kết nối Internet…', 'play2grow-theme' ) ),
+		'_p2g_prog_fee'      => array( __( 'Chi phí', 'play2grow-theme' ), 'tag', __( 'Chỉ điền mức phí đã được duyệt công bố', 'play2grow-theme' ) ),
 	);
 }
 
@@ -33,10 +33,10 @@ function p2g_program_fields() {
  */
 function p2g_program_statuses() {
 	return array(
-		''         => __( '— Không hiển thị trạng thái —', 'play2grow' ),
-		'live'     => __( 'Đang hoạt động', 'play2grow' ),
-		'beta'     => __( 'Đang thử nghiệm', 'play2grow' ),
-		'upcoming' => __( 'Sắp ra mắt', 'play2grow' ),
+		''         => __( '— Không hiển thị trạng thái —', 'play2grow-theme' ),
+		'live'     => __( 'Đang hoạt động', 'play2grow-theme' ),
+		'beta'     => __( 'Đang thử nghiệm', 'play2grow-theme' ),
+		'upcoming' => __( 'Sắp ra mắt', 'play2grow-theme' ),
 	);
 }
 
@@ -93,11 +93,11 @@ add_action( 'init', 'p2g_register_meta' );
  */
 function p2g_add_meta_boxes( $post_type, $post ) {
 	if ( in_array( $post_type, array( 'post', 'page' ), true ) && ! p2g_seo_plugin_active() ) {
-		add_meta_box( 'p2g-seo', __( 'SEO cơ bản (Play2Grow)', 'play2grow' ), 'p2g_seo_box', $post_type, 'normal', 'low' );
+		add_meta_box( 'p2g-seo', __( 'SEO cơ bản (Play2Grow)', 'play2grow-theme' ), 'p2g_seo_box', $post_type, 'normal', 'low' );
 	}
 
 	if ( 'page' === $post_type ) {
-		add_meta_box( 'p2g-program', __( 'Thông tin sản phẩm / trải nghiệm học tập', 'play2grow' ), 'p2g_program_box', 'page', 'normal', 'default' );
+		add_meta_box( 'p2g-program', __( 'Thông tin sản phẩm / trải nghiệm học tập', 'play2grow-theme' ), 'p2g_program_box', 'page', 'normal', 'default' );
 	}
 }
 add_action( 'add_meta_boxes', 'p2g_add_meta_boxes', 10, 2 );
@@ -113,14 +113,14 @@ function p2g_seo_box( $post ) {
 	$noindex = (bool) get_post_meta( $post->ID, '_p2g_noindex', true );
 	?>
 	<p>
-		<label for="p2g-meta-description"><strong><?php esc_html_e( 'Mô tả meta (meta description)', 'play2grow' ); ?></strong></label><br>
+		<label for="p2g-meta-description"><strong><?php esc_html_e( 'Mô tả meta (meta description)', 'play2grow-theme' ); ?></strong></label><br>
 		<textarea id="p2g-meta-description" name="p2g_meta_description" rows="3" class="widefat" maxlength="320"><?php echo esc_textarea( $desc ); ?></textarea>
-		<span class="description"><?php esc_html_e( 'Khoảng 120–160 ký tự, mô tả đúng nội dung trang. Để trống thì theme dùng phần Tóm tắt (Excerpt).', 'play2grow' ); ?></span>
+		<span class="description"><?php esc_html_e( 'Khoảng 120–160 ký tự, mô tả đúng nội dung trang. Để trống thì theme dùng phần Tóm tắt (Excerpt).', 'play2grow-theme' ); ?></span>
 	</p>
 	<p>
-		<label><input type="checkbox" name="p2g_noindex" value="1" <?php checked( $noindex ); ?>> <?php esc_html_e( 'Không cho công cụ tìm kiếm lập chỉ mục trang này (noindex)', 'play2grow' ); ?></label>
+		<label><input type="checkbox" name="p2g_noindex" value="1" <?php checked( $noindex ); ?>> <?php esc_html_e( 'Không cho công cụ tìm kiếm lập chỉ mục trang này (noindex)', 'play2grow-theme' ); ?></label>
 	</p>
-	<p class="description"><?php esc_html_e( 'Hộp này tự ẩn khi bạn cài Yoast SEO, Rank Math hoặc plugin SEO tương tự.', 'play2grow' ); ?></p>
+	<p class="description"><?php esc_html_e( 'Hộp này tự ẩn khi bạn cài Yoast SEO, Rank Math hoặc plugin SEO tương tự.', 'play2grow-theme' ); ?></p>
 	<?php
 }
 
@@ -131,10 +131,10 @@ function p2g_seo_box( $post ) {
  */
 function p2g_program_box( $post ) {
 	wp_nonce_field( 'p2g_save_meta', 'p2g_meta_nonce' );
-	echo '<p class="description">' . esc_html__( 'Chỉ dùng cho trang có mẫu "Chi tiết sản phẩm". Mỗi trường để trống sẽ không hiển thị. Chỉ điền thông tin đã được kiểm chứng trên sản phẩm thực tế.', 'play2grow' ) . '</p>';
+	echo '<p class="description">' . esc_html__( 'Chỉ dùng cho trang có mẫu "Chi tiết sản phẩm". Mỗi trường để trống sẽ không hiển thị. Chỉ điền thông tin đã được kiểm chứng trên sản phẩm thực tế.', 'play2grow-theme' ) . '</p>';
 	echo '<table class="form-table" role="presentation"><tbody>';
 	$current = get_post_meta( $post->ID, '_p2g_prog_status', true );
-	echo '<tr><th scope="row"><label for="_p2g_prog_status">' . esc_html__( 'Trạng thái', 'play2grow' ) . '</label></th><td><select id="_p2g_prog_status" name="_p2g_prog_status">';
+	echo '<tr><th scope="row"><label for="_p2g_prog_status">' . esc_html__( 'Trạng thái', 'play2grow-theme' ) . '</label></th><td><select id="_p2g_prog_status" name="_p2g_prog_status">';
 	foreach ( p2g_program_statuses() as $value => $label ) {
 		printf( '<option value="%1$s" %2$s>%3$s</option>', esc_attr( $value ), selected( $current, $value, false ), esc_html( $label ) );
 	}

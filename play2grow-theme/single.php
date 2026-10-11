@@ -39,7 +39,7 @@ while ( have_posts() ) :
 			the_content();
 			wp_link_pages(
 				array(
-					'before' => '<nav class="page-links" aria-label="' . esc_attr__( 'Các trang của bài viết', 'play2grow' ) . '">' . esc_html__( 'Trang:', 'play2grow' ),
+					'before' => '<nav class="page-links" aria-label="' . esc_attr__( 'Các trang của bài viết', 'play2grow-theme' ) . '">' . esc_html__( 'Trang:', 'play2grow-theme' ),
 					'after'  => '</nav>',
 				)
 			);
@@ -50,13 +50,13 @@ while ( have_posts() ) :
 			<?php
 			$p2g_tags = get_the_tag_list( '<ul class="tag-list"><li>', '</li><li>', '</li></ul>' );
 			if ( $p2g_tags && ! is_wp_error( $p2g_tags ) ) {
-				echo '<div class="article-footer__tags"><span class="article-footer__label">' . esc_html__( 'Thẻ:', 'play2grow' ) . '</span>' . wp_kses_post( $p2g_tags ) . '</div>';
+				echo '<div class="article-footer__tags"><span class="article-footer__label">' . esc_html__( 'Thẻ:', 'play2grow-theme' ) . '</span>' . wp_kses_post( $p2g_tags ) . '</div>';
 			}
 
 			$p2g_bio = get_the_author_meta( 'description' );
 			if ( $p2g_bio ) :
 				?>
-				<section class="author-box" aria-label="<?php esc_attr_e( 'Về tác giả', 'play2grow' ); ?>">
+				<section class="author-box" aria-label="<?php esc_attr_e( 'Về tác giả', 'play2grow-theme' ); ?>">
 					<?php echo get_avatar( get_the_author_meta( 'ID' ), 72, '', '', array( 'class' => 'author-box__avatar' ) ); ?>
 					<div>
 						<p class="author-box__name"><?php the_author_posts_link(); ?></p>
@@ -68,10 +68,10 @@ while ( have_posts() ) :
 			<?php
 			the_post_navigation(
 				array(
-					'prev_text'          => '<span class="post-nav__label">' . esc_html__( 'Bài trước', 'play2grow' ) . '</span><span class="post-nav__title">%title</span>',
-					'next_text'          => '<span class="post-nav__label">' . esc_html__( 'Bài tiếp theo', 'play2grow' ) . '</span><span class="post-nav__title">%title</span>',
-					'screen_reader_text' => __( 'Điều hướng bài viết', 'play2grow' ),
-					'aria_label'         => __( 'Bài viết khác', 'play2grow' ),
+					'prev_text'          => '<span class="post-nav__label">' . esc_html__( 'Bài trước', 'play2grow-theme' ) . '</span><span class="post-nav__title">%title</span>',
+					'next_text'          => '<span class="post-nav__label">' . esc_html__( 'Bài tiếp theo', 'play2grow-theme' ) . '</span><span class="post-nav__title">%title</span>',
+					'screen_reader_text' => __( 'Điều hướng bài viết', 'play2grow-theme' ),
+					'aria_label'         => __( 'Bài viết khác', 'play2grow-theme' ),
 				)
 			);
 			?>

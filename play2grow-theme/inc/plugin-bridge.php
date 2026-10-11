@@ -86,7 +86,7 @@ function p2g_contact_form( $title = '' ) {
  * @return string
  */
 function p2g_core_missing_text() {
-	return __( 'Plugin <strong>Play2Grow Core</strong> chưa được kích hoạt nên form liên hệ, thông tin doanh nghiệp và mạng xã hội đang bị ẩn. Cài file play2grow-core.zip tại Plugin → Cài mới → Tải plugin lên, rồi kích hoạt.', 'play2grow' );
+	return __( 'Plugin <strong>Play2Grow Core</strong> chưa được kích hoạt nên form liên hệ, thông tin doanh nghiệp và mạng xã hội đang bị ẩn. Cài file play2grow-core.zip tại Plugin → Cài mới → Tải plugin lên, rồi kích hoạt.', 'play2grow-theme' );
 }
 
 /**

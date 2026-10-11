@@ -11,11 +11,11 @@ get_header();
 
 $p2g_eyebrow = '';
 if ( is_category() ) {
-	$p2g_eyebrow = __( 'Chủ đề', 'play2grow' );
+	$p2g_eyebrow = __( 'Chủ đề', 'play2grow-theme' );
 } elseif ( is_tag() ) {
-	$p2g_eyebrow = __( 'Thẻ', 'play2grow' );
+	$p2g_eyebrow = __( 'Thẻ', 'play2grow-theme' );
 } elseif ( is_author() ) {
-	$p2g_eyebrow = __( 'Tác giả', 'play2grow' );
+	$p2g_eyebrow = __( 'Tác giả', 'play2grow-theme' );
 }
 
 $p2g_title = ( is_category() || is_tag() || is_tax() ) ? single_term_title( '', false ) : ( is_author() ? get_the_author_meta( 'display_name', (int) get_query_var( 'author' ) ) : wp_strip_all_tags( get_the_archive_title() ) );

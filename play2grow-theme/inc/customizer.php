@@ -49,8 +49,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_panel(
 		'p2g_panel',
 		array(
-			'title'       => __( 'Play2Grow', 'play2grow' ),
-			'description' => __( 'Nút đăng ký, thanh trên cùng và chân trang. Thông tin doanh nghiệp và mạng xã hội nằm ở mục "Play2Grow – Thông tin doanh nghiệp" (plugin Play2Grow Core).', 'play2grow' ),
+			'title'       => __( 'Play2Grow', 'play2grow-theme' ),
+			'description' => __( 'Nút đăng ký, thanh trên cùng và chân trang. Thông tin doanh nghiệp và mạng xã hội nằm ở mục "Play2Grow – Thông tin doanh nghiệp" (plugin Play2Grow Core).', 'play2grow-theme' ),
 			'priority'    => 30,
 		)
 	);
@@ -59,7 +59,7 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'p2g_header',
 		array(
-			'title' => __( 'Đầu trang & nút đăng ký', 'play2grow' ),
+			'title' => __( 'Đầu trang & nút đăng ký', 'play2grow-theme' ),
 			'panel' => 'p2g_panel',
 		)
 	);
@@ -73,8 +73,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'p2g_cta_label',
 		array(
-			'label'       => __( 'Chữ trên nút chính', 'play2grow' ),
-			'description' => __( 'Mặc định: "Đăng ký nhận thông tin".', 'play2grow' ),
+			'label'       => __( 'Chữ trên nút chính', 'play2grow-theme' ),
+			'description' => __( 'Mặc định: "Đăng ký nhận thông tin".', 'play2grow-theme' ),
 			'section'     => 'p2g_header',
 			'type'        => 'text',
 		)
@@ -89,8 +89,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'p2g_cta_page',
 		array(
-			'label'       => __( 'Trang đích của nút đăng ký', 'play2grow' ),
-			'description' => __( 'Nếu để trống, theme dùng trang có đường dẫn /lien-he/ hoặc trang dùng mẫu "Liên hệ". Nếu không tìm thấy trang đã xuất bản, nút sẽ tự ẩn để tránh dẫn tới trang lỗi.', 'play2grow' ),
+			'label'       => __( 'Trang đích của nút đăng ký', 'play2grow-theme' ),
+			'description' => __( 'Nếu để trống, theme dùng trang có đường dẫn /lien-he/ hoặc trang dùng mẫu "Liên hệ". Nếu không tìm thấy trang đã xuất bản, nút sẽ tự ẩn để tránh dẫn tới trang lỗi.', 'play2grow-theme' ),
 			'section'     => 'p2g_header',
 			'type'        => 'dropdown-pages',
 		)
@@ -105,8 +105,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'p2g_topbar_text',
 		array(
-			'label'       => __( 'Dòng chữ bên trái thanh trên cùng', 'play2grow' ),
-			'description' => __( 'Để trống để ẩn.', 'play2grow' ),
+			'label'       => __( 'Dòng chữ bên trái thanh trên cùng', 'play2grow-theme' ),
+			'description' => __( 'Để trống để ẩn.', 'play2grow-theme' ),
 			'section'     => 'p2g_header',
 			'type'        => 'text',
 		)
@@ -121,8 +121,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'p2g_show_floating',
 		array(
-			'label'       => __( 'Hiện nút liên hệ nổi và thanh đăng ký cố định trên điện thoại', 'play2grow' ),
-			'description' => __( 'Nút gọi/Zalo chỉ xuất hiện khi đã nhập hotline hoặc đường dẫn Zalo.', 'play2grow' ),
+			'label'       => __( 'Hiện nút liên hệ nổi và thanh đăng ký cố định trên điện thoại', 'play2grow-theme' ),
+			'description' => __( 'Nút gọi/Zalo chỉ xuất hiện khi đã nhập hotline hoặc đường dẫn Zalo.', 'play2grow-theme' ),
 			'section'     => 'p2g_header',
 			'type'        => 'checkbox',
 		)
@@ -137,8 +137,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'p2g_show_topbar',
 		array(
-			'label'       => __( 'Hiện thanh trên cùng', 'play2grow' ),
-			'description' => __( 'Hiển thị dòng chữ, menu "Thanh trên cùng", hotline/email (nếu đã nhập) và mạng xã hội.', 'play2grow' ),
+			'label'       => __( 'Hiện thanh trên cùng', 'play2grow-theme' ),
+			'description' => __( 'Hiển thị dòng chữ, menu "Thanh trên cùng", hotline/email (nếu đã nhập) và mạng xã hội.', 'play2grow-theme' ),
 			'section'     => 'p2g_header',
 			'type'        => 'checkbox',
 		)
@@ -148,7 +148,7 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'p2g_footer',
 		array(
-			'title' => __( 'Chân trang', 'play2grow' ),
+			'title' => __( 'Chân trang', 'play2grow-theme' ),
 			'panel' => 'p2g_panel',
 		)
 	);
@@ -162,8 +162,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'p2g_footer_about',
 		array(
-			'label'       => __( 'Đoạn giới thiệu ngắn', 'play2grow' ),
-			'description' => __( 'Hiển thị dưới logo ở chân trang. Nếu để trống, theme dùng Khẩu hiệu (Tagline) trong Cài đặt → Tổng quan.', 'play2grow' ),
+			'label'       => __( 'Đoạn giới thiệu ngắn', 'play2grow-theme' ),
+			'description' => __( 'Hiển thị dưới logo ở chân trang. Nếu để trống, theme dùng Khẩu hiệu (Tagline) trong Cài đặt → Tổng quan.', 'play2grow-theme' ),
 			'section'     => 'p2g_footer',
 			'type'        => 'textarea',
 		)
@@ -178,8 +178,8 @@ function p2g_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'p2g_copyright',
 		array(
-			'label'       => __( 'Dòng bản quyền', 'play2grow' ),
-			'description' => __( 'Mặc định: "© [năm] [Tên website]".', 'play2grow' ),
+			'label'       => __( 'Dòng bản quyền', 'play2grow-theme' ),
+			'description' => __( 'Mặc định: "© [năm] [Tên website]".', 'play2grow-theme' ),
 			'section'     => 'p2g_footer',
 			'type'        => 'text',
 		)
@@ -187,8 +187,8 @@ function p2g_customize_register( $wp_customize ) {
 
 	// Colors (core section).
 	$colors = array(
-		'p2g_color_primary' => array( __( 'Màu chủ đạo', 'play2grow' ), '#0E6B5C', __( 'Dùng cho nút, liên kết, tiêu đề nhấn. Nên giữ độ tương phản tối thiểu 4.5:1 với nền trắng.', 'play2grow' ) ),
-		'p2g_color_accent'  => array( __( 'Màu nhấn', 'play2grow' ), '#FFB938', __( 'Dùng cho điểm nhấn trang trí và nút phụ (chữ màu tối trên nền màu nhấn).', 'play2grow' ) ),
+		'p2g_color_primary' => array( __( 'Màu chủ đạo', 'play2grow-theme' ), '#0E6B5C', __( 'Dùng cho nút, liên kết, tiêu đề nhấn. Nên giữ độ tương phản tối thiểu 4.5:1 với nền trắng.', 'play2grow-theme' ) ),
+		'p2g_color_accent'  => array( __( 'Màu nhấn', 'play2grow-theme' ), '#FFB938', __( 'Dùng cho điểm nhấn trang trí và nút phụ (chữ màu tối trên nền màu nhấn).', 'play2grow-theme' ) ),
 	);
 	foreach ( $colors as $key => $c ) {
 		$wp_customize->add_setting(

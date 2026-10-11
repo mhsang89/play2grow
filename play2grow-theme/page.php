@@ -19,12 +19,12 @@ while ( have_posts() ) :
 				<?php the_post_thumbnail( 'p2g-wide', array( 'loading' => 'eager', 'fetchpriority' => 'high', 'sizes' => '(min-width: 1240px) 1200px, 94vw' ) ); ?>
 			</figure>
 		<?php endif; ?>
-		<div class="entry-content">
+		<div class="entry-content<?php echo p2g_is_elementor() ? ' entry-content--canvas' : ''; ?>">
 			<?php
 			the_content();
 			wp_link_pages(
 				array(
-					'before' => '<nav class="page-links" aria-label="' . esc_attr__( 'Các trang của nội dung', 'play2grow' ) . '">' . esc_html__( 'Trang:', 'play2grow' ),
+					'before' => '<nav class="page-links" aria-label="' . esc_attr__( 'Các trang của nội dung', 'play2grow-theme' ) . '">' . esc_html__( 'Trang:', 'play2grow-theme' ),
 					'after'  => '</nav>',
 				)
 			);

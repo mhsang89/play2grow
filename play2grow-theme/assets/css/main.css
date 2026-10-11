@@ -975,3 +975,6 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; accent-
 			linear-gradient(120deg, var(--p2g-primary-dark), var(--p2g-primary));
 	}
 }
+.wp-caption-text, .gallery-caption { font-size: .88rem; color: var(--p2g-muted); text-align: center; margin-top: .5em; }
+/* Elementor-built content: let Elementor control widths */
+.entry-content--canvas > * { max-width: none; width: 100% !important; margin-inline: 0; }

@@ -21,7 +21,7 @@ while ( have_posts() ) :
 	?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class( 'page-article' ); ?>>
 		<?php if ( ! $p2g_inline ) : ?>
-			<section class="section section--tight" aria-label="<?php esc_attr_e( 'Danh sách sản phẩm', 'play2grow' ); ?>">
+			<section class="section section--tight" aria-label="<?php esc_attr_e( 'Danh sách sản phẩm', 'play2grow-theme' ); ?>">
 				<div class="container">
 					<?php echo p2g_render_programs( get_the_ID() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the renderer. ?>
 				</div>

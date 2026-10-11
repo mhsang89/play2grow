@@ -15,8 +15,8 @@ function p2g_register_pattern_category() {
 	register_block_pattern_category(
 		'play2grow',
 		array(
-			'label'       => __( 'Play2Grow', 'play2grow' ),
-			'description' => __( 'Các khối nội dung dựng sẵn theo nhận diện Play2Grow.', 'play2grow' ),
+			'label'       => __( 'Play2Grow', 'play2grow-theme' ),
+			'description' => __( 'Các khối nội dung dựng sẵn theo nhận diện Play2Grow.', 'play2grow-theme' ),
 		)
 	);
 }

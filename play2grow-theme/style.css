@@ -2,15 +2,16 @@
 Theme Name: Play2Grow
 Theme URI: https://play2grow.edu.vn/
 Author: Play2Grow
-Description: Giao diện WordPress độc lập dành cho website giáo dục Play2Grow. Hỗ trợ trang chủ dựng bằng khối (block patterns), trang chương trình, blog kiến thức, form đăng ký tư vấn có lưu trữ và chống spam, breadcrumbs, metadata SEO cơ bản (tự tắt khi có plugin SEO), thông tin doanh nghiệp quản lý trong Customizer. Không phụ thuộc plugin trả phí, không tải tài nguyên từ bên thứ ba.
+Author URI: https://play2grow.edu.vn/
+Description: Giao diện WordPress độc lập cho website Play2Grow – học tiếng Anh qua trải nghiệm dành cho trẻ. Bố cục website giáo dục có cấu trúc: thanh tiện ích, menu thả xuống, trang chủ dựng bằng block pattern, trang sản phẩm có nhãn trạng thái, blog Góc học tập, breadcrumbs và SEO cơ bản (tự tắt khi có plugin SEO). Font Be Vietnam Pro tự lưu trữ, không tải tài nguyên bên thứ ba. Form liên hệ và thông tin doanh nghiệp do plugin đi kèm Play2Grow Core cung cấp.
 Version: 1.0.0
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: play2grow
-Tags: education, blog, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, block-patterns, wide-blocks, accessibility-ready
+Text Domain: play2grow-theme
+Tags: education, blog, custom-logo, custom-menu, custom-colors, featured-images, threaded-comments, translation-ready, block-patterns, wide-blocks
 */
 
 /*

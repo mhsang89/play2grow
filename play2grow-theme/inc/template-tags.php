@@ -73,13 +73,13 @@ function p2g_tel( $phone ) {
  * @return array[] Each item: [label, url]. Last item has an empty url.
  */
 function p2g_breadcrumb_items() {
-	$items = array( array( __( 'Trang chủ', 'play2grow' ), home_url( '/' ) ) );
+	$items = array( array( __( 'Trang chủ', 'play2grow-theme' ), home_url( '/' ) ) );
 
 	$blog_page = (int) get_option( 'page_for_posts' );
 	$blog_item = $blog_page ? array( get_the_title( $blog_page ), get_permalink( $blog_page ) ) : null;
 
 	if ( is_home() ) {
-		$items[] = array( $blog_page ? get_the_title( $blog_page ) : __( 'Bài viết', 'play2grow' ), '' );
+		$items[] = array( $blog_page ? get_the_title( $blog_page ) : __( 'Bài viết', 'play2grow-theme' ), '' );
 	} elseif ( is_singular( 'post' ) ) {
 		if ( $blog_item ) {
 			$items[] = $blog_item;
@@ -123,9 +123,9 @@ function p2g_breadcrumb_items() {
 		}
 		$items[] = array( get_the_author_meta( 'display_name', (int) get_query_var( 'author' ) ), '' );
 	} elseif ( is_search() ) {
-		$items[] = array( __( 'Kết quả tìm kiếm', 'play2grow' ), '' );
+		$items[] = array( __( 'Kết quả tìm kiếm', 'play2grow-theme' ), '' );
 	} elseif ( is_404() ) {
-		$items[] = array( __( 'Không tìm thấy trang', 'play2grow' ), '' );
+		$items[] = array( __( 'Không tìm thấy trang', 'play2grow-theme' ), '' );
 	} elseif ( is_archive() ) {
 		if ( $blog_item && is_date() ) {
 			$items[] = $blog_item;
@@ -139,7 +139,7 @@ function p2g_breadcrumb_items() {
 			$items[ $last_index ][1] = get_pagenum_link( 1 );
 		}
 		/* translators: %d: page number. */
-		$items[] = array( sprintf( __( 'Trang %d', 'play2grow' ), max( 1, (int) get_query_var( 'paged' ) ) ), '' );
+		$items[] = array( sprintf( __( 'Trang %d', 'play2grow-theme' ), max( 1, (int) get_query_var( 'paged' ) ) ), '' );
 	}
 
 	return apply_filters( 'p2g_breadcrumb_items', $items );
@@ -154,11 +154,11 @@ function p2g_breadcrumbs() {
 	}
 
 	if ( function_exists( 'yoast_breadcrumb' ) && class_exists( 'WPSEO_Options' ) && WPSEO_Options::get( 'breadcrumbs-enable' ) ) {
-		yoast_breadcrumb( '<nav class="breadcrumbs breadcrumbs--plugin" aria-label="' . esc_attr__( 'Đường dẫn', 'play2grow' ) . '">', '</nav>' );
+		yoast_breadcrumb( '<nav class="breadcrumbs breadcrumbs--plugin" aria-label="' . esc_attr__( 'Đường dẫn', 'play2grow-theme' ) . '">', '</nav>' );
 		return;
 	}
 	if ( function_exists( 'rank_math_the_breadcrumbs' ) && class_exists( '\RankMath\Helper' ) && \RankMath\Helper::is_breadcrumbs_enabled() ) {
-		echo '<nav class="breadcrumbs breadcrumbs--plugin" aria-label="' . esc_attr__( 'Đường dẫn', 'play2grow' ) . '">';
+		echo '<nav class="breadcrumbs breadcrumbs--plugin" aria-label="' . esc_attr__( 'Đường dẫn', 'play2grow-theme' ) . '">';
 		rank_math_the_breadcrumbs();
 		echo '</nav>';
 		return;
@@ -169,7 +169,7 @@ function p2g_breadcrumbs() {
 		return;
 	}
 
-	echo '<nav class="breadcrumbs" aria-label="' . esc_attr__( 'Đường dẫn', 'play2grow' ) . '"><ol>';
+	echo '<nav class="breadcrumbs" aria-label="' . esc_attr__( 'Đường dẫn', 'play2grow-theme' ) . '"><ol>';
 	$last = count( $items ) - 1;
 	foreach ( $items as $i => $item ) {
 		echo '<li>';
@@ -205,7 +205,7 @@ function p2g_post_meta( $full = true ) {
 	$out[] = sprintf(
 		'<span class="post-meta__item">%1$s<span class="screen-reader-text">%2$s </span><time datetime="%3$s">%4$s</time></span>',
 		p2g_icon( 'calendar' ),
-		esc_html__( 'Ngày đăng:', 'play2grow' ),
+		esc_html__( 'Ngày đăng:', 'play2grow-theme' ),
 		esc_attr( $published ),
 		esc_html( get_the_date() )
 	);
@@ -214,7 +214,7 @@ function p2g_post_meta( $full = true ) {
 	if ( $full && ( get_the_modified_time( 'U' ) - get_the_time( 'U' ) ) > DAY_IN_SECONDS ) {
 		$out[] = sprintf(
 			'<span class="post-meta__item">%1$s <time datetime="%2$s">%3$s</time></span>',
-			esc_html__( 'Cập nhật:', 'play2grow' ),
+			esc_html__( 'Cập nhật:', 'play2grow-theme' ),
 			esc_attr( $modified ),
 			esc_html( get_the_modified_date() )
 		);
@@ -224,7 +224,7 @@ function p2g_post_meta( $full = true ) {
 		'<span class="post-meta__item">%1$s%2$s</span>',
 		p2g_icon( 'clock' ),
 		/* translators: %d: minutes. */
-		esc_html( sprintf( __( '%d phút đọc', 'play2grow' ), p2g_reading_time() ) )
+		esc_html( sprintf( __( '%d phút đọc', 'play2grow-theme' ), p2g_reading_time() ) )
 	);
 
 	echo '<div class="post-meta">' . wp_kses( implode( '', $out ), array_merge( wp_kses_allowed_html( 'post' ), p2g_kses_svg(), array( 'time' => array( 'datetime' => true ) ) ) ) . '</div>';
@@ -248,10 +248,10 @@ function p2g_pagination() {
 	the_posts_pagination(
 		array(
 			'mid_size'           => 1,
-			'prev_text'          => __( '← Trang trước', 'play2grow' ),
-			'next_text'          => __( 'Trang sau →', 'play2grow' ),
-			'screen_reader_text' => __( 'Phân trang bài viết', 'play2grow' ),
-			'aria_label'         => __( 'Phân trang', 'play2grow' ),
+			'prev_text'          => __( '← Trang trước', 'play2grow-theme' ),
+			'next_text'          => __( 'Trang sau →', 'play2grow-theme' ),
+			'screen_reader_text' => __( 'Phân trang bài viết', 'play2grow-theme' ),
+			'aria_label'         => __( 'Phân trang', 'play2grow-theme' ),
 		)
 	);
 }
@@ -271,7 +271,7 @@ function p2g_social_list() {
 			esc_url( $link[0] ),
 			wp_kses( p2g_icon( $link[2] ), p2g_kses_svg() ),
 			/* translators: %s: network name. */
-			esc_html( sprintf( __( '%s của Play2Grow (mở trong thẻ mới)', 'play2grow' ), $link[1] ) )
+			esc_html( sprintf( __( '%s của Play2Grow (mở trong thẻ mới)', 'play2grow-theme' ), $link[1] ) )
 		);
 	}
 	echo '</ul>';

@@ -85,13 +85,13 @@ function p2g_render_programs( $parent_id = 0, $limit = 12, $columns = 3 ) {
 	ob_start();
 	if ( ! $programs ) {
 		echo '<div class="empty-state">';
-		echo '<p class="empty-state__title">' . esc_html__( 'Thông tin chi tiết về sản phẩm Play2Grow sẽ được cập nhật tại đây.', 'play2grow' ) . '</p>';
+		echo '<p class="empty-state__title">' . esc_html__( 'Thông tin chi tiết về sản phẩm Play2Grow sẽ được cập nhật tại đây.', 'play2grow-theme' ) . '</p>';
 		if ( p2g_contact_url() ) {
-			echo '<p>' . esc_html__( 'Để lại thông tin liên hệ để Play2Grow gửi thông báo khi có cập nhật mới.', 'play2grow' ) . '</p>';
+			echo '<p>' . esc_html__( 'Để lại thông tin liên hệ để Play2Grow gửi thông báo khi có cập nhật mới.', 'play2grow-theme' ) . '</p>';
 			p2g_cta_button( 'btn btn--secondary' );
 		}
 		echo '</div>';
-		echo p2g_editor_note( __( 'Chưa có trang sản phẩm nào được xuất bản. Tạo trang con của trang "Sản phẩm", chọn mẫu "Chi tiết sản phẩm", điền hộp "Thông tin sản phẩm / trải nghiệm học tập" rồi xuất bản. Chỉ mô tả tính năng đã kiểm chứng (xem PRODUCT_AUDIT.md).', 'play2grow' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
+		echo p2g_editor_note( __( 'Chưa có trang sản phẩm nào được xuất bản. Tạo trang con của trang "Sản phẩm", chọn mẫu "Chi tiết sản phẩm", điền hộp "Thông tin sản phẩm / trải nghiệm học tập" rồi xuất bản. Chỉ mô tả tính năng đã kiểm chứng (xem PRODUCT_AUDIT.md).', 'play2grow-theme' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 		return ob_get_clean();
 	}
 
@@ -134,7 +134,7 @@ function p2g_render_latest_posts( $count = 3, $category = '' ) {
 		echo '</div>';
 		wp_reset_postdata();
 	} else {
-		echo '<div class="empty-state"><p class="empty-state__title">' . esc_html__( 'Bài viết đang được biên soạn và sẽ sớm ra mắt.', 'play2grow' ) . '</p></div>';
+		echo '<div class="empty-state"><p class="empty-state__title">' . esc_html__( 'Bài viết đang được biên soạn và sẽ sớm ra mắt.', 'play2grow-theme' ) . '</p></div>';
 	}
 
 	return ob_get_clean();

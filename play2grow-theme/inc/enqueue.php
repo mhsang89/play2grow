@@ -43,10 +43,10 @@ function p2g_enqueue_assets() {
 		'p2g-main',
 		'window.p2gI18n = ' . wp_json_encode(
 			array(
-				'openMenu'    => __( 'Mở menu', 'play2grow' ),
-				'closeMenu'   => __( 'Đóng menu', 'play2grow' ),
-				'openSub'     => __( 'Mở menu con', 'play2grow' ),
-				'closeSub'    => __( 'Đóng menu con', 'play2grow' ),
+				'openMenu'    => __( 'Mở menu', 'play2grow-theme' ),
+				'closeMenu'   => __( 'Đóng menu', 'play2grow-theme' ),
+				'openSub'     => __( 'Mở menu con', 'play2grow-theme' ),
+				'closeSub'    => __( 'Đóng menu con', 'play2grow-theme' ),
 			)
 		) . ';',
 		'before'

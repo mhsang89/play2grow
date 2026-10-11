@@ -43,7 +43,7 @@ if ( ! $p2g_related->have_posts() ) {
 ?>
 <section class="related section" aria-labelledby="related-title">
 	<div class="container">
-		<h2 id="related-title" class="section__title"><?php esc_html_e( 'Bài viết liên quan', 'play2grow' ); ?></h2>
+		<h2 id="related-title" class="section__title"><?php esc_html_e( 'Bài viết liên quan', 'play2grow-theme' ); ?></h2>
 		<div class="card-grid card-grid--3">
 			<?php
 			while ( $p2g_related->have_posts() ) {

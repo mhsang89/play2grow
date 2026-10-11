@@ -48,7 +48,7 @@ else :
 			echo p2g_editor_note( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 				sprintf(
 					/* translators: %s: settings URL. */
-					__( 'Đây là trang chủ dự phòng. Để dùng trang chủ đầy đủ, vào <a href="%s">Giao diện → Play2Grow</a> để tạo nội dung khởi đầu, hoặc tạo một trang, chèn các mẫu khối "Play2Grow" rồi chọn trang đó làm Trang chủ trong Cài đặt → Đọc.', 'play2grow' ),
+					__( 'Đây là trang chủ dự phòng. Để dùng trang chủ đầy đủ, vào <a href="%s">Giao diện → Play2Grow</a> để tạo nội dung khởi đầu, hoặc tạo một trang, chèn các mẫu khối "Play2Grow" rồi chọn trang đó làm Trang chủ trong Cài đặt → Đọc.', 'play2grow-theme' ),
 					esc_url( admin_url( 'themes.php?page=p2g-settings' ) )
 				)
 			);
@@ -58,7 +58,7 @@ else :
 
 	<section class="section">
 		<div class="container">
-			<h2 class="section__title"><?php esc_html_e( 'Bài viết mới', 'play2grow' ); ?></h2>
+			<h2 class="section__title"><?php esc_html_e( 'Bài viết mới', 'play2grow-theme' ); ?></h2>
 			<?php echo p2g_render_latest_posts( 3 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the renderer. ?>
 		</div>
 	</section>

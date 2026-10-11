@@ -205,6 +205,9 @@ function p2gc_the_icon( $name ) {
 function p2gc_contact_url() {
 	$url  = '';
 	$page = get_page_by_path( 'lien-he' );
+	if ( ! $page || 'publish' !== $page->post_status ) {
+		$page = get_page_by_path( 'dang-ki' );
+	}
 	if ( $page && 'publish' === $page->post_status ) {
 		$url = get_permalink( $page );
 	} else {

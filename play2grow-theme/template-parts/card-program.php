@@ -40,6 +40,6 @@ $p2g_statuses = p2g_program_statuses();
 				<?php endif; ?>
 			</ul>
 		<?php endif; ?>
-		<a class="card__link" href="<?php echo esc_url( get_permalink( $p2g_program ) ); ?>"><?php esc_html_e( 'Xem chi tiết', 'play2grow' ); ?><span class="screen-reader-text">: <?php echo esc_html( get_the_title( $p2g_program ) ); ?></span> <?php p2g_the_icon( 'arrow-right' ); ?></a>
+		<a class="card__link" href="<?php echo esc_url( get_permalink( $p2g_program ) ); ?>"><?php esc_html_e( 'Xem chi tiết', 'play2grow-theme' ); ?><span class="screen-reader-text">: <?php echo esc_html( get_the_title( $p2g_program ) ); ?></span> <?php p2g_the_icon( 'arrow-right' ); ?></a>
 	</div>
 </article>

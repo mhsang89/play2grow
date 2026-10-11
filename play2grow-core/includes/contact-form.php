@@ -571,6 +571,7 @@ function p2gc_enqueue_form_script() {
 		'p2gc-form',
 		'window.p2gcForm = ' . wp_json_encode(
 			array(
+				'ajaxUrl'     => admin_url( 'admin-ajax.php' ),
 				'sending'     => __( 'Đang gửi…', 'play2grow-core' ),
 				'networkErr'  => __( 'Không gửi được do lỗi kết nối. Vui lòng kiểm tra mạng và thử lại.', 'play2grow-core' ),
 				'required'    => __( 'Vui lòng điền thông tin này.', 'play2grow-core' ),
@@ -584,3 +585,20 @@ function p2gc_enqueue_form_script() {
 		'before'
 	);
 }
+
+/**
+ * Fresh nonce + time stamp for the form. Pages are often served from a page cache
+ * (e.g. LiteSpeed Cache), so the values printed in the HTML can be days old; form.js
+ * calls this endpoint when a visitor starts filling in the form.
+ */
+function p2gc_form_token() {
+	nocache_headers();
+	wp_send_json(
+		array(
+			'nonce' => wp_create_nonce( 'p2g_lead' ),
+			'stamp' => p2gc_form_stamp(),
+		)
+	);
+}
+add_action( 'wp_ajax_p2gc_token', 'p2gc_form_token' );
+add_action( 'wp_ajax_nopriv_p2gc_token', 'p2gc_form_token' );

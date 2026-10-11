@@ -51,9 +51,9 @@ while ( have_posts() ) :
 					<?php the_content(); ?>
 				</div>
 			</div>
-			<aside class="program-layout__aside" aria-label="<?php esc_attr_e( 'Thông tin nhanh', 'play2grow' ); ?>">
+			<aside class="program-layout__aside" aria-label="<?php esc_attr_e( 'Thông tin nhanh', 'play2grow-theme' ); ?>">
 				<div class="facts-card">
-					<h2 class="facts-card__title"><?php esc_html_e( 'Thông tin nhanh', 'play2grow' ); ?></h2>
+					<h2 class="facts-card__title"><?php esc_html_e( 'Thông tin nhanh', 'play2grow-theme' ); ?></h2>
 					<?php if ( $p2g_facts ) : ?>
 						<dl class="facts-card__list">
 							<?php foreach ( $p2g_facts as $p2g_fact ) : ?>
@@ -64,8 +64,8 @@ while ( have_posts() ) :
 							<?php endforeach; ?>
 						</dl>
 					<?php else : ?>
-						<p class="facts-card__empty"><?php esc_html_e( 'Thông tin chi tiết đang được cập nhật.', 'play2grow' ); ?></p>
-						<?php echo p2g_editor_note( __( 'Điền hộp "Thông tin sản phẩm / trải nghiệm học tập" bên dưới trình soạn thảo để hiện thông tin nhanh.', 'play2grow' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside. ?>
+						<p class="facts-card__empty"><?php esc_html_e( 'Thông tin chi tiết đang được cập nhật.', 'play2grow-theme' ); ?></p>
+						<?php echo p2g_editor_note( __( 'Điền hộp "Thông tin sản phẩm / trải nghiệm học tập" bên dưới trình soạn thảo để hiện thông tin nhanh.', 'play2grow-theme' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside. ?>
 					<?php endif; ?>
 					<?php p2g_cta_button( 'btn btn--primary btn--block' ); ?>
 				</div>
@@ -86,7 +86,7 @@ while ( have_posts() ) :
 			?>
 			<section class="section section--soft" aria-labelledby="siblings-title">
 				<div class="container">
-					<h2 id="siblings-title" class="section__title"><?php esc_html_e( 'Khám phá thêm', 'play2grow' ); ?></h2>
+					<h2 id="siblings-title" class="section__title"><?php esc_html_e( 'Khám phá thêm', 'play2grow-theme' ); ?></h2>
 					<div class="card-grid card-grid--3">
 						<?php
 						foreach ( array_slice( $p2g_siblings, 0, 3 ) as $p2g_sibling ) {

@@ -80,6 +80,31 @@
 		var wrap = form.closest( '.lead-form-wrap' );
 		var submit = form.querySelector( '[type="submit"]' );
 		var touched = {};
+		var tokenAt = 0;
+		var tokenReq = null;
+
+		// Refresh nonce + stamp once the visitor starts typing (cached pages carry old values).
+		function refreshToken() {
+			if ( tokenReq || ! window.fetch || ! i18n.ajaxUrl ) {
+				return tokenReq;
+			}
+			var body = new FormData();
+			body.append( 'action', 'p2gc_token' );
+			tokenReq = fetch( i18n.ajaxUrl, { method: 'POST', body: body, credentials: 'same-origin' } )
+				.then( function ( r ) {
+					return r.json();
+				} )
+				.then( function ( t ) {
+					if ( t && t.nonce && t.stamp ) {
+						form.p2g_nonce.value = t.nonce;
+						form.p2g_stamp.value = t.stamp;
+						tokenAt = Date.now();
+					}
+				} )
+				.catch( function () {} );
+			return tokenReq;
+		}
+		form.addEventListener( 'focusin', refreshToken, { once: true } );
 
 		[ 'p2g_name', 'p2g_phone', 'p2g_email' ].forEach( function ( field ) {
 			var input = form.querySelector( '[name="' + field + '"]' );
@@ -122,12 +147,22 @@
 			}
 			e.preventDefault();
 
-			var data = new FormData( form );
-			data.append( 'p2g_ajax', '1' );
 			submit.setAttribute( 'aria-busy', 'true' );
 			submit.disabled = true;
 
-			fetch( form.getAttribute( 'action' ), { method: 'POST', body: data, credentials: 'same-origin' } )
+			Promise.resolve( refreshToken() )
+				.then( function () {
+					// The server rejects stamps younger than 3 seconds (bot protection).
+					var wait = tokenAt ? Math.max( 0, 3200 - ( Date.now() - tokenAt ) ) : 0;
+					return new Promise( function ( resolve ) {
+						setTimeout( resolve, wait );
+					} );
+				} )
+				.then( function () {
+					var data = new FormData( form );
+					data.append( 'p2g_ajax', '1' );
+					return fetch( form.getAttribute( 'action' ), { method: 'POST', body: data, credentials: 'same-origin' } );
+				} )
 				.then( function ( res ) {
 					return res.json().catch( function () {
 						return { status: 'error', message: i18n.networkErr };

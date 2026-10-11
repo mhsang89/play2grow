@@ -14,8 +14,8 @@ if ( ! p2g_contact_url() ) {
 $p2g_cta = apply_filters(
 	'p2g_cta_band',
 	array(
-		'title' => __( 'Mỗi ngày đều có thể là một bài học tiếng Anh nhỏ', 'play2grow' ),
-		'text'  => __( 'Để lại thông tin để nhận cập nhật về sản phẩm và những gợi ý hoạt động mới từ Play2Grow.', 'play2grow' ),
+		'title' => __( 'Mỗi ngày đều có thể là một bài học tiếng Anh nhỏ', 'play2grow-theme' ),
+		'text'  => __( 'Để lại thông tin để nhận cập nhật về sản phẩm và những gợi ý hoạt động mới từ Play2Grow.', 'play2grow-theme' ),
 	)
 );
 ?>
