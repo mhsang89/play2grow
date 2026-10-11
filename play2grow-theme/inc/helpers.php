@@ -68,7 +68,7 @@ function p2g_contact_url() {
 	}
 
 	if ( ! $page_id ) {
-		$pages = get_posts(
+		$pages   = get_posts(
 			array(
 				'post_type'      => 'page',
 				'post_status'    => 'publish',

@@ -50,12 +50,12 @@ if ( '' === $p2g_copyright ) {
 			if ( has_nav_menu( 'legal' ) ) {
 				wp_nav_menu(
 					array(
-						'theme_location'  => 'legal',
-						'container'       => 'nav',
-						'container_class' => 'legal-nav',
+						'theme_location'       => 'legal',
+						'container'            => 'nav',
+						'container_class'      => 'legal-nav',
 						'container_aria_label' => __( 'Chính sách', 'play2grow-theme' ),
-						'depth'           => 1,
-						'fallback_cb'     => false,
+						'depth'                => 1,
+						'fallback_cb'          => false,
 					)
 				);
 			} elseif ( get_privacy_policy_url() ) {

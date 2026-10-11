@@ -49,6 +49,7 @@ if ( post_password_required() ) {
 	comment_form(
 		array(
 			'title_reply'          => __( 'Để lại bình luận', 'play2grow-theme' ),
+			/* translators: %s: comment author name. */
 			'title_reply_to'       => __( 'Trả lời %s', 'play2grow-theme' ),
 			'cancel_reply_link'    => __( 'Hủy trả lời', 'play2grow-theme' ),
 			'label_submit'         => __( 'Gửi bình luận', 'play2grow-theme' ),

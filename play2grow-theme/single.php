@@ -27,7 +27,16 @@ while ( have_posts() ) :
 
 		<?php if ( has_post_thumbnail() ) : ?>
 			<figure class="article-media container">
-				<?php the_post_thumbnail( 'p2g-wide', array( 'loading' => 'eager', 'fetchpriority' => 'high', 'sizes' => '(min-width: 1240px) 1100px, 94vw' ) ); ?>
+				<?php
+				the_post_thumbnail(
+					'p2g-wide',
+					array(
+						'loading'       => 'eager',
+						'fetchpriority' => 'high',
+						'sizes'         => '(min-width: 1240px) 1100px, 94vw',
+					)
+				);
+				?>
 				<?php if ( get_the_post_thumbnail_caption() ) : ?>
 					<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
 				<?php endif; ?>

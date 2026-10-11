@@ -36,7 +36,8 @@ echo p2g_pattern_buttons( // phpcs:ignore WordPress.Security.EscapeOutput.Output
 		array( 'Xem thêm hoạt động tại nhà', p2g_post_link( 'hoat-dong-tieng-anh-tai-nha-cho-tre' ), 'outline' ),
 	)
 );
-?></div>
+?>
+</div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"55%"} -->

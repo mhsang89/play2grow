@@ -28,6 +28,7 @@ echo p2g_pattern_buttons( // phpcs:ignore WordPress.Security.EscapeOutput.Output
 	),
 	'p2g-center'
 );
-?></div>
+?>
+</div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

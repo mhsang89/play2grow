@@ -151,8 +151,8 @@ function p2g_run_starter_import( $status ) {
 	}
 
 	foreach ( $items as $item ) {
-		$path     = 'page' === $item['type'] && ! empty( $item['parent'] ) ? $item['parent'] . '/' . $item['slug'] : $item['slug'];
-		$existing = 'page' === $item['type']
+		$path        = 'page' === $item['type'] && ! empty( $item['parent'] ) ? $item['parent'] . '/' . $item['slug'] : $item['slug'];
+		$existing    = 'page' === $item['type']
 			? get_page_by_path( $path )
 			: get_posts(
 				array(
@@ -170,9 +170,9 @@ function p2g_run_starter_import( $status ) {
 			}
 			// Never touch the existing page: create a separate draft the owner can review
 			// and then copy into the original page (keeping its URL).
-			$replacement     = true;
-			$item['slug']   .= '-ban-moi';
-			$item['title']   = '[Bản mới] ' . $item['title'];
+			$replacement         = true;
+			$item['slug']       .= '-ban-moi';
+			$item['title']       = '[Bản mới] ' . $item['title'];
 			$report['skipped'][] = sprintf( '/%1$s/ đã tồn tại – giữ nguyên trang cũ, tạo bản nháp "%2$s" để so sánh', $path, $item['title'] );
 			if ( get_page_by_path( ( ! empty( $item['parent'] ) ? $item['parent'] . '/' : '' ) . $item['slug'] ) ) {
 				continue;

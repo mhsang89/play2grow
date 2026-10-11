@@ -211,8 +211,8 @@ function p2gc_send_lead_mail( $data, $lead_id ) {
 	/* translators: 1: site name, 2: person name. */
 	$subject = sprintf( __( '[%1$s] Đăng ký liên hệ mới từ %2$s', 'play2grow-core' ), $site, $data['name'] );
 
-	$lines   = array();
-	$labels  = array(
+	$lines  = array();
+	$labels = array(
 		'name'     => __( 'Họ và tên', 'play2grow-core' ),
 		'phone'    => __( 'Số điện thoại', 'play2grow-core' ),
 		'email'    => __( 'Email', 'play2grow-core' ),
@@ -377,7 +377,16 @@ function p2gc_consent_label() {
 			__( 'Xem %s.', 'play2grow-core' ),
 			'<a href="' . esc_url( $policy ) . '" target="_blank" rel="noopener">' . esc_html__( 'Chính sách quyền riêng tư', 'play2grow-core' ) . '</a>'
 		);
-		return wp_kses( $text, array( 'a' => array( 'href' => true, 'target' => true, 'rel' => true ) ) );
+		return wp_kses(
+			$text,
+			array(
+				'a' => array(
+					'href'   => true,
+					'target' => true,
+					'rel'    => true,
+				),
+			)
+		);
 	}
 
 	return esc_html( $text );
@@ -467,7 +476,19 @@ function p2gc_contact_form_shortcode( $atts ) {
 				<input type="text" id="p2g-website" name="p2g_website" value="" tabindex="-1" autocomplete="off">
 			</div>
 
-			<p class="lead-form__required-note"><?php echo wp_kses( __( 'Các trường có dấu <span class="req" aria-hidden="true">*</span> là bắt buộc.', 'play2grow-core' ), array( 'span' => array( 'class' => true, 'aria-hidden' => true ) ) ); ?></p>
+			<p class="lead-form__required-note">
+			<?php
+			echo wp_kses(
+				__( 'Các trường có dấu <span class="req" aria-hidden="true">*</span> là bắt buộc.', 'play2grow-core' ),
+				array(
+					'span' => array(
+						'class'       => true,
+						'aria-hidden' => true,
+					),
+				)
+			);
+			?>
+												</p>
 
 			<div class="field">
 				<label for="p2g-name"><?php esc_html_e( 'Họ và tên phụ huynh / người liên hệ', 'play2grow-core' ); ?> <span class="req" aria-hidden="true">*</span></label>

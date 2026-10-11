@@ -44,7 +44,16 @@ while ( have_posts() ) :
 			<div class="program-layout__main">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<figure class="program-layout__media">
-						<?php the_post_thumbnail( 'p2g-wide', array( 'loading' => 'eager', 'fetchpriority' => 'high', 'sizes' => '(min-width: 1024px) 760px, 94vw' ) ); ?>
+						<?php
+						the_post_thumbnail(
+							'p2g-wide',
+							array(
+								'loading'       => 'eager',
+								'fetchpriority' => 'high',
+								'sizes'         => '(min-width: 1024px) 760px, 94vw',
+							)
+						);
+						?>
 					</figure>
 				<?php endif; ?>
 				<div class="entry-content entry-content--flush">

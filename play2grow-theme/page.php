@@ -16,7 +16,16 @@ while ( have_posts() ) :
 	<article id="post-<?php the_ID(); ?>" <?php post_class( 'page-article' ); ?>>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<figure class="page-article__media container">
-				<?php the_post_thumbnail( 'p2g-wide', array( 'loading' => 'eager', 'fetchpriority' => 'high', 'sizes' => '(min-width: 1240px) 1200px, 94vw' ) ); ?>
+				<?php
+				the_post_thumbnail(
+					'p2g-wide',
+					array(
+						'loading'       => 'eager',
+						'fetchpriority' => 'high',
+						'sizes'         => '(min-width: 1240px) 1200px, 94vw',
+					)
+				);
+				?>
 			</figure>
 		<?php endif; ?>
 		<div class="entry-content<?php echo p2g_is_elementor() ? ' entry-content--canvas' : ''; ?>">

@@ -116,11 +116,11 @@ function p2g_setup() {
 
 	register_nav_menus(
 		array(
-			'topbar'          => __( 'Thanh trên cùng (liên kết nhanh)', 'play2grow-theme' ),
-			'primary'         => __( 'Menu chính (đầu trang)', 'play2grow-theme' ),
-			'footer_explore'  => __( 'Chân trang – Khám phá', 'play2grow-theme' ),
-			'footer_support'  => __( 'Chân trang – Hỗ trợ', 'play2grow-theme' ),
-			'legal'           => __( 'Chân trang – Chính sách (dòng cuối)', 'play2grow-theme' ),
+			'topbar'         => __( 'Thanh trên cùng (liên kết nhanh)', 'play2grow-theme' ),
+			'primary'        => __( 'Menu chính (đầu trang)', 'play2grow-theme' ),
+			'footer_explore' => __( 'Chân trang – Khám phá', 'play2grow-theme' ),
+			'footer_support' => __( 'Chân trang – Hỗ trợ', 'play2grow-theme' ),
+			'legal'          => __( 'Chân trang – Chính sách (dòng cuối)', 'play2grow-theme' ),
 		)
 	);
 

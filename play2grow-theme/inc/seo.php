@@ -48,7 +48,7 @@ function p2g_meta_description() {
 
 	$desc = trim( preg_replace( '/\s+/u', ' ', wp_strip_all_tags( (string) $desc ) ) );
 	if ( mb_strlen( $desc ) > 160 ) {
-		$desc = rtrim( mb_substr( $desc, 0, 157 ), " ,.;:-" ) . '…';
+		$desc = rtrim( mb_substr( $desc, 0, 157 ), ' ,.;:-' ) . '…';
 	}
 
 	return (string) apply_filters( 'p2g_meta_description', $desc );
@@ -312,7 +312,7 @@ function p2g_schema_graph() {
 			),
 			'publisher'        => array( '@id' => $home . '#organization' ),
 		);
-		$desc = p2g_meta_description();
+		$desc    = p2g_meta_description();
 		if ( $desc ) {
 			$article['description'] = $desc;
 		}
