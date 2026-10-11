@@ -22,11 +22,13 @@ Phân loại: ✅ **Kiểm thử thực tế** (chạy trên WordPress thật) �
 
 | Hạng mục | Loại | Kết quả |
 |---|---|---|
-| 10 trang + 6 bài + chuyên mục + tìm kiếm + tác giả + thẻ trả về 200; trang không tồn tại trả về 404 | ✅ | Đạt |
-| Quét liên kết nội bộ (crawler: 39 trang, 49 URL gồm CSS/JS/font/ảnh) | ✅ | **0 liên kết hỏng** |
+| 10 trang + 7 trang lớp + 6 bài + chuyên mục + tìm kiếm + tác giả + thẻ trả về 200; trang không tồn tại trả về 404 | ✅ | Đạt |
+| Quét liên kết nội bộ (crawler: 46 trang, 56 URL gồm CSS/JS/font/ảnh) | ✅ | **0 liên kết hỏng** |
 | Không còn token `{{…}}` hay shortcode thô `[p2g_…]` trong HTML | ✅ | Đạt, kể cả khi **tắt** plugin (shortcode tự bị loại bỏ) |
 | Mỗi trang đúng 1 thẻ H1 | ✅ | Đạt |
-| Block Gutenberg hợp lệ khi mở trình soạn thảo (16 trang/bài) | ✅ | **0 block lỗi** |
+| Block Gutenberg hợp lệ khi mở trình soạn thảo (23 trang/bài) | ✅ | **0 block lỗi** |
+| Trang Chương trình học nhóm đúng 4 nhóm; trang lớp có "Thông tin nhanh", breadcrumbs "Trang chủ / Chương trình học / Lớp" (cả JSON-LD), mục "Chương trình khác" | ✅ | Đạt |
+| Danh sách "Anh/chị quan tâm đến" của form tự lấy 7 lớp đã xuất bản | ✅ | Đạt |
 | Menu mobile: mở/đóng, `aria-expanded`, nút mở menu con, Esc đóng và trả focus | ✅ | Đạt |
 | Bàn phím desktop: skip link, dropdown khi focus (`:focus-within`), ô tìm kiếm nhận focus | ✅ | Đạt |
 | Tràn ngang ở 390px / 820px / 1366px trên 5 loại trang | ✅ | 0px |

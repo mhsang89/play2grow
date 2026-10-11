@@ -1,6 +1,6 @@
 <?php
 /**
- * Product pages ("Sản phẩm" children) and latest-post lists rendered by the theme.
+ * Program (class) pages and latest-post lists rendered by the theme.
  * The plugin's [p2g_programs] / [p2g_latest_posts] shortcodes delegate to these
  * functions so the markup matches the design.
  *
@@ -10,57 +10,42 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Find the page that holds the product list.
+ * Published program pages = pages using the "Chi tiết chương trình" template,
+ * wherever they sit in the page tree (so existing URLs such as /steam-english/ keep working).
  *
- * @param string|int $parent Page ID or path.
- * @return int
- */
-function p2g_programs_parent_id( $parent = '' ) {
-	if ( is_numeric( $parent ) && (int) $parent > 0 ) {
-		return (int) $parent;
-	}
-	if ( '' !== $parent ) {
-		$page = get_page_by_path( $parent );
-		return $page ? (int) $page->ID : 0;
-	}
-
-	$pages = get_posts(
-		array(
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'posts_per_page' => 1,
-			'meta_key'       => '_wp_page_template', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
-			'meta_value'     => 'page-templates/template-programs.php', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
-			'fields'         => 'ids',
-		)
-	);
-	if ( $pages ) {
-		return (int) $pages[0];
-	}
-
-	$page = get_page_by_path( 'san-pham' );
-
-	return $page ? (int) $page->ID : 0;
-}
-
-/**
- * Published product pages.
- *
- * @param int $parent_id Parent.
- * @param int $limit     Max items.
+ * @param array $args limit (int), group (string), exclude (int[]).
  * @return WP_Post[]
  */
-function p2g_get_programs( $parent_id, $limit = 12 ) {
-	if ( ! $parent_id ) {
-		return array();
+function p2g_get_programs( $args = array() ) {
+	$args = wp_parse_args(
+		$args,
+		array(
+			'limit'   => 24,
+			'group'   => '',
+			'exclude' => array(),
+		)
+	);
+
+	$meta = array(
+		array(
+			'key'   => '_wp_page_template',
+			'value' => 'page-templates/template-program.php',
+		),
+	);
+	if ( '' !== $args['group'] ) {
+		$meta[] = array(
+			'key'   => '_p2g_prog_group',
+			'value' => $args['group'],
+		);
 	}
 
 	return get_posts(
 		array(
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
-			'post_parent'    => $parent_id,
-			'posts_per_page' => max( 1, min( 50, (int) $limit ) ),
+			'posts_per_page' => max( 1, min( 60, (int) $args['limit'] ) ),
+			'post__not_in'   => array_map( 'absint', (array) $args['exclude'] ),
+			'meta_query'     => $meta, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
 			'orderby'        => array(
 				'menu_order' => 'ASC',
 				'title'      => 'ASC',
@@ -70,36 +55,58 @@ function p2g_get_programs( $parent_id, $limit = 12 ) {
 }
 
 /**
- * Product cards (or an honest empty state).
+ * Program cards (optionally grouped by "Nhóm chương trình"), or an honest empty state.
  *
- * @param int $parent_id Parent page (0 = auto).
- * @param int $limit     Max items.
- * @param int $columns   2–4.
+ * @param int  $limit   Max items.
+ * @param int  $columns 2–4.
+ * @param bool $grouped Group under headings.
  * @return string
  */
-function p2g_render_programs( $parent_id = 0, $limit = 12, $columns = 3 ) {
-	$parent_id = $parent_id ? (int) $parent_id : p2g_programs_parent_id();
-	$programs  = p2g_get_programs( $parent_id, $limit );
-	$columns   = max( 2, min( 4, (int) $columns ) );
+function p2g_render_programs( $limit = 24, $columns = 3, $grouped = false ) {
+	$programs = p2g_get_programs( array( 'limit' => $limit ) );
+	$columns  = max( 2, min( 4, (int) $columns ) );
 
 	ob_start();
 	if ( ! $programs ) {
 		echo '<div class="empty-state">';
-		echo '<p class="empty-state__title">' . esc_html__( 'Thông tin chi tiết về sản phẩm Play2Grow sẽ được cập nhật tại đây.', 'play2grow-theme' ) . '</p>';
+		echo '<p class="empty-state__title">' . esc_html__( 'Thông tin các chương trình học đang được cập nhật.', 'play2grow-theme' ) . '</p>';
 		if ( p2g_contact_url() ) {
-			echo '<p>' . esc_html__( 'Để lại thông tin liên hệ để Play2Grow gửi thông báo khi có cập nhật mới.', 'play2grow-theme' ) . '</p>';
+			echo '<p>' . esc_html__( 'Anh/chị vui lòng để lại thông tin để được tư vấn về lớp học phù hợp với con.', 'play2grow-theme' ) . '</p>';
 			p2g_cta_button( 'btn btn--secondary' );
 		}
 		echo '</div>';
-		echo p2g_editor_note( __( 'Chưa có trang sản phẩm nào được xuất bản. Tạo trang con của trang "Sản phẩm", chọn mẫu "Chi tiết sản phẩm", điền hộp "Thông tin sản phẩm / trải nghiệm học tập" rồi xuất bản. Chỉ mô tả tính năng đã kiểm chứng (xem PRODUCT_AUDIT.md).', 'play2grow-theme' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
+		echo p2g_editor_note( __( 'Chưa có trang chương trình nào được xuất bản với mẫu "Chi tiết chương trình". Mở trang lớp học (ví dụ /steam-english/), chọn Mẫu = "Chi tiết chương trình", điền hộp "Thông tin chương trình / lớp học" rồi cập nhật.', 'play2grow-theme' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 		return ob_get_clean();
 	}
 
-	echo '<div class="card-grid card-grid--' . esc_attr( (string) $columns ) . '">';
-	foreach ( $programs as $program ) {
-		get_template_part( 'template-parts/card', 'program', array( 'post' => $program ) );
+	$sets = array( '' => $programs );
+	if ( $grouped ) {
+		$sets   = array();
+		$groups = p2g_program_groups();
+		foreach ( $programs as $program ) {
+			$key = get_post_meta( $program->ID, '_p2g_prog_group', true );
+			$key = isset( $groups[ $key ] ) ? $key : 'other';
+			$sets[ $key ][] = $program;
+		}
+		uksort(
+			$sets,
+			static function ( $a, $b ) use ( $groups ) {
+				return array_search( $a, array_keys( $groups ), true ) - array_search( $b, array_keys( $groups ), true );
+			}
+		);
 	}
-	echo '</div>';
+
+	foreach ( $sets as $key => $items ) {
+		if ( $grouped ) {
+			$groups = p2g_program_groups();
+			echo '<h2 class="program-group__title">' . esc_html( $groups[ $key ] ) . '</h2>';
+		}
+		echo '<div class="card-grid card-grid--' . esc_attr( (string) $columns ) . '">';
+		foreach ( $items as $program ) {
+			get_template_part( 'template-parts/card', 'program', array( 'post' => $program ) );
+		}
+		echo '</div>';
+	}
 
 	return ob_get_clean();
 }

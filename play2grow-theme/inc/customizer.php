@@ -74,7 +74,7 @@ function p2g_customize_register( $wp_customize ) {
 		'p2g_cta_label',
 		array(
 			'label'       => __( 'Chữ trên nút chính', 'play2grow-theme' ),
-			'description' => __( 'Mặc định: "Đăng ký nhận thông tin".', 'play2grow-theme' ),
+			'description' => __( 'Mặc định: "Đăng ký tư vấn".', 'play2grow-theme' ),
 			'section'     => 'p2g_header',
 			'type'        => 'text',
 		)

@@ -15,6 +15,8 @@ $p2g_audience = get_post_meta( $p2g_program->ID, '_p2g_prog_audience', true );
 $p2g_format   = get_post_meta( $p2g_program->ID, '_p2g_prog_format', true );
 $p2g_status   = get_post_meta( $p2g_program->ID, '_p2g_prog_status', true );
 $p2g_statuses = p2g_program_statuses();
+$p2g_groups   = p2g_program_groups();
+$p2g_group    = get_post_meta( $p2g_program->ID, '_p2g_prog_group', true );
 ?>
 <article class="card card--program">
 	<?php if ( has_post_thumbnail( $p2g_program ) ) : ?>
@@ -23,8 +25,15 @@ $p2g_statuses = p2g_program_statuses();
 		</a>
 	<?php endif; ?>
 	<div class="card__body">
-		<?php if ( $p2g_status && ! empty( $p2g_statuses[ $p2g_status ] ) ) : ?>
-			<p class="card__meta"><span class="status-badge status-badge--<?php echo esc_attr( $p2g_status ); ?>"><?php echo esc_html( $p2g_statuses[ $p2g_status ] ); ?></span></p>
+		<?php if ( ( $p2g_status && ! empty( $p2g_statuses[ $p2g_status ] ) ) || isset( $p2g_groups[ $p2g_group ] ) ) : ?>
+			<p class="card__meta">
+				<?php if ( isset( $p2g_groups[ $p2g_group ] ) ) : ?>
+					<span class="badge"><?php echo esc_html( $p2g_groups[ $p2g_group ] ); ?></span>
+				<?php endif; ?>
+				<?php if ( $p2g_status && ! empty( $p2g_statuses[ $p2g_status ] ) ) : ?>
+					<span class="status-badge status-badge--<?php echo esc_attr( $p2g_status ); ?>"><?php echo esc_html( $p2g_statuses[ $p2g_status ] ); ?></span>
+				<?php endif; ?>
+			</p>
 		<?php endif; ?>
 		<h3 class="card__title"><a href="<?php echo esc_url( get_permalink( $p2g_program ) ); ?>"><?php echo esc_html( get_the_title( $p2g_program ) ); ?></a></h3>
 		<?php if ( has_excerpt( $p2g_program ) ) : ?>

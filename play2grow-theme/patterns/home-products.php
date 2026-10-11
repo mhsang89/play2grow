@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Sản phẩm – Danh sách sản phẩm đã công bố
+ * Title: Chương trình học – thẻ các lớp đang mở
  * Slug: play2grow/products
  * Categories: play2grow, featured
- * Keywords: sản phẩm, chương trình, danh sách
+ * Keywords: chương trình, lớp học, khóa học, danh sách
  * Viewport Width: 1400
  *
  * @package Play2Grow
@@ -14,26 +14,26 @@ defined( 'ABSPATH' ) || exit;
 <!-- wp:group {"align":"full","className":"p2g-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull p2g-section"><!-- wp:group {"className":"p2g-section__head p2g-section__head--center","layout":{"type":"default"}} -->
 <div class="wp-block-group p2g-section__head p2g-section__head--center"><!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Sản phẩm</p>
+<p class="eyebrow">Chương trình học</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Sản phẩm và trải nghiệm học tập của Play2Grow</h2>
+<h2 class="wp-block-heading">Các lớp học tại Play2Grow</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Mỗi sản phẩm được giới thiệu kèm trạng thái rõ ràng – đang hoạt động, đang thử nghiệm hay sắp ra mắt – để phụ huynh biết chính xác điều gì đã có thể sử dụng.</p>
+<p>Tiếng Anh qua hoạt động STEAM, cùng các lớp vẽ, thủ công, đàn và nhảy – để con được khám phá nhiều niềm yêu thích trong cùng một môi trường.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:shortcode -->
-[p2g_programs limit="3"]
+[p2g_programs limit="8" columns="4"]
 <!-- /wp:shortcode -->
 
 <?php
 echo p2g_pattern_buttons( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 	array(
-		array( 'Xem trang Sản phẩm', p2g_page_link( 'san-pham' ), 'outline' ),
+		array( 'Xem tất cả chương trình', p2g_page_link( 'chuong-trinh' ), 'outline' ),
 	),
 	'p2g-center'
 );

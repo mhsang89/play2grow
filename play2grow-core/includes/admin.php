@@ -111,7 +111,7 @@ function p2gc_render_settings_page() {
 					<th scope="row"><label for="p2g-interests"><?php esc_html_e( 'Lựa chọn "Anh/chị quan tâm đến"', 'play2grow-core' ); ?></label></th>
 					<td>
 						<textarea id="p2g-interests" name="p2gc_settings[lead_interests]" rows="5" class="large-text"><?php echo esc_textarea( $s['lead_interests'] ); ?></textarea>
-						<p class="description"><?php esc_html_e( 'Mỗi dòng một lựa chọn. Để trống để dùng danh sách mặc định (tên các trang sản phẩm đã xuất bản + các lựa chọn chung).', 'play2grow-core' ); ?></p>
+						<p class="description"><?php esc_html_e( 'Mỗi dòng một lựa chọn. Để trống để dùng danh sách mặc định (tên các trang chương trình đã xuất bản + các lựa chọn chung).', 'play2grow-core' ); ?></p>
 					</td>
 				</tr>
 				<tr>

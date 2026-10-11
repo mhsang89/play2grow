@@ -22,17 +22,18 @@ Nơi nhập sau khi xác minh: **Giao diện → Tùy biến → Play2Grow – T
 | Giờ làm việc | T2–T6 8:00–19:00; T7 9:00–16:00; CN nghỉ | Footer website hiện tại | Đã công bố, chưa xác minh | Xác nhận |
 | Mạng xã hội (Facebook, Zalo, YouTube, TikTok…) | — | Không thấy trên website | Cần bổ sung | Cung cấp đường dẫn tài khoản chính thức |
 | Logo chính thức (SVG hoặc PNG nền trong suốt) | — | Không lấy được bản gốc | Cần bổ sung | Tải lên tại Tùy biến → Nhận diện website |
-| Giấy phép giáo dục / chuyên ngành | — | — | **Cần đánh giá** | Nếu Play2Grow là trung tâm ngoại ngữ, kỹ năng có lớp học trực tiếp, pháp luật Việt Nam có thể yêu cầu quyết định cho phép hoạt động giáo dục từ cơ quan quản lý giáo dục. Cần người có chuyên môn pháp lý xác định. Nếu chỉ là sản phẩm số, yêu cầu có thể khác. |
+| Giấy phép giáo dục / chuyên ngành | — | — | **Cần đánh giá – ưu tiên cao** | Play2Grow là trung tâm có lớp học trực tiếp (tiếng Anh và năng khiếu). Pháp luật Việt Nam có thể yêu cầu quyết định cho phép hoạt động giáo dục / thành lập trung tâm từ cơ quan quản lý giáo dục có thẩm quyền. Cần người có chuyên môn pháp lý xác định; chỉ hiển thị số quyết định khi đã có. |
 | Thông báo/đăng ký website với Bộ Công Thương | — | — | Cần đánh giá | Áp dụng nếu website có chức năng thương mại điện tử (đặt hàng, thanh toán trực tuyến) |
 
 ## 2. Thông tin sản phẩm cần xác nhận (xem PRODUCT_AUDIT.md)
 
-1. Play2Grow hiện là **trung tâm có lớp học**, **sản phẩm số**, hay cả hai?
-2. Danh sách chương trình hoặc sản phẩm đang hoạt động thật: tên, độ tuổi, hình thức, thời lượng, học phí, lịch học.
+1. ~~Play2Grow hiện là trung tâm có lớp học, sản phẩm số, hay cả hai?~~ **Đã xác nhận (11/10/2026): trung tâm có lớp học, các chương trình đang hoạt động thật.**
+2. Với từng lớp (STEAM English, Vẽ, Thủ công, Piano, Keyboard, Tiktok Dance, Nhảy hiện đại): độ tuổi, thời lượng, lịch học, sĩ số, học phí, giáo viên, học liệu. Mini Party và Kỹ năng tự vệ có phải chương trình thường xuyên không? Có học thử, bảo lưu, hoàn phí không?
 3. Khẩu hiệu "100% tiếng Anh với người bản xứ": có giáo viên bản xứ không, chiếm tỷ lệ bao nhiêu? Nếu không chứng minh được, nên bỏ.
 4. Có tính năng AI nào đang hoạt động không? Dữ liệu trẻ em được xử lý thế nào?
-5. Mô hình phí: miễn phí, trả phí hay gói đăng ký? Có thanh toán trực tuyến không?
+5. Có thanh toán học phí trực tuyến không (nếu có, cần chính sách thanh toán/hoàn tiền)?
 6. Có gửi thông tin/bản tin cho người đăng ký không? Nếu có, nội dung ô đồng ý cần nêu rõ.
+7. Chính sách chụp ảnh/quay video học viên và đăng lên website/mạng xã hội (cần sự đồng ý của phụ huynh).
 
 ## 3. Pháp lý và quyền riêng tư cần rà soát
 

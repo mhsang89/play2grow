@@ -51,4 +51,4 @@ tools/build.sh      # sinh lại block markup + dist/*.zip + SHA256SUMS.txt
 
 - Không có quyền truy cập WP Admin, database hay hosting của website thật: **chưa có thay đổi nào trên production**.
 - Chưa kiểm thử thực tế với Elementor Pro, WPML, LiteSpeed Cache, Revolution Slider (plugin trả phí) và gửi email thật.
-- Định vị "nền tảng EdTech/AI" trong brief **chưa khớp** với website hiện tại (trung tâm có lớp học). Không tính năng hay chương trình nào được khẳng định khi chưa xác minh. Xem COMPANY_INFO_REQUIRED.md.
+- Đã xác nhận: Play2Grow là trung tâm có lớp học (7 chương trình đang hoạt động). Chi tiết từng lớp, thông tin pháp lý và giấy phép giáo dục vẫn cần bổ sung – xem COMPANY_INFO_REQUIRED.md.

@@ -1,11 +1,11 @@
 <?php
 /**
- * Template Name: Danh sách sản phẩm
+ * Template Name: Danh sách chương trình
  * Template Post Type: page
  *
- * Overview page: shows the page content, then cards for every published child page
- * (each child = one product / learning experience). Add [p2g_programs] anywhere in
- * the content to control the position of the cards yourself.
+ * Overview page: cards for every published page that uses the "Chi tiết chương trình"
+ * template, grouped by "Nhóm chương trình", followed by the page content. Add
+ * [p2g_programs grouped="1"] in the content to control the position yourself.
  *
  * @package Play2Grow
  */
@@ -21,9 +21,9 @@ while ( have_posts() ) :
 	?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class( 'page-article' ); ?>>
 		<?php if ( ! $p2g_inline ) : ?>
-			<section class="section section--tight" aria-label="<?php esc_attr_e( 'Danh sách sản phẩm', 'play2grow-theme' ); ?>">
+			<section class="section section--tight" aria-label="<?php esc_attr_e( 'Danh sách chương trình', 'play2grow-theme' ); ?>">
 				<div class="container">
-					<?php echo p2g_render_programs( get_the_ID() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the renderer. ?>
+					<?php echo p2g_render_programs( 60, 3, true ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the renderer. ?>
 				</div>
 			</section>
 		<?php endif; ?>

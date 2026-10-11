@@ -10,33 +10,55 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Product / learning-experience detail fields stored on pages that use the
- * "Chi tiết sản phẩm" template. Every field is optional; empty fields are hidden.
+ * Class / program detail fields stored on pages that use the "Chi tiết chương trình"
+ * template. Every field is optional; empty fields are hidden on the website.
  *
  * @return array meta_key => [label, icon, placeholder]
  */
 function p2g_program_fields() {
 	return array(
-		'_p2g_prog_audience' => array( __( 'Độ tuổi phù hợp', 'play2grow-theme' ), 'users', __( 'Ví dụ: Trẻ từ … đến … tuổi', 'play2grow-theme' ) ),
-		'_p2g_prog_skills'   => array( __( 'Kỹ năng tiếng Anh', 'play2grow-theme' ), 'book', __( 'Ví dụ: Nghe, nói, từ vựng theo chủ đề', 'play2grow-theme' ) ),
-		'_p2g_prog_format'   => array( __( 'Hình thức / nền tảng', 'play2grow-theme' ), 'monitor', __( 'Ví dụ: Ứng dụng di động, hoạt động in ra giấy…', 'play2grow-theme' ) ),
-		'_p2g_prog_duration' => array( __( 'Thời lượng', 'play2grow-theme' ), 'clock', __( 'Ví dụ: Mỗi hoạt động khoảng … phút', 'play2grow-theme' ) ),
-		'_p2g_prog_require'  => array( __( 'Yêu cầu sử dụng', 'play2grow-theme' ), 'info', __( 'Ví dụ: Cần tài khoản phụ huynh, kết nối Internet…', 'play2grow-theme' ) ),
-		'_p2g_prog_fee'      => array( __( 'Chi phí', 'play2grow-theme' ), 'tag', __( 'Chỉ điền mức phí đã được duyệt công bố', 'play2grow-theme' ) ),
+		'_p2g_prog_audience' => array( __( 'Độ tuổi', 'play2grow-theme' ), 'users', __( 'Ví dụ: 4 – 6 tuổi', 'play2grow-theme' ) ),
+		'_p2g_prog_skills'   => array( __( 'Nội dung chính', 'play2grow-theme' ), 'book', __( 'Ví dụ: Nghe – nói, từ vựng theo chủ đề, dự án STEAM', 'play2grow-theme' ) ),
+		'_p2g_prog_format'   => array( __( 'Hình thức học', 'play2grow-theme' ), 'monitor', __( 'Ví dụ: Lớp trực tiếp tại trung tâm', 'play2grow-theme' ) ),
+		'_p2g_prog_duration' => array( __( 'Thời lượng', 'play2grow-theme' ), 'clock', __( 'Ví dụ: 90 phút/buổi, 2 buổi/tuần', 'play2grow-theme' ) ),
+		'_p2g_prog_schedule' => array( __( 'Lịch học', 'play2grow-theme' ), 'calendar', __( 'Ví dụ: Thứ Bảy, Chủ Nhật 9:00 – 10:30', 'play2grow-theme' ) ),
+		'_p2g_prog_class'    => array( __( 'Sĩ số lớp', 'play2grow-theme' ), 'users', __( 'Ví dụ: Tối đa … học viên', 'play2grow-theme' ) ),
+		'_p2g_prog_teacher'  => array( __( 'Giáo viên', 'play2grow-theme' ), 'user', __( 'Chỉ ghi thông tin đã được xác nhận', 'play2grow-theme' ) ),
+		'_p2g_prog_fee'      => array( __( 'Học phí', 'play2grow-theme' ), 'tag', __( 'Chỉ điền mức phí đã được duyệt công bố', 'play2grow-theme' ) ),
+		'_p2g_prog_require'  => array( __( 'Cần chuẩn bị', 'play2grow-theme' ), 'info', __( 'Ví dụ: Dụng cụ vẽ do trung tâm cung cấp', 'play2grow-theme' ) ),
 	);
 }
 
 /**
- * Product status options. The status badge is shown only when one is chosen.
+ * Status options. The badge is shown only when one is chosen.
  *
  * @return array
  */
 function p2g_program_statuses() {
 	return array(
 		''         => __( '— Không hiển thị trạng thái —', 'play2grow-theme' ),
-		'live'     => __( 'Đang hoạt động', 'play2grow-theme' ),
-		'beta'     => __( 'Đang thử nghiệm', 'play2grow-theme' ),
-		'upcoming' => __( 'Sắp ra mắt', 'play2grow-theme' ),
+		'live'     => __( 'Đang mở lớp', 'play2grow-theme' ),
+		'upcoming' => __( 'Sắp khai giảng', 'play2grow-theme' ),
+		'beta'     => __( 'Lớp thử nghiệm', 'play2grow-theme' ),
+		'paused'   => __( 'Tạm ngưng tuyển sinh', 'play2grow-theme' ),
+	);
+}
+
+/**
+ * Program groups used to organise the "Chương trình học" overview page.
+ *
+ * @return array
+ */
+function p2g_program_groups() {
+	return (array) apply_filters(
+		'p2g_program_groups',
+		array(
+			'english' => __( 'Tiếng Anh', 'play2grow-theme' ),
+			'art'     => __( 'Mỹ thuật', 'play2grow-theme' ),
+			'music'   => __( 'Âm nhạc', 'play2grow-theme' ),
+			'dance'   => __( 'Nhảy', 'play2grow-theme' ),
+			'other'   => __( 'Chương trình khác', 'play2grow-theme' ),
+		)
 	);
 }
 
@@ -70,7 +92,7 @@ function p2g_register_meta() {
 		);
 	}
 
-	foreach ( array_merge( array_keys( p2g_program_fields() ), array( '_p2g_prog_status' ) ) as $key ) {
+	foreach ( array_merge( array_keys( p2g_program_fields() ), array( '_p2g_prog_status', '_p2g_prog_group' ) ) as $key ) {
 		register_post_meta(
 			'page',
 			$key,
@@ -97,7 +119,7 @@ function p2g_add_meta_boxes( $post_type, $post ) {
 	}
 
 	if ( 'page' === $post_type ) {
-		add_meta_box( 'p2g-program', __( 'Thông tin sản phẩm / trải nghiệm học tập', 'play2grow-theme' ), 'p2g_program_box', 'page', 'normal', 'default' );
+		add_meta_box( 'p2g-program', __( 'Thông tin chương trình / lớp học', 'play2grow-theme' ), 'p2g_program_box', 'page', 'normal', 'default' );
 	}
 }
 add_action( 'add_meta_boxes', 'p2g_add_meta_boxes', 10, 2 );
@@ -131,12 +153,18 @@ function p2g_seo_box( $post ) {
  */
 function p2g_program_box( $post ) {
 	wp_nonce_field( 'p2g_save_meta', 'p2g_meta_nonce' );
-	echo '<p class="description">' . esc_html__( 'Chỉ dùng cho trang có mẫu "Chi tiết sản phẩm". Mỗi trường để trống sẽ không hiển thị. Chỉ điền thông tin đã được kiểm chứng trên sản phẩm thực tế.', 'play2grow-theme' ) . '</p>';
+	echo '<p class="description">' . esc_html__( 'Dùng cho trang có mẫu "Chi tiết chương trình". Trường để trống sẽ hiển thị "Đang cập nhật" hoặc được ẩn. Chỉ điền thông tin đã được xác nhận.', 'play2grow-theme' ) . '</p>';
 	echo '<table class="form-table" role="presentation"><tbody>';
 	$current = get_post_meta( $post->ID, '_p2g_prog_status', true );
 	echo '<tr><th scope="row"><label for="_p2g_prog_status">' . esc_html__( 'Trạng thái', 'play2grow-theme' ) . '</label></th><td><select id="_p2g_prog_status" name="_p2g_prog_status">';
 	foreach ( p2g_program_statuses() as $value => $label ) {
 		printf( '<option value="%1$s" %2$s>%3$s</option>', esc_attr( $value ), selected( $current, $value, false ), esc_html( $label ) );
+	}
+	echo '</select></td></tr>';
+	$group = get_post_meta( $post->ID, '_p2g_prog_group', true );
+	echo '<tr><th scope="row"><label for="_p2g_prog_group">' . esc_html__( 'Nhóm chương trình', 'play2grow-theme' ) . '</label></th><td><select id="_p2g_prog_group" name="_p2g_prog_group"><option value="">' . esc_html__( '— Chưa phân nhóm —', 'play2grow-theme' ) . '</option>';
+	foreach ( p2g_program_groups() as $value => $label ) {
+		printf( '<option value="%1$s" %2$s>%3$s</option>', esc_attr( $value ), selected( $group, $value, false ), esc_html( $label ) );
 	}
 	echo '</select></td></tr>';
 	foreach ( p2g_program_fields() as $key => $field ) {
@@ -175,6 +203,15 @@ function p2g_save_meta( $post_id ) {
 			update_post_meta( $post_id, '_p2g_noindex', 1 );
 		} else {
 			delete_post_meta( $post_id, '_p2g_noindex' );
+		}
+	}
+
+	if ( 'page' === get_post_type( $post_id ) && isset( $_POST['_p2g_prog_group'] ) ) {
+		$group = sanitize_key( wp_unslash( $_POST['_p2g_prog_group'] ) );
+		if ( '' !== $group && array_key_exists( $group, p2g_program_groups() ) ) {
+			update_post_meta( $post_id, '_p2g_prog_group', $group );
+		} else {
+			delete_post_meta( $post_id, '_p2g_prog_group' );
 		}
 	}
 

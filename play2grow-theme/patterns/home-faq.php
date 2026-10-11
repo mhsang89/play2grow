@@ -12,7 +12,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $p2g_faq_page = p2g_page_link( 'cau-hoi-thuong-gap' );
-$p2g_contact  = p2g_page_link( 'lien-he' );
+$p2g_contact  = p2g_contact_url_any();
 $p2g_parent   = p2g_post_link( 'cha-me-khong-gioi-tieng-anh-giup-con-hoc' );
 ?>
 <!-- wp:group {"align":"full","className":"p2g-section p2g-section--sky","layout":{"type":"default"}} -->
@@ -29,7 +29,7 @@ $p2g_parent   = p2g_post_link( 'cha-me-khong-gioi-tieng-anh-giup-con-hoc' );
 <!-- wp:group {"className":"p2g-faq","layout":{"type":"default"}} -->
 <div class="wp-block-group p2g-faq"><!-- wp:details -->
 <details class="wp-block-details"><summary>Play2Grow là gì?</summary><!-- wp:paragraph -->
-<p>Play2Grow là thương hiệu giáo dục tập trung vào việc giúp trẻ học tiếng Anh thông qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày.</p>
+<p>Play2Grow là trung tâm dành cho trẻ với các lớp STEAM English, mỹ thuật, âm nhạc và nhảy. Chúng tôi tập trung vào việc giúp trẻ học qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
@@ -46,8 +46,8 @@ $p2g_parent   = p2g_post_link( 'cha-me-khong-gioi-tieng-anh-giup-con-hoc' );
 <!-- /wp:details -->
 
 <!-- wp:details -->
-<details class="wp-block-details"><summary>Sản phẩm dành cho độ tuổi nào và có mất phí không?</summary><!-- wp:paragraph -->
-<p>Độ tuổi phù hợp, hình thức sử dụng và chi phí sẽ được công bố cùng từng sản phẩm trên trang Sản phẩm. <?php echo $p2g_contact ? 'Anh/chị có thể <a href="' . esc_url( $p2g_contact ) . '">để lại thông tin liên hệ</a> để nhận cập nhật.' : ''; ?></p>
+<details class="wp-block-details"><summary>Các lớp dành cho độ tuổi nào, học phí ra sao?</summary><!-- wp:paragraph -->
+<p>Mỗi lớp có độ tuổi, lịch học và học phí riêng, được ghi trên trang của từng chương trình. <?php echo $p2g_contact ? 'Anh/chị có thể <a href="' . esc_url( $p2g_contact ) . '">để lại thông tin</a> để được tư vấn lớp phù hợp với con.' : ''; ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 

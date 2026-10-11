@@ -1,6 +1,6 @@
 # Play2Grow – WordPress theme
 
-Phiên bản **1.0.0** · Giấy phép GPLv2+ · Text domain `play2grow-theme`
+Phiên bản **1.1.0** · Giấy phép GPLv2+ · Text domain `play2grow-theme`
 
 Giao diện cổ điển (classic theme) độc lập cho website Play2Grow – học tiếng Anh qua trải nghiệm dành cho trẻ. Không cần Elementor hay plugin trả phí. Không tải font, script hay CSS từ bên thứ ba.
 
@@ -39,10 +39,10 @@ PHP 7.4–8.2 và WordPress 6.4–7.0 chưa được kiểm thử thực tế.
 ## Quản lý nội dung
 
 - **Trang chủ** là một Trang bình thường, dựng từ các mẫu khối (Block patterns) trong nhóm **Play2Grow**. Sửa chữ, đổi ảnh, thêm/bớt section ngay trong trình soạn thảo.
-- **Mẫu trang**: *Danh sách sản phẩm* (tự hiện thẻ cho các trang con), *Chi tiết sản phẩm* (hộp thông tin nhanh + nhãn trạng thái), *Liên hệ* (form + thông tin doanh nghiệp), *Toàn chiều rộng (không tiêu đề)* cho trang dựng bằng khối/Elementor.
+- **Mẫu trang**: *Danh sách chương trình* (tự hiện thẻ cho mọi trang dùng mẫu Chi tiết chương trình, nhóm theo Tiếng Anh/Mỹ thuật/Âm nhạc/Nhảy), *Chi tiết chương trình* (hộp Thông tin nhanh + nhãn trạng thái lớp), *Liên hệ* (form + thông tin doanh nghiệp), *Toàn chiều rộng (không tiêu đề)* cho trang dựng bằng khối/Elementor.
 - **Hộp "SEO cơ bản"** (meta description, noindex) trên mỗi trang/bài. Hộp này tự ẩn khi có Yoast/Rank Math/AIOSEO/SEOPress/The SEO Framework/Slim SEO.
 - **Ghi chú nội bộ** `[p2g_note]…[/p2g_note]`: chỉ người dùng có quyền biên tập mới thấy; dùng để đánh dấu chỗ cần xác nhận. Xóa trước khi coi trang là hoàn chỉnh.
-- **Nội dung khởi đầu (tùy chọn)**: Giao diện → Play2Grow → *Bước 1* tạo 10 trang + 6 bài viết + 9 chuyên mục (mặc định là **bản nháp**, không ghi đè; trang trùng đường dẫn được tạo thành "[Bản mới] …"). Sau khi rà soát và xuất bản, *Bước 2* tạo menu (chỉ cho vị trí còn trống) và đặt Trang chủ/Góc học tập.
+- **Nội dung khởi đầu (tùy chọn)**: Giao diện → Play2Grow → *Bước 1* tạo 10 trang + 7 trang lớp học + 6 bài viết + 9 chuyên mục (mặc định là **bản nháp**, không ghi đè; trang trùng đường dẫn được tạo thành "[Bản mới] …"). Sau khi rà soát và xuất bản, *Bước 2* tạo menu (chỉ cho vị trí còn trống) và đặt Trang chủ/Góc học tập.
 
 ## Tính năng kỹ thuật
 

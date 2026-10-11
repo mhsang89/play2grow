@@ -64,18 +64,18 @@ Một vài cách cân bằng đơn giản:
 Thông tin trên trang này mang tính tham khảo chung về giáo dục, không thay thế lời khuyên chuyên môn về y tế, tâm lý hay phát triển của trẻ. Nếu có băn khoăn về sự phát triển ngôn ngữ của con, phụ huynh nên tham khảo ý kiến chuyên gia.
 :::
 
-## Những câu hỏi nên đặt ra khi chọn một sản phẩm học tiếng Anh cho con
+## Những câu hỏi nên đặt ra khi chọn lớp học cho con
 
-Dù lựa chọn Play2Grow hay bất kỳ chương trình nào khác, những câu hỏi dưới đây giúp phụ huynh đưa ra quyết định phù hợp:
+Dù lựa chọn Play2Grow hay bất kỳ trung tâm nào khác, những câu hỏi dưới đây giúp phụ huynh đưa ra quyết định phù hợp:
 
 :::checklist
-- Sản phẩm dành cho độ tuổi và trình độ nào? Có phù hợp với con mình không?
+- Lớp học dành cho độ tuổi và trình độ nào? Có phù hợp với con mình không?
 - Con sẽ thực sự làm gì trong mỗi buổi học hay mỗi hoạt động?
-- Tỷ lệ giữa thời gian trước màn hình và hoạt động thật là bao nhiêu?
+- Sĩ số lớp bao nhiêu? Giáo viên có kinh nghiệm phù hợp với lứa tuổi không?
 - Phụ huynh được hướng dẫn hỗ trợ con như thế nào?
-- Sản phẩm thu thập dữ liệu gì của con và dùng vào việc gì?
-- Những tính năng được quảng cáo đã thực sự hoạt động hay mới trong kế hoạch?
-- Chi phí, cách hủy hoặc ngừng sử dụng có rõ ràng không?
+- Trung tâm thu thập thông tin gì của con, có chụp ảnh/quay video học viên không và dùng vào việc gì?
+- Phụ huynh được thông tin về quá trình học của con như thế nào?
+- Học phí, chính sách bảo lưu hoặc ngừng học có rõ ràng không?
 :::
 
 Nếu anh/chị có câu hỏi về Play2Grow, hãy [gửi cho chúng tôi]({{page:lien-he}}).

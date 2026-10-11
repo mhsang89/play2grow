@@ -1,5 +1,5 @@
 <!--meta Liên hệ (mẫu Liên hệ: form + thông tin doanh nghiệp tự hiển thị) -->
-Anh/chị muốn tìm hiểu về phương pháp học tiếng Anh qua trải nghiệm, nhận thông tin khi Play2Grow có sản phẩm mới hay đề xuất hợp tác? Hãy để lại lời nhắn – chỉ cần số điện thoại **hoặc** email để chúng tôi có thể liên hệ lại.
+Anh/chị muốn được tư vấn về lớp học, lịch học và học phí cho con, hay có câu hỏi về phương pháp học tiếng Anh qua trải nghiệm? Hãy để lại thông tin – chỉ cần số điện thoại **hoặc** email để Play2Grow liên hệ lại.
 
 ### Trước khi gửi
 

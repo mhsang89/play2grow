@@ -3,7 +3,7 @@
  * Shortcodes used inside page content and block patterns. They live in the plugin so
  * content keeps working (no raw "[p2g_…]" text) even if the theme is changed.
  *
- * [p2g_programs]           – published product pages (children of the "Sản phẩm" page)
+ * [p2g_programs]           – published class/program pages (template "Chi tiết chương trình")
  * [p2g_latest_posts]       – latest articles
  * [p2g_cta_button]         – button to the contact page (hidden if that page does not exist)
  * [p2g_company_info]       – verified company details (Tùy biến → Play2Grow – Doanh nghiệp)
@@ -22,57 +22,19 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Find the page that holds the product list.
+ * Published program pages (pages using the "Chi tiết chương trình" template).
  *
- * @param string $parent Page ID or path.
- * @return int
- */
-function p2gc_programs_parent_id( $parent = '' ) {
-	if ( is_numeric( $parent ) && (int) $parent > 0 ) {
-		return (int) $parent;
-	}
-	if ( '' !== $parent ) {
-		$page = get_page_by_path( $parent );
-		return $page ? (int) $page->ID : 0;
-	}
-
-	$pages = get_posts(
-		array(
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'posts_per_page' => 1,
-			'meta_key'       => '_wp_page_template', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
-			'meta_value'     => 'page-templates/template-programs.php', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
-			'fields'         => 'ids',
-		)
-	);
-	if ( $pages ) {
-		return (int) $pages[0];
-	}
-
-	$page = get_page_by_path( 'san-pham' );
-
-	return $page ? (int) $page->ID : 0;
-}
-
-/**
- * Published product pages.
- *
- * @param int $parent_id Parent page.
- * @param int $limit     Max items.
+ * @param int $limit Max items.
  * @return WP_Post[]
  */
-function p2gc_get_programs( $parent_id, $limit = 12 ) {
-	if ( ! $parent_id ) {
-		return array();
-	}
-
+function p2gc_get_programs( $limit = 24 ) {
 	return get_posts(
 		array(
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
-			'post_parent'    => $parent_id,
-			'posts_per_page' => max( 1, min( 50, (int) $limit ) ),
+			'posts_per_page' => max( 1, min( 60, (int) $limit ) ),
+			'meta_key'       => '_wp_page_template', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+			'meta_value'     => 'page-templates/template-program.php', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
 			'orderby'        => array(
 				'menu_order' => 'ASC',
 				'title'      => 'ASC',
@@ -82,7 +44,7 @@ function p2gc_get_programs( $parent_id, $limit = 12 ) {
 }
 
 /**
- * [p2g_programs parent="" limit="12" columns="3"].
+ * [p2g_programs limit="24" columns="3" grouped="0"].
  *
  * @param array $atts Attributes.
  * @return string
@@ -90,23 +52,21 @@ function p2gc_get_programs( $parent_id, $limit = 12 ) {
 function p2gc_programs_shortcode( $atts ) {
 	$atts = shortcode_atts(
 		array(
-			'parent'  => '',
-			'limit'   => 12,
+			'limit'   => 24,
 			'columns' => 3,
+			'grouped' => 0,
 		),
 		$atts,
 		'p2g_programs'
 	);
 
-	$parent_id = p2gc_programs_parent_id( $atts['parent'] );
-
 	if ( function_exists( 'p2g_render_programs' ) ) {
-		return p2g_render_programs( $parent_id, (int) $atts['limit'], (int) $atts['columns'] );
+		return p2g_render_programs( (int) $atts['limit'], (int) $atts['columns'], (bool) $atts['grouped'] );
 	}
 
-	$programs = p2gc_get_programs( $parent_id, (int) $atts['limit'] );
+	$programs = p2gc_get_programs( (int) $atts['limit'] );
 	if ( ! $programs ) {
-		return '<p class="p2g-empty">' . esc_html__( 'Thông tin chi tiết về sản phẩm Play2Grow sẽ được cập nhật tại đây.', 'play2grow-core' ) . '</p>';
+		return '<p class="p2g-empty">' . esc_html__( 'Thông tin các chương trình học đang được cập nhật.', 'play2grow-core' ) . '</p>';
 	}
 	$out = '<ul class="p2g-program-list">';
 	foreach ( $programs as $program ) {

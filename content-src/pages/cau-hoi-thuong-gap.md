@@ -2,23 +2,23 @@
 ## Về Play2Grow
 
 :::details Play2Grow là gì?
-Play2Grow là thương hiệu giáo dục tập trung vào việc giúp trẻ học tiếng Anh thông qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày. Tinh thần của Play2Grow được tóm gọn trong câu: *Explore the world. Play with English. Grow every day.* – Học qua khám phá, trưởng thành qua trải nghiệm.
+Play2Grow là trung tâm dành cho trẻ với lớp STEAM English và các lớp mỹ thuật (vẽ, thủ công), âm nhạc (đàn Piano, Keyboard) và nhảy (Tiktok Dance, Nhảy hiện đại). Chúng tôi tập trung vào việc giúp trẻ học qua hoạt động thực tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày. Tinh thần của Play2Grow được tóm gọn trong câu: *Explore the world. Play with English. Grow every day.* – Học qua khám phá, trưởng thành qua trải nghiệm.
 :::
 
-:::details Play2Grow có phải là trung tâm tiếng Anh không?
-Play2Grow định hướng phát triển như một thương hiệu giáo dục ứng dụng công nghệ (EdTech), tập trung vào học tiếng Anh qua trải nghiệm, thay vì mô hình lớp học truyền thống. Thông tin chi tiết về từng sản phẩm, hình thức sử dụng và trạng thái sẽ được công bố trên trang [Sản phẩm]({{page:san-pham}}).
+:::details Play2Grow có những lớp học nào?
+Hiện Play2Grow có các lớp: STEAM English, Lớp Vẽ, Lớp thủ công, Lớp đàn Piano, Lớp đàn Keyboard, Tiktok Dance và Nhảy hiện đại. Thông tin từng lớp có tại trang [Chương trình học]({{page:chuong-trinh}}).
 :::
 
-:::details Sản phẩm của Play2Grow dành cho độ tuổi nào?
-Độ tuổi phù hợp được công bố riêng cho từng sản phẩm. Các bài viết trong [Góc học tập]({{posts_page}}) có gợi ý hoạt động cho nhiều nhóm tuổi khác nhau để phụ huynh tham khảo.
+:::details Các lớp dành cho độ tuổi nào?
+Mỗi lớp có độ tuổi phù hợp riêng, được ghi trên trang của từng chương trình. Nếu chưa chắc lớp nào phù hợp với con, anh/chị có thể [để lại thông tin]({{contact}}) để được tư vấn.
 :::
 
-:::details Sử dụng Play2Grow có mất phí không?
-Chi phí (nếu có) sẽ được thông báo rõ ràng trên trang của từng sản phẩm. Các bài viết và gợi ý hoạt động trên website này đều có thể đọc miễn phí.
+:::details Học phí và lịch học như thế nào?
+Học phí và lịch học khác nhau theo từng lớp và được ghi trên trang của từng chương trình. Để biết lịch khai giảng gần nhất, anh/chị vui lòng [liên hệ Play2Grow]({{contact}}).
 :::
 
 :::note
-Vui lòng xác nhận mô hình kinh doanh (miễn phí / trả phí / gói đăng ký) để cập nhật câu trả lời về chi phí khi có sản phẩm chính thức.
+Nên bổ sung các câu hỏi thực tế của trung tâm: có học thử không, chính sách bảo lưu/hoàn học phí, đưa đón, sĩ số lớp, giáo viên. Chỉ trả lời khi đã có chính sách chính thức.
 :::
 
 ## Về phương pháp

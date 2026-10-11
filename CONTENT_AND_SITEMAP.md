@@ -6,8 +6,14 @@
 /                                   Trang chủ
 ├── /gioi-thieu/                    Giới thiệu Play2Grow       (URL hiện có – giữ nguyên)
 ├── /phuong-phap-hoc/               Phương pháp học tiếng Anh qua trải nghiệm
-├── /san-pham/                      Sản phẩm (danh sách, có nhãn trạng thái)
-│   └── /san-pham/<ten-san-pham>/   Chi tiết sản phẩm (tạo khi đã xác minh)
+├── /chuong-trinh/                  Chương trình học (danh sách theo nhóm)
+├── /steam-english/                 STEAM English          (URL hiện có – giữ nguyên)
+├── /lop-ve/                        Lớp Vẽ                 (URL hiện có – giữ nguyên)
+├── /lop-thu-cong/                  Lớp thủ công           (URL mới; trang cũ đang 404)
+├── /lop-dan-piano/                 Lớp đàn Piano
+├── /lop-dan-keyboard/              Lớp đàn Keyboard
+├── /tiktok-dance/                  Tiktok Dance
+├── /nhay-hien-dai/                 Nhảy hiện đại
 ├── /phu-huynh/                     Dành cho phụ huynh
 ├── /goc-hoc-tap/                   Góc học tập (trang bài viết)
 │   ├── /category/<chuyen-muc>/     9 chuyên mục
@@ -19,15 +25,15 @@
 └── /dieu-khoan-su-dung/            Điều khoản sử dụng (bản nháp pháp lý)
 ```
 
-URL hiện có cần quyết định: `/steam-english/`, `/lop-ve/`, `/co-so-vat-chat/`, `/giao-vien/`, `/tuyen-dung/` (chỉ có tiêu đề). Đề xuất: nếu là chương trình thật, chuyển thành trang con của `/san-pham/` **bằng chuyển hướng 301** từ URL cũ, hoặc giữ URL và chọn mẫu "Chi tiết sản phẩm". Chuyển hướng 301 đề xuất: `/contacts/` → `/lien-he/` (hoặc `/dang-ki/`), `/blog-grid/` → `/goc-hoc-tap/`. Theme không tự tạo chuyển hướng; dùng plugin Redirection hoặc cấu hình máy chủ.
+Các trang lớp **giữ nguyên URL ở gốc** như website cũ (`/steam-english/`, `/lop-ve/`); breadcrumbs vẫn hiển thị "Trang chủ / Chương trình học / Tên lớp". Trang lớp nào đã tồn tại sẽ được nhập thành bản nháp "[Bản mới] …" để chủ sở hữu sao chép nội dung vào trang gốc, sau đó đặt mẫu "Chi tiết chương trình". `/co-so-vat-chat/`, `/giao-vien/`, `/tuyen-dung/` (chỉ có tiêu đề): bổ sung nội dung thật hoặc ẩn khỏi menu và đặt noindex. Chuyển hướng 301 đề xuất: `/contacts/` → `/lien-he/` (hoặc `/dang-ki/`), `/blog-grid/` → `/goc-hoc-tap/`. Theme không tự tạo chuyển hướng; dùng plugin Redirection hoặc cấu hình máy chủ.
 
 ## 2. Menu
 
 | Vị trí | Mục |
 |---|---|
 | Thanh trên cùng | Góc học tập · Hỏi đáp · Liên hệ |
-| Menu chính | **Khám phá** ▾ (Về Play2Grow, Phương pháp học qua trải nghiệm) · **Hoạt động tiếng Anh** ▾ (Khám phá thiên nhiên, Học qua hoạt động hằng ngày, Trò chơi tiếng Anh, Con vật quanh em, Đồ ăn & bữa ăn, Địa điểm quanh ta) · **Sản phẩm** · **Phụ huynh** ▾ (Hướng dẫn đồng hành cùng con, Bài viết cho phụ huynh, Công nghệ & trẻ em, Câu hỏi thường gặp) · **Liên hệ** + nút CTA |
-| Chân trang – Khám phá | Giới thiệu Play2Grow · Phương pháp học · Sản phẩm · Góc học tập |
+| Menu chính | **Khám phá** ▾ (Về Play2Grow, Phương pháp học qua trải nghiệm) · **Hoạt động tiếng Anh** ▾ (Khám phá thiên nhiên, Học qua hoạt động hằng ngày, Trò chơi tiếng Anh, Con vật quanh em, Đồ ăn & bữa ăn, Địa điểm quanh ta) · **Chương trình** ▾ (Tất cả chương trình + 7 lớp) · **Phụ huynh** ▾ (Hướng dẫn đồng hành cùng con, Bài viết cho phụ huynh, Công nghệ & trẻ em, Câu hỏi thường gặp) · **Liên hệ** + nút CTA |
+| Chân trang – Khám phá | Giới thiệu Play2Grow · Phương pháp học · Chương trình học · Góc học tập |
 | Chân trang – Hỗ trợ | Dành cho phụ huynh · Câu hỏi thường gặp · Liên hệ |
 | Chân trang – Chính sách | Chính sách quyền riêng tư · Điều khoản sử dụng |
 
@@ -40,11 +46,12 @@ Lưu ý: chuyên mục chưa có bài viết vẫn có trong menu khi chạy "B�
 | Trang chủ | `trang-chu` | Hiểu nhanh Play2Grow là gì, bắt đầu từ đâu | Hero, truy cập nhanh, ví dụ hoạt động, chủ đề, cách bắt đầu, triết lý, giá trị, sản phẩm, bài viết, hỏi đáp, CTA | Khẩu hiệu, mô tả định vị |
 | Giới thiệu Play2Grow | `gioi-thieu` (đã tồn tại → tạo "[Bản mới]") | Sứ mệnh, triết lý, công nghệ có trách nhiệm | Sứ mệnh/tầm nhìn (đề xuất), lý do chọn học qua trải nghiệm, 5 nguyên tắc, nguyên tắc công nghệ, giá trị, mục người sáng lập (ẩn), thông tin pháp lý | Sứ mệnh/tầm nhìn, nguyên tắc công nghệ, người sáng lập |
 | Phương pháp | `phuong-phap-hoc` | Giải thích cách học | Định nghĩa, 4 nhịp (quan sát – khám phá – sử dụng – kể lại), 6 ví dụ tình huống (có nhãn "gợi ý cho phụ huynh"), bảng điểm mạnh/giới hạn, vai trò cha mẹ, tài liệu tham khảo | Khung "4 nhịp" có phải phương pháp chính thức |
-| Sản phẩm | `san-pham` | Danh sách sản phẩm minh bạch | Giải thích nhãn trạng thái, nguyên tắc thiết kế sản phẩm, đăng ký nhận tin | Toàn bộ sản phẩm |
+| Chương trình học | `chuong-trinh` | Danh sách lớp theo nhóm | Thẻ 7 lớp (Tiếng Anh, Mỹ thuật, Âm nhạc, Nhảy), tinh thần học qua trải nghiệm, gợi ý chọn lớp | Mini Party, Kỹ năng tự vệ |
+| 7 trang lớp | `steam-english`, `lop-ve`, `lop-thu-cong`, `lop-dan-piano`, `lop-dan-keyboard`, `tiktok-dance`, `nhay-hien-dai` | Chuyển đổi: tư vấn lớp | Mô tả chung (đánh dấu cần xác nhận), "Thông tin nhanh" (độ tuổi, lịch, học phí hiển thị "Đang cập nhật" khi trống), nút đăng ký tư vấn, chương trình khác | **Toàn bộ chi tiết lớp** |
 | Dành cho phụ huynh | `phu-huynh` | Hướng dẫn đồng hành | Vai trò cha mẹ, bảng mẫu câu theo sinh hoạt, bảng hoạt động theo độ tuổi, duy trì thói quen, cân bằng màn hình, checklist chọn sản phẩm | — |
 | Góc học tập | `goc-hoc-tap` | Trang bài viết | (WordPress tự hiển thị danh sách + bộ lọc chuyên mục) | — |
 | Câu hỏi thường gặp | `cau-hoi-thuong-gap` | Giải đáp | 13 câu hỏi trong 4 nhóm | Chi phí, độ tuổi |
-| Liên hệ | `lien-he` | Chuyển đổi | Hướng dẫn trước khi gửi + form + thông tin liên hệ đã xác minh | Email nhận thông báo |
+| Liên hệ | `lien-he` | Chuyển đổi: đăng ký tư vấn | Hướng dẫn trước khi gửi + form (danh sách lớp tự cập nhật) + thông tin liên hệ đã xác minh | Email nhận thông báo |
 | Chính sách quyền riêng tư | `chinh-sach-quyen-rieng-tu` | Pháp lý | 14 mục, mô tả đúng dữ liệu form/cookie | **Rà soát pháp lý** |
 | Điều khoản sử dụng | `dieu-khoan-su-dung` | Pháp lý | 10 mục, gồm an toàn khi làm hoạt động cùng trẻ | **Rà soát pháp lý** |
 | Bài: Học tiếng Anh qua trải nghiệm là gì? | `hoc-tieng-anh-qua-trai-nghiem-la-gi` | SEO thông tin | Định nghĩa, lý do, hiểu lầm, ví dụ pha nước cam, 5 nguyên tắc, nguồn tham khảo | — |

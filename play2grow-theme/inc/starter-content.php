@@ -82,7 +82,7 @@ function p2g_starter_tokens( $content ) {
 	);
 
 	return preg_replace_callback(
-		'/\{\{(page|post|cat|posts_page|asset)(?::([a-z0-9\/._-]+))?\}\}/',
+		'/\{\{(page|post|cat|posts_page|asset|contact)(?::([a-z0-9\/._-]+))?\}\}/',
 		static function ( $m ) {
 			$arg = isset( $m[2] ) ? $m[2] : '';
 			switch ( $m[1] ) {
@@ -98,6 +98,9 @@ function p2g_starter_tokens( $content ) {
 					break;
 				case 'posts_page':
 					$url = p2g_posts_page_link();
+					break;
+				case 'contact':
+					$url = p2g_contact_url_any();
 					break;
 				default:
 					$url = p2g_image_url( $arg );
@@ -213,6 +216,11 @@ function p2g_run_starter_import( $status ) {
 
 		if ( ! empty( $item['template'] ) ) {
 			update_post_meta( $id, '_wp_page_template', $item['template'] );
+		}
+		if ( ! empty( $item['meta'] ) && is_array( $item['meta'] ) ) {
+			foreach ( $item['meta'] as $meta_key => $meta_value ) {
+				update_post_meta( $id, sanitize_key( $meta_key ), sanitize_text_field( $meta_value ) );
+			}
 		}
 		if ( ! empty( $item['description'] ) ) {
 			update_post_meta( $id, '_p2g_meta_description', $item['description'] );

@@ -47,7 +47,7 @@ Website hướng đến phụ huynh và người chăm sóc trẻ. Form liên h�
 ## 5. Mục đích sử dụng thông tin
 
 - Liên hệ phản hồi câu hỏi hoặc yêu cầu của anh/chị.
-- Gửi thông tin liên quan đến nội dung anh/chị đã chọn quan tâm, chẳng hạn thông tin về sản phẩm Play2Grow.
+- Gửi thông tin liên quan đến nội dung anh/chị đã chọn quan tâm, chẳng hạn lịch khai giảng, chương trình học và hoạt động của Play2Grow.
 - Bảo vệ website khỏi spam và hành vi lạm dụng.
 
 Chúng tôi không bán thông tin cá nhân của anh/chị và không sử dụng thông tin cho mục đích khác với các mục đích nêu trên khi chưa có sự đồng ý của anh/chị.

@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"p2g-hero__note"} -->
-<p class="p2g-hero__note">Đây là gợi ý để phụ huynh tham khảo và tự thực hiện tại nhà, không phải mô tả một tính năng của sản phẩm Play2Grow.</p>
+<p class="p2g-hero__note">Đây là gợi ý để phụ huynh tham khảo và tự thực hiện tại nhà, không phải mô tả nội dung của một lớp học cụ thể tại Play2Grow.</p>
 <!-- /wp:paragraph -->
 
 <?php

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.1.0 – 2026-10-11
+
+Chủ sở hữu xác nhận Play2Grow là **trung tâm có lớp học**, các chương trình đang hoạt động thật.
+
+- "Sản phẩm" → **Chương trình học** (`/chuong-trinh/`), nhóm theo Tiếng Anh / Mỹ thuật / Âm nhạc / Nhảy.
+- 7 trang lớp (STEAM English, Lớp Vẽ, Lớp thủ công, Lớp đàn Piano, Lớp đàn Keyboard, Tiktok Dance, Nhảy hiện đại) giữ URL ở gốc như website cũ; breadcrumbs đặt dưới "Chương trình học".
+- Mẫu "Chi tiết chương trình": trường mới (nhóm, lịch học, sĩ số, giáo viên); độ tuổi/lịch/học phí hiển thị "Đang cập nhật – liên hệ để được tư vấn" khi trống; nhãn "Đang mở lớp / Sắp khai giảng / Lớp thử nghiệm / Tạm ngưng tuyển sinh".
+- CTA mặc định "Đăng ký tư vấn"; form tự liệt kê các lớp đã xuất bản.
+- Cập nhật nội dung trang chủ, Giới thiệu, Hỏi đáp, Phụ huynh, Liên hệ, Chính sách quyền riêng tư theo mô hình trung tâm.
+
+
 ## 1.0.0 – 2026-10-11
 
 ### Theme `play2grow-theme`

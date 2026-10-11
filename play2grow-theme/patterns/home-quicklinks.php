@@ -14,8 +14,8 @@
 defined( 'ABSPATH' ) || exit;
 
 $p2g_links = array(
-	array( 'spot-explore.svg', 'Phương pháp', 'Học tiếng Anh qua trải nghiệm là gì', p2g_page_link( 'phuong-phap-hoc' ) ),
-	array( 'spot-play.svg', 'Sản phẩm', 'Trải nghiệm học tập của Play2Grow', p2g_page_link( 'san-pham' ) ),
+	array( 'spot-play.svg', 'Chương trình học', 'STEAM English, mỹ thuật, âm nhạc, nhảy', p2g_page_link( 'chuong-trinh' ) ),
+	array( 'spot-explore.svg', 'Phương pháp', 'Học tiếng Anh qua trải nghiệm', p2g_page_link( 'phuong-phap-hoc' ) ),
 	array( 'spot-home.svg', 'Phụ huynh', 'Đồng hành cùng con tại nhà', p2g_page_link( 'phu-huynh' ) ),
 	array( 'spot-create.svg', 'Góc học tập', 'Ý tưởng hoạt động và trò chơi', p2g_posts_page_link() ),
 );

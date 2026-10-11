@@ -29,16 +29,16 @@ function p2gc_interest_options() {
 	}
 
 	$options = array();
-	foreach ( p2gc_get_programs( p2gc_programs_parent_id(), 20 ) as $program ) {
+	foreach ( p2gc_get_programs( 30 ) as $program ) {
 		$options[] = wp_strip_all_tags( get_the_title( $program ) );
 	}
 
 	return array_merge(
 		$options,
 		array(
-			__( 'Nhận thông tin về sản phẩm Play2Grow', 'play2grow-core' ),
-			__( 'Hỏi về phương pháp học tiếng Anh qua trải nghiệm', 'play2grow-core' ),
-			__( 'Hợp tác / truyền thông', 'play2grow-core' ),
+			__( 'Cần tư vấn chọn lớp phù hợp cho con', 'play2grow-core' ),
+			__( 'Hỏi về lịch học và học phí', 'play2grow-core' ),
+			__( 'Hợp tác / tuyển dụng', 'play2grow-core' ),
 			__( 'Nội dung khác', 'play2grow-core' ),
 		)
 	);

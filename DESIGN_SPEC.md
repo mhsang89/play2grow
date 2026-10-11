@@ -16,10 +16,10 @@ Mỗi mục ghi rõ là **[Suy luận]** (không kiểm chứng được trên I
 
 | Hạng mục | Mẫu cấu trúc website giáo dục [Suy luận] | Cách áp dụng cho Play2Grow [Áp dụng] |
 |---|---|---|
-| Kiến trúc thông tin | Menu chính 5–7 mục, dropdown theo nhóm (chương trình/độ tuổi, về chúng tôi, tin tức); các liên kết phụ đưa lên thanh trên cùng | Menu: **Khám phá ▾ · Hoạt động tiếng Anh ▾ · Sản phẩm · Phụ huynh ▾ · Liên hệ**; thanh trên cùng: Góc học tập · Hỏi đáp · Liên hệ |
+| Kiến trúc thông tin | Menu chính 5–7 mục, dropdown theo nhóm (chương trình/độ tuổi, về chúng tôi, tin tức); các liên kết phụ đưa lên thanh trên cùng | Menu: **Khám phá ▾ · Hoạt động tiếng Anh ▾ · Chương trình ▾ (7 lớp) · Phụ huynh ▾ · Liên hệ**; thanh trên cùng: Góc học tập · Hỏi đáp · Liên hệ |
 | Header | Thanh tiện ích màu thương hiệu ở trên; header trắng cố định; nút CTA nổi bật bên phải | Topbar xanh đậm (khẩu hiệu tiếng Anh, liên kết nhanh, hotline/email khi đã nhập); header trắng dính trên cùng, bóng nhẹ; nút "Đăng ký nhận thông tin" |
 | Footer | Footer tối nhiều cột: thương hiệu, liên kết, thông tin liên hệ/pháp lý, mạng xã hội; dòng bản quyền + chính sách | 4 cột: thương hiệu + mô tả + mạng xã hội · Khám phá · Hỗ trợ · Thông tin liên hệ (chỉ các trường đã xác minh); dòng cuối: bản quyền + menu chính sách |
-| Thứ tự trang chủ | Hero lớn → truy cập nhanh → chương trình → lợi ích → bằng chứng xã hội → tin tức → form | Hero → **thẻ truy cập nhanh** nổi chồng lên hero → ví dụ hoạt động → khám phá theo chủ đề → cách bắt đầu → triết lý → giá trị cho trẻ/phụ huynh → sản phẩm (có trạng thái) → Góc học tập → hỏi đáp → CTA. **Không có** phần số liệu hay lời chứng thực (chưa có dữ liệu thật). |
+| Thứ tự trang chủ | Hero lớn → truy cập nhanh → chương trình → lợi ích → bằng chứng xã hội → tin tức → form | Hero (CTA "Xem các chương trình" + "Đăng ký tư vấn") → **thẻ truy cập nhanh** → ví dụ hoạt động → khám phá theo chủ đề → cách bắt đầu → triết lý → giá trị cho trẻ/phụ huynh → **các lớp học** (thẻ 7 lớp) → Góc học tập → hỏi đáp → CTA. **Không có** phần số liệu hay lời chứng thực (chưa có dữ liệu thật). |
 | Trang con | Banner tiêu đề màu thương hiệu + breadcrumbs | Banner xanh gradient + "mặt trời" vàng, breadcrumbs, tiêu đề H1, đoạn dẫn |
 | Chuyển đổi | Nút đăng ký lặp lại ở header, cuối section, cuối trang; nút liên hệ nổi; thanh CTA dính trên mobile | Header CTA · CTA cuối trang (template part) · thanh CTA dính đáy trên mobile · nút Gọi/Zalo nổi (**chỉ khi** đã nhập hotline/Zalo) · form ngắn, chỉ bắt buộc tên + SĐT **hoặc** email |
 | Mobile/tablet | Menu hamburger dạng panel, CTA cố định | Breakpoint menu 1200px; panel menu có nút mở menu con; thanh CTA dính < 768px; lưới thẻ 1 → 2 → 3/4 cột |
@@ -65,6 +65,6 @@ Nút (primary, outline, accent, secondary, light), chip lọc chủ đề, badge
 | Mục trong brief | Quyết định |
 |---|---|
 | "Featured interactive English activities" | Thay bằng **ví dụ hoạt động cho phụ huynh** và bài viết – vì chưa có hoạt động tương tác nào trong sản phẩm được xác minh. |
-| "Learning Paths", "Learning journeys and progress" | **Không triển khai** – chưa có sản phẩm/lộ trình được xác minh. Mục "Sản phẩm" có nhãn trạng thái để bổ sung sau. |
+| "Learning Paths", "Learning journeys and progress" | Thay bằng **Chương trình học** – các lớp thật của trung tâm (đã được chủ sở hữu xác nhận). Lộ trình theo cấp độ sẽ thêm khi có giáo trình chính thức. |
 | "Personalized learning and AI-powered feedback" | **Không triển khai** – brief yêu cầu chỉ thêm khi tính năng có thật; hiện chưa có (PRODUCT_AUDIT.md). |
 | "Authentic real-world imagery" | Chưa có ảnh thật được cấp quyền; dùng minh họa nguyên bản và chừa vị trí để thay. |

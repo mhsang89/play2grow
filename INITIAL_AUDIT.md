@@ -64,7 +64,7 @@ Ngày kiểm tra: 11/10/2026. Người thực hiện: Claude (Claude Code, môi 
 - **Brief hiện tại** mô tả Play2Grow là **thương hiệu/nền tảng EdTech** học tiếng Anh qua trải nghiệm, có thể ứng dụng AI.
 - Không tìm thấy bằng chứng nào về sản phẩm số, ứng dụng hay tính năng AI đang hoạt động.
 
-Theme mới được thiết kế để **phù hợp cả hai hướng** (trang "Sản phẩm" có nhãn trạng thái; có thể thêm các trang lớp học thật vào đó). Nội dung khởi đầu viết theo **định vị thương hiệu trong brief** và **không khẳng định** bất kỳ tính năng hay chương trình nào chưa xác minh. Cần chủ sở hữu xác nhận mô hình kinh doanh thực tế (xem COMPANY_INFO_REQUIRED.md).
+**Đã giải quyết (11/10/2026):** chủ sở hữu xác nhận Play2Grow là **trung tâm có lớp học** và các chương trình đang hoạt động thật. Website mới được chuyển sang định vị này: trang Chương trình học, 7 trang lớp giữ URL cũ, CTA "Đăng ký tư vấn". Chi tiết từng lớp vẫn cần bổ sung.
 
 ## 5. Vấn đề và rủi ro, xếp theo mức độ ưu tiên
 

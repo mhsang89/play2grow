@@ -31,7 +31,7 @@ $p2g_tiles = array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Đây là những hướng tiếp cận định hình cách Play2Grow suy nghĩ về việc học tiếng Anh. Mỗi sản phẩm cụ thể sẽ được giới thiệu riêng, kèm thông tin rõ ràng về những gì đã sẵn sàng.</p>
+<p>Đây là những hướng tiếp cận định hình cách Play2Grow suy nghĩ về việc học tiếng Anh, trong lớp học cũng như ở nhà.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

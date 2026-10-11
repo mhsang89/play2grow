@@ -988,3 +988,9 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; accent-
 .topic-card__title a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 .topic-card__desc { font-size: .93rem; color: var(--p2g-muted); line-height: 1.5; margin: 0 0 .6em; }
 .topic-card__count { font-size: .82rem; font-weight: 600; color: var(--p2g-primary); }
+/* Programs overview & detail */
+.program-group__title { font-size: clamp(1.3rem, 1.1rem + .8vw, 1.7rem); margin: 48px 0 20px; padding-bottom: 10px; border-bottom: 3px solid var(--p2g-accent); display: inline-block; }
+.program-group__title:first-child { margin-top: 0; }
+.card__meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.status-badge--paused { background: #eee; color: #4a4a4a; }
+.facts-card__row--pending dd { font-weight: 500; color: var(--p2g-muted); font-style: italic; }

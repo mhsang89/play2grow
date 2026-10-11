@@ -66,7 +66,7 @@ defined( 'ABSPATH' ) || exit;
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Thông tin minh bạch: điều gì đã có, điều gì đang được phát triển</li>
+<li>Thông tin minh bạch về lớp học, lịch học và học phí</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>

@@ -95,7 +95,22 @@ function p2g_breadcrumb_items() {
 		}
 		$items[] = array( get_the_title(), '' );
 	} elseif ( is_page() ) {
-		foreach ( array_reverse( get_post_ancestors( get_the_ID() ) ) as $ancestor_id ) {
+		$ancestors = array_reverse( get_post_ancestors( get_the_ID() ) );
+		// Program pages keep their old root URLs (/steam-english/…) but belong under "Chương trình học".
+		if ( ! $ancestors && 'page-templates/template-program.php' === get_page_template_slug() ) {
+			$overview = get_posts(
+				array(
+					'post_type'      => 'page',
+					'post_status'    => 'publish',
+					'posts_per_page' => 1,
+					'fields'         => 'ids',
+					'meta_key'       => '_wp_page_template', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+					'meta_value'     => 'page-templates/template-programs.php', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
+				)
+			);
+			$ancestors = $overview;
+		}
+		foreach ( $ancestors as $ancestor_id ) {
 			$items[] = array( get_the_title( $ancestor_id ), get_permalink( $ancestor_id ) );
 		}
 		$items[] = array( get_the_title(), '' );

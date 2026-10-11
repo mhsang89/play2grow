@@ -23,14 +23,14 @@ defined( 'ABSPATH' ) || exit;
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"p2g-hero__lead"} -->
-<p class="p2g-hero__lead">Play2Grow tập trung vào việc giúp trẻ học tiếng Anh thông qua vui chơi, khám phá và những hoạt động gắn với đời sống hằng ngày – để tiếng Anh không chỉ nằm trên trang vở mà xuất hiện trong chính những gì trẻ đang trải nghiệm.</p>
+<p class="p2g-hero__lead">Play2Grow là trung tâm dành cho trẻ với lớp STEAM English cùng các lớp mỹ thuật, âm nhạc và nhảy. Chúng tôi tập trung vào việc học qua vui chơi, khám phá và thực hành – để tiếng Anh và năng khiếu không chỉ nằm trên trang vở mà xuất hiện trong chính những gì trẻ đang trải nghiệm.</p>
 <!-- /wp:paragraph -->
 
 <?php
 echo p2g_pattern_buttons( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
 	array(
-		array( 'Khám phá hoạt động', p2g_posts_page_link() ),
-		array( 'Tìm hiểu phương pháp', p2g_page_link( 'phuong-phap-hoc' ), 'outline' ),
+		array( 'Xem các chương trình', p2g_page_link( 'chuong-trinh' ) ),
+		array( 'Đăng ký tư vấn', p2g_contact_url_any(), 'outline' ),
 	)
 );
 ?>

@@ -18,7 +18,7 @@
 |---|---|---|
 | 1. Audit | Xong | INITIAL_AUDIT.md, PRODUCT_AUDIT.md. Đã audit HTML công khai play2grow.edu.vn; ILA bị Cloudflare chặn. |
 | 2. Strategy / IA | Xong | CONTENT_AND_SITEMAP.md, DESIGN_SPEC.md |
-| 3. Content | Xong (bản nháp chờ xác nhận) | 10 trang, 6 bài viết chuyên sâu, 9 chuyên mục (3 chuyên mục chưa có bài nên tự ẩn trên website). Các chỗ cần xác nhận được đánh dấu bằng ghi chú nội bộ. |
+| 3. Content | Xong (bản nháp chờ xác nhận) | 10 trang chính + 7 trang lớp học, 6 bài viết chuyên sâu, 9 chuyên mục (3 chuyên mục chưa có bài nên tự ẩn trên website). Các chỗ cần xác nhận được đánh dấu bằng ghi chú nội bộ. |
 | 4. UI/UX | Xong | Hệ thống thiết kế, header/topbar/dropdown, banner trang con, thẻ truy cập nhanh, thẻ chủ đề, CTA dính trên mobile |
 | 5. Theme + plugin | Xong | Xem cấu trúc bên dưới |
 | 6. QA | Xong trong phạm vi môi trường | QA_REPORT.md |
@@ -32,8 +32,8 @@ play2grow-theme/
   style.css, functions.php, readme.txt, README.md, screenshot.png
   header.php, footer.php, index.php, front-page.php, page.php, single.php,
   archive.php, search.php, searchform.php, 404.php, comments.php
-  page-templates/   template-full-width.php · template-programs.php (Danh sách sản phẩm)
-                    template-program.php (Chi tiết sản phẩm) · template-contact.php (Liên hệ)
+  page-templates/   template-full-width.php · template-programs.php (Danh sách chương trình)
+                    template-program.php (Chi tiết chương trình) · template-contact.php (Liên hệ)
   template-parts/   card-post · card-program · category-filter · post-list · content-none
                     cta-band · related-posts · floating-contact
   patterns/         13 block pattern (hero, truy cập nhanh, triết lý, chủ đề, ví dụ hoạt động,
@@ -61,5 +61,5 @@ dist/          ZIP cài đặt
 1. Trả lời các câu hỏi trong COMPANY_INFO_REQUIRED.md (mô hình kinh doanh, chương trình thật, thông tin pháp lý, logo).
 2. Rà soát pháp lý Chính sách quyền riêng tư và Điều khoản.
 3. Cài đặt trên staging, chạy INSTALLATION_CHECKLIST.md, rồi mới chuyển production.
-4. Quyết định với các trang cũ (STEAM English, Lớp vẽ, Giáo viên, Cơ sở vật chất, Tuyển dụng): viết nội dung thật hoặc đặt `noindex`/ẩn khỏi menu; tạo chuyển hướng 301 cho `/contacts/`, `/blog-grid/`.
+4. Bổ sung chi tiết 7 lớp học (độ tuổi, lịch, học phí, giáo viên) và ảnh lớp học thật; với Giáo viên, Cơ sở vật chất, Tuyển dụng: viết nội dung thật hoặc đặt `noindex`/ẩn khỏi menu; tạo chuyển hướng 301 cho `/contacts/`, `/blog-grid/`.
 5. Phiên bản tiếng Anh (WPML): nội dung khởi đầu chỉ có tiếng Việt; cần dịch bằng WPML nếu muốn giữ `/en/`.

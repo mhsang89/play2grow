@@ -94,7 +94,7 @@ function p2g_contact_url() {
 function p2g_cta_label() {
 	$label = trim( (string) get_theme_mod( 'p2g_cta_label', '' ) );
 
-	return '' !== $label ? $label : __( 'Đăng ký nhận thông tin', 'play2grow-theme' );
+	return '' !== $label ? $label : __( 'Đăng ký tư vấn', 'play2grow-theme' );
 }
 
 /**
@@ -335,4 +335,22 @@ function p2g_is_elementor( $post_id = null ) {
 	$post_id = $post_id ? $post_id : get_the_ID();
 
 	return $post_id && 'builder' === get_post_meta( $post_id, '_elementor_edit_mode', true ) && defined( 'ELEMENTOR_VERSION' );
+}
+
+/**
+ * Contact/consultation URL for patterns: the new /lien-he/ page while the starter
+ * importer runs (it may still be a draft), otherwise the live CTA target
+ * (Customizer page → /lien-he/ → existing /dang-ki/).
+ *
+ * @return string
+ */
+function p2g_contact_url_any() {
+	if ( ! empty( $GLOBALS['p2g_importing'] ) ) {
+		$url = p2g_page_link( 'lien-he' );
+		if ( $url ) {
+			return $url;
+		}
+	}
+
+	return p2g_contact_url();
 }

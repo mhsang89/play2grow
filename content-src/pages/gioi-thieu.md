@@ -1,7 +1,7 @@
 <!--meta Giới thiệu Play2Grow -->
 ## Play2Grow là ai?
 
-Play2Grow là thương hiệu giáo dục được xây dựng quanh một niềm tin đơn giản: tiếng Anh trở nên gần gũi với trẻ nhất khi gắn với những điều các con đang làm, đang nhìn thấy và đang tò mò. Thay vì để ngôn ngữ chỉ tồn tại trong sách vở, Play2Grow hướng đến việc đưa tiếng Anh vào trò chơi, vào những buổi khám phá và vào nhịp sinh hoạt quen thuộc của mỗi gia đình.
+Play2Grow là trung tâm dành cho trẻ với lớp STEAM English và các lớp mỹ thuật, âm nhạc, nhảy – được xây dựng quanh một niềm tin đơn giản: tiếng Anh trở nên gần gũi với trẻ nhất khi gắn với những điều các con đang làm, đang nhìn thấy và đang tò mò. Thay vì để ngôn ngữ chỉ tồn tại trong sách vở, Play2Grow hướng đến việc đưa tiếng Anh vào trò chơi, vào những buổi khám phá trong lớp học và vào nhịp sinh hoạt quen thuộc của mỗi gia đình. Các lớp năng khiếu cho trẻ thêm cơ hội thử sức, tìm ra điều mình yêu thích và tự tin thể hiện bản thân.
 
 Tên gọi Play2Grow nói lên điều đó: **chơi để lớn lên**. Trong mỗi trò chơi, mỗi câu hỏi “cái gì đây?”, mỗi lần tự tay làm ra một thứ gì đó, trẻ đều có cơ hội học thêm một chút – về thế giới xung quanh và về cách diễn đạt điều mình nghĩ.
 
@@ -57,18 +57,18 @@ Mười phút vui vẻ mỗi ngày thường có giá trị hơn một buổi h�
 
 ## Công nghệ có trách nhiệm
 
-Play2Grow định hướng phát triển như một thương hiệu giáo dục ứng dụng công nghệ, nhưng công nghệ chỉ là phương tiện. Những nguyên tắc dưới đây định hướng cách Play2Grow tiếp cận công nghệ, bao gồm cả trí tuệ nhân tạo (AI):
+Play2Grow ưu tiên những trải nghiệm thật trong lớp học. Khi sử dụng công nghệ – trong lớp hay trong các công cụ hỗ trợ học tập sau này, kể cả trí tuệ nhân tạo (AI) – chúng tôi theo những nguyên tắc sau:
 
 :::checklist
 - Công nghệ phục vụ trải nghiệm học thật, không thay thế thời gian vui chơi, vận động và trò chuyện trực tiếp của trẻ.
 - Tôn trọng khuyến nghị về thời gian sử dụng thiết bị phù hợp với lứa tuổi và khuyến khích hoạt động ngoài màn hình.
 - Thu thập ít dữ liệu nhất có thể, đặc biệt là dữ liệu của trẻ em, và giải thích rõ dữ liệu được dùng vào việc gì.
-- Minh bạch về trạng thái sản phẩm: tính năng nào đang hoạt động, đang thử nghiệm hay mới trong kế hoạch.
+- Minh bạch: công cụ hay tính năng nào đang thực sự được sử dụng, công cụ nào mới trong kế hoạch.
 - Không giới thiệu AI như một “phép màu”. Mỗi tính năng AI, nếu có, cần được mô tả đúng việc nó làm và giới hạn của nó.
 :::
 
 :::note
-Các nguyên tắc công nghệ là cam kết của doanh nghiệp. Vui lòng xác nhận Play2Grow đồng ý công bố những nguyên tắc này. Hiện chưa có tính năng AI nào được xác minh (xem PRODUCT_AUDIT.md).
+Các nguyên tắc công nghệ là cam kết của doanh nghiệp. Vui lòng xác nhận Play2Grow đồng ý công bố. Hiện chưa có công cụ AI nào được xác minh (xem PRODUCT_AUDIT.md); có thể xóa mục này nếu trung tâm chưa sử dụng công nghệ trong giảng dạy.
 :::
 
 ## Giá trị Play2Grow muốn mang lại
@@ -97,9 +97,17 @@ Các nguyên tắc công nghệ là cam kết của doanh nghiệp. Vui lòng x�
 Người sáng lập được cung cấp: THUY BUI. Trước khi công bố mục này, vui lòng xác nhận: cách viết tên đầy đủ có dấu, chức danh, tiểu sử ngắn được phép công bố và ảnh chân dung (nếu có). Không thêm thông tin về kinh nghiệm, bằng cấp hay thành tích khi chưa có xác nhận. Có thể xóa tiêu đề này nếu chưa muốn công bố.
 :::
 
+## Cơ sở vật chất và giáo viên
+
+:::note
+Website cũ có các trang Cơ Sở Vật Chất (/co-so-vat-chat/) và Giáo Viên (/giao-vien/) nhưng chưa có nội dung. Vui lòng bổ sung ảnh thật của lớp học (đã có sự đồng ý nếu có trẻ em xuất hiện) và thông tin giáo viên được phép công bố. Không dùng ảnh mẫu hay hồ sơ giả.
+:::
+
+Để tham quan lớp học hoặc tìm hiểu về đội ngũ giáo viên, anh/chị vui lòng [liên hệ Play2Grow]({{contact}}).
+
 ## Thông tin pháp lý
 
-Thông tin về đơn vị vận hành website được cập nhật dưới đây.
+Thông tin về đơn vị vận hành được cập nhật dưới đây.
 
 [[p2g_company_info]]
 
