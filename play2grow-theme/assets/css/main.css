@@ -887,10 +887,10 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; accent-
 .p2g-quicklink:hover { transform: translateY(-3px); }
 .p2g-quicklink .wp-block-image { margin: 0 0 10px; }
 .p2g-quicklink .wp-block-image img { width: 56px; height: 56px; border-radius: 0; }
-.p2g-quicklink h3 { font-size: 1.12rem; margin: 0 0 .25em; }
-.p2g-quicklink h3 a { color: var(--p2g-ink); text-decoration: none; }
-.p2g-quicklink h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
-.p2g-quicklink h3 a:hover { color: var(--p2g-primary); }
+.p2g-quicklink h2, .p2g-quicklink h3 { font-size: 1.12rem; margin: 0 0 .25em; letter-spacing: 0; }
+.p2g-quicklink :is(h2, h3) a { color: var(--p2g-ink); text-decoration: none; }
+.p2g-quicklink :is(h2, h3) a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.p2g-quicklink :is(h2, h3) a:hover { color: var(--p2g-primary); }
 .p2g-quicklink p { margin: 0; font-size: .93rem; color: var(--p2g-muted); line-height: 1.5; }
 @media (max-width: 479px) {
 	.p2g-quicklink { padding: 16px; }

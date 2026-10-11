@@ -37,8 +37,8 @@ if ( ! $p2g_links ) {
 <figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( p2g_image_url( $p2g_link[0] ) ); ?>" alt="" style="width:56px;height:56px"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><a href="<?php echo esc_url( $p2g_link[3] ); ?>"><?php echo esc_html( $p2g_link[1] ); ?></a></h3>
+<!-- wp:heading {"className":"p2g-quicklink__title"} -->
+<h2 class="wp-block-heading p2g-quicklink__title"><a href="<?php echo esc_url( $p2g_link[3] ); ?>"><?php echo esc_html( $p2g_link[1] ); ?></a></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
