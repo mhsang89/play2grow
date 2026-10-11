@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" role="img" aria-labelledby="t d">
+<title id="t">Minh họa khám phá thế giới bằng tiếng Anh</title>
+<desc id="d">Kính lúp soi chiếc lá trên đồi xanh, mặt trời, cây và các bong bóng hội thoại tiếng Anh như Hello, leaf và What is this.</desc>
+<defs>
+<clipPath id="c"><path d="M80 70C190-10 430-10 540 70s110 300 20 390-330 120-450 60S-30 150 80 70z"/></clipPath>
+</defs>
+<path d="M80 70C190-10 430-10 540 70s110 300 20 390-330 120-450 60S-30 150 80 70z" fill="#E2F0F7"/>
+<g clip-path="url(#c)">
+<circle cx="470" cy="135" r="52" fill="#FFB938"/>
+<g stroke="#FFB938" stroke-width="8" stroke-linecap="round"><path d="M470 55v-18M470 233v-18M390 135h-18M568 135h-18M413 78l-12-12M539 204l-12-12M527 78l12-12M401 204l12-12"/></g>
+<path d="M-20 400c90-70 190-90 300-50s200 30 380-30v260H-20z" fill="#9FD6C2"/>
+<path d="M-20 450c120-50 240-40 340 0s230 20 340-20v190H-20z" fill="#0E6B5C"/>
+<rect x="140" y="250" width="16" height="120" rx="6" fill="#7A5230"/>
+<circle cx="148" cy="225" r="58" fill="#3E9C7F"/>
+<circle cx="112" cy="250" r="38" fill="#4FB08F"/>
+<circle cx="186" cy="248" r="40" fill="#4FB08F"/>
+<circle cx="132" cy="210" r="6" fill="#F0694B"/><circle cx="170" cy="230" r="6" fill="#F0694B"/><circle cx="150" cy="262" r="6" fill="#F0694B"/>
+<path d="M300 470c10-40 40-62 80-66" stroke="#2F7D5F" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M330 420c-6-40 20-78 64-84 6 44-22 80-64 84z" fill="#7CC47F"/>
+<path d="M334 418l52-74" stroke="#2F7D5F" stroke-width="3" stroke-linecap="round"/>
+</g>
+<circle cx="360" cy="385" r="70" fill="#FFFFFF" fill-opacity=".35" stroke="#17282B" stroke-width="12"/>
+<path d="M410 437l58 58" stroke="#17282B" stroke-width="20" stroke-linecap="round"/>
+<path d="M412 439l56 56" stroke="#F0694B" stroke-width="10" stroke-linecap="round"/>
+<g font-family="Be Vietnam Pro, Arial, sans-serif" font-weight="700">
+<path d="M58 118h150a18 18 0 0118 18v44a18 18 0 01-18 18H112l-26 22v-22H58a18 18 0 01-18-18v-44a18 18 0 0118-18z" fill="#FFFFFF" stroke="#17282B" stroke-width="4"/>
+<text x="133" y="167" font-size="30" fill="#0E6B5C" text-anchor="middle">Hello!</text>
+<path d="M452 268h120a18 18 0 0118 18v40a18 18 0 01-18 18h-26v22l-26-22h-68a18 18 0 01-18-18v-40a18 18 0 0118-18z" fill="#FFF8EC" stroke="#17282B" stroke-width="4"/>
+<text x="512" y="314" font-size="28" fill="#17282B" text-anchor="middle">leaf</text>
+<path d="M222 42h178a16 16 0 0116 16v36a16 16 0 01-16 16h-120l-22 20v-20h-36a16 16 0 01-16-16V58a16 16 0 0116-16z" fill="#FFB938" stroke="#17282B" stroke-width="4"/>
+<text x="311" y="84" font-size="24" fill="#17282B" text-anchor="middle">What is this?</text>
+</g>
+<g transform="translate(470 420)">
+<rect x="0" y="40" width="54" height="54" rx="8" fill="#F0694B" stroke="#17282B" stroke-width="4"/>
+<rect x="58" y="40" width="54" height="54" rx="8" fill="#5AA9D6" stroke="#17282B" stroke-width="4"/>
+<rect x="29" y="-18" width="54" height="54" rx="8" fill="#FFB938" stroke="#17282B" stroke-width="4"/>
+<g font-family="Be Vietnam Pro, Arial, sans-serif" font-weight="700" font-size="30" fill="#FFFFFF" text-anchor="middle"><text x="27" y="78">A</text><text x="85" y="78">B</text><text x="56" y="20" fill="#17282B">C</text></g>
+</g>
+<path d="M40 330c30-30 60-40 90-30" stroke="#17282B" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/>
+</svg>
