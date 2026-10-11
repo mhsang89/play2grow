@@ -1,0 +1,1765 @@
+# Copyright (C) 2026 Play2Grow
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Play2Grow 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/play2grow-theme\n"
+"POT-Creation-Date: 2026-10-11T08:11:49+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: play2grow-theme\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Theme Name of the theme
+#. Author of the theme
+#: style.css inc/admin.php:16 inc/customizer.php:52 inc/patterns.php:18
+msgid "Play2Grow"
+msgstr "Play2Grow"
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://play2grow.edu.vn/"
+msgstr "https://play2grow.edu.vn/"
+
+#. Description of the theme
+#: style.css
+msgid ""
+"Giao diện WordPress độc lập cho website Play2Grow – học tiếng Anh qua trải "
+"nghiệm dành cho trẻ. Bố cục website giáo dục có cấu trúc: thanh tiện ích, "
+"menu thả xuống, trang chủ dựng bằng block pattern, trang chương trình học có"
+" nhãn trạng thái lớp, blog Góc học tập, breadcrumbs và SEO cơ bản (tự tắt "
+"khi có plugin SEO). Font Be Vietnam Pro tự lưu trữ, không tải tài nguyên bên"
+" thứ ba. Form liên hệ và thông tin doanh nghiệp do plugin đi kèm Play2Grow "
+"Core cung cấp."
+msgstr ""
+"A standalone WordPress theme for Play2Grow – experiential English learning "
+"for children. A structured education site layout: utility bar, dropdown "
+"menus, a home page built from block patterns, program pages with class "
+"status labels, a Learning Corner blog, breadcrumbs and basic SEO (switches "
+"off when an SEO plugin is active). Self-hosted Be Vietnam Pro font, no "
+"third-party assets. The contact form and company details are provided by the"
+" companion plugin Play2Grow Core."
+
+#: 404.php:15
+msgid "Trang bạn tìm không còn ở đây"
+msgstr "The page you are looking for is no longer here"
+
+#: 404.php:16
+msgid ""
+"Đường dẫn có thể đã thay đổi hoặc trang đã được gỡ. Bạn có thể tìm kiếm nội "
+"dung hoặc quay về trang chủ."
+msgstr ""
+"The link may have changed or the page may have been removed. You can search "
+"the site or go back to the home page."
+
+#: 404.php:19
+msgid "Về trang chủ"
+msgstr "Back to home"
+
+#: archive.php:14
+msgid "Chủ đề"
+msgstr "Topics"
+
+#: archive.php:16
+msgid "Thẻ"
+msgstr "Tags"
+
+#: archive.php:18
+msgid "Tác giả"
+msgstr "Author"
+
+#. translators: %s: number of comments.
+#: comments.php:20
+#, php-format
+msgid "%s bình luận"
+msgid_plural "%s bình luận"
+msgstr[0] "%s comment"
+msgstr[1] "%s comments"
+
+#: comments.php:37
+msgid "← Bình luận cũ hơn"
+msgstr "← Older comments"
+
+#: comments.php:38
+msgid "Bình luận mới hơn →"
+msgstr "Newer comments →"
+
+#: comments.php:45
+msgid "Bài viết đã đóng bình luận."
+msgstr "Comments are closed."
+
+#: comments.php:51
+msgid "Để lại bình luận"
+msgstr "Leave a comment"
+
+#. translators: %s: comment author name.
+#: comments.php:53
+#, php-format
+msgid "Trả lời %s"
+msgstr "Reply to %s"
+
+#: comments.php:54
+msgid "Hủy trả lời"
+msgstr "Cancel reply"
+
+#: comments.php:55
+msgid "Gửi bình luận"
+msgstr "Post comment"
+
+#: comments.php:56
+msgid ""
+"Email của bạn sẽ không được hiển thị công khai. Vui lòng không chia sẻ thông"
+" tin cá nhân của trẻ trong bình luận."
+msgstr ""
+"Your email address will not be published. Please do not share children’s "
+"personal information in comments."
+
+#: footer.php:31 patterns/home-learning-ways.php:15
+msgid "Khám phá"
+msgstr "Explore"
+
+#: footer.php:32
+msgid "Hỗ trợ"
+msgstr "Support"
+
+#: footer.php:35 page-templates/template-contact.php:35
+msgid "Thông tin liên hệ"
+msgstr "Contact details"
+
+#: footer.php:56 footer.php:62
+msgid "Chính sách"
+msgstr "Policies"
+
+#. translators: %s: settings URL.
+#: front-page.php:51
+#, php-format
+msgid ""
+"Đây là trang chủ dự phòng. Để dùng trang chủ đầy đủ, vào <a href=\"%s\">Giao"
+" diện → Play2Grow</a> để tạo nội dung khởi đầu, hoặc tạo một trang, chèn các"
+" mẫu khối \"Play2Grow\" rồi chọn trang đó làm Trang chủ trong Cài đặt → Đọc."
+msgstr ""
+"This is the fallback home page. To use the full home page, go to <a "
+"href=\"%s\">Appearance → Play2Grow</a> to create the starter content, or "
+"create a page, insert the \"Play2Grow\" block patterns and set that page as "
+"the home page in Settings → Reading."
+
+#: front-page.php:61 index.php:17
+msgid "Bài viết mới"
+msgstr "Latest articles"
+
+#: header.php:23
+msgid "Bỏ qua và tới nội dung chính"
+msgstr "Skip to main content"
+
+#: header.php:40
+msgid "Liên kết nhanh"
+msgstr "Quick links"
+
+#: header.php:50
+msgid "Hotline:"
+msgstr "Hotline:"
+
+#: header.php:53
+msgid "Email:"
+msgstr "Email:"
+
+#: header.php:72
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:76
+msgid "Menu chính"
+msgstr "Main menu"
+
+#: header.php:92 search.php:22 searchform.php:13
+msgid "Tìm kiếm"
+msgstr "Search"
+
+#: inc/admin.php:15
+msgid "Cài đặt Play2Grow"
+msgstr "Play2Grow setup"
+
+#: inc/admin.php:42
+msgid ""
+"Đã kích hoạt plugin Play2Grow Core (form liên hệ, thông tin doanh nghiệp)"
+msgstr "Play2Grow Core plugin is active (contact form, company details)"
+
+#: inc/admin.php:47
+msgid "Đã chọn Trang chủ tĩnh (Cài đặt → Đọc)"
+msgstr "A static home page is selected (Settings → Reading)"
+
+#: inc/admin.php:52
+msgid "Đã chọn trang hiển thị bài viết (Góc học tập)"
+msgstr "A posts page is selected (Learning Corner)"
+
+#: inc/admin.php:57
+msgid "Đã gán Menu chính"
+msgstr "Main menu is assigned"
+
+#: inc/admin.php:62
+msgid "Đã gán menu chân trang"
+msgstr "Footer menus are assigned"
+
+#: inc/admin.php:67
+msgid "Có trang Liên hệ đã xuất bản (nút đăng ký đang hiển thị)"
+msgstr "A published Contact page exists (the enquiry button is visible)"
+
+#: inc/admin.php:72
+msgid "Đã nhập email nhận thông báo đăng ký (Cài đặt → Play2Grow)"
+msgstr "A notification email for enquiries is set (Settings → Play2Grow)"
+
+#: inc/admin.php:77
+msgid ""
+"Đã xuất bản và chọn trang Chính sách quyền riêng tư (Cài đặt → Quyền riêng "
+"tư)"
+msgstr "A Privacy policy page is published and selected (Settings → Privacy)"
+
+#. translators: %d: number of filled fields.
+#: inc/admin.php:83
+#, php-format
+msgid ""
+"Thông tin doanh nghiệp đã nhập: %d trường (chỉ nhập thông tin đã xác minh)"
+msgstr "Company details entered: %d fields (only enter verified information)"
+
+#: inc/admin.php:88
+msgid "Đã tải logo chính thức"
+msgstr "An official logo is uploaded"
+
+#: inc/admin.php:93
+msgid ""
+"Đường dẫn tĩnh dạng thân thiện (Cài đặt → Đường dẫn tĩnh, khuyến nghị \"Tên "
+"bài viết\")"
+msgstr "Pretty permalinks (Settings → Permalinks, \"Post name\" recommended)"
+
+#: inc/admin.php:98
+msgid ""
+"Website cho phép công cụ tìm kiếm lập chỉ mục (Cài đặt → Đọc). Chỉ bật khi "
+"website đã sẵn sàng."
+msgstr ""
+"Search engines are allowed to index the site (Settings → Reading). Only "
+"enable this when the site is ready."
+
+#: inc/admin.php:113
+msgid "Cài đặt giao diện Play2Grow"
+msgstr "Play2Grow theme setup"
+
+#: inc/admin.php:117
+msgid "Danh sách kiểm tra sau cài đặt"
+msgstr "Post-installation checklist"
+
+#: inc/admin.php:122
+msgid "Đã xong"
+msgstr "Done"
+
+#: inc/admin.php:122
+msgid "Chưa xong"
+msgstr "Not done"
+
+#: inc/admin.php:124
+msgid "Thiết lập"
+msgstr "Set up"
+
+#: inc/admin.php:133
+msgid ""
+"Đã phát hiện plugin SEO: theme đã tự tắt meta description, Open Graph và "
+"JSON-LD của mình để tránh trùng lặp."
+msgstr ""
+"SEO plugin detected: the theme has switched off its own meta description, "
+"Open Graph and JSON-LD to avoid duplicates."
+
+#: inc/admin.php:134
+msgid ""
+"Chưa phát hiện plugin SEO: theme đang tự xuất meta description, Open Graph, "
+"canonical cho trang lưu trữ và JSON-LD cơ bản."
+msgstr ""
+"No SEO plugin detected: the theme outputs its own meta description, Open "
+"Graph, canonical links for archives and basic JSON-LD."
+
+#. translators: %s: settings URL.
+#: inc/admin.php:163
+#, php-format
+msgid ""
+"Đã kích hoạt giao diện Play2Grow. Mở <a href=\"%s\">Giao diện → "
+"Play2Grow</a> để xem danh sách kiểm tra sau cài đặt và (tùy chọn) tạo nội "
+"dung khởi đầu dưới dạng bản nháp."
+msgstr ""
+"The Play2Grow theme is active. Open <a href=\"%s\">Appearance → "
+"Play2Grow</a> to see the post-installation checklist and (optionally) create"
+" starter content as drafts."
+
+#: inc/customizer.php:53
+msgid ""
+"Nút đăng ký, thanh trên cùng và chân trang. Thông tin doanh nghiệp và mạng "
+"xã hội nằm ở mục \"Play2Grow – Thông tin doanh nghiệp\" (plugin Play2Grow "
+"Core)."
+msgstr ""
+"Enquiry button, top bar and footer. Company details and social links are "
+"under \"Play2Grow – Company details\" (Play2Grow Core plugin)."
+
+#: inc/customizer.php:62
+msgid "Đầu trang & nút đăng ký"
+msgstr "Header & enquiry button"
+
+#: inc/customizer.php:76
+msgid "Chữ trên nút chính"
+msgstr "Main button label"
+
+#: inc/customizer.php:77
+msgid "Mặc định: \"Đăng ký tư vấn\"."
+msgstr "Default: \"Book a consultation\"."
+
+#: inc/customizer.php:92
+msgid "Trang đích của nút đăng ký"
+msgstr "Enquiry button target page"
+
+#: inc/customizer.php:93
+msgid ""
+"Nếu để trống, theme dùng trang có đường dẫn /lien-he/ hoặc trang dùng mẫu "
+"\"Liên hệ\". Nếu không tìm thấy trang đã xuất bản, nút sẽ tự ẩn để tránh dẫn"
+" tới trang lỗi."
+msgstr ""
+"If empty, the theme uses the page at /lien-he/ or a page using the "
+"\"Contact\" template. If no published page is found, the button is hidden to"
+" avoid linking to an error page."
+
+#: inc/customizer.php:108
+msgid "Dòng chữ bên trái thanh trên cùng"
+msgstr "Top bar text (left)"
+
+#: inc/customizer.php:109
+msgid "Để trống để ẩn."
+msgstr "Leave empty to hide."
+
+#: inc/customizer.php:124
+msgid "Hiện nút liên hệ nổi và thanh đăng ký cố định trên điện thoại"
+msgstr "Show the floating contact button and the sticky enquiry bar on phones"
+
+#: inc/customizer.php:125
+msgid "Nút gọi/Zalo chỉ xuất hiện khi đã nhập hotline hoặc đường dẫn Zalo."
+msgstr ""
+"Call/Zalo buttons only appear when a hotline or Zalo link has been entered."
+
+#: inc/customizer.php:140
+msgid "Hiện thanh trên cùng"
+msgstr "Show the top bar"
+
+#: inc/customizer.php:141
+msgid ""
+"Hiển thị dòng chữ, menu \"Thanh trên cùng\", hotline/email (nếu đã nhập) và "
+"mạng xã hội."
+msgstr ""
+"Shows the text, the \"Top bar\" menu, hotline/email (if entered) and social "
+"links."
+
+#: inc/customizer.php:151
+msgid "Chân trang"
+msgstr "Footer"
+
+#: inc/customizer.php:165
+msgid "Đoạn giới thiệu ngắn"
+msgstr "Short introduction"
+
+#: inc/customizer.php:166
+msgid ""
+"Hiển thị dưới logo ở chân trang. Nếu để trống, theme dùng Khẩu hiệu "
+"(Tagline) trong Cài đặt → Tổng quan."
+msgstr ""
+"Shown under the logo in the footer. If empty, the theme uses the Tagline "
+"from Settings → General."
+
+#: inc/customizer.php:181
+msgid "Dòng bản quyền"
+msgstr "Copyright line"
+
+#: inc/customizer.php:182
+msgid "Mặc định: \"© [năm] [Tên website]\"."
+msgstr "Default: \"© [year] [Site title]\"."
+
+#: inc/customizer.php:190
+msgid "Màu chủ đạo"
+msgstr "Primary colour"
+
+#: inc/customizer.php:190
+msgid ""
+"Dùng cho nút, liên kết, tiêu đề nhấn. Nên giữ độ tương phản tối thiểu 4.5:1 "
+"với nền trắng."
+msgstr ""
+"Used for buttons, links and highlighted headings. Keep a contrast ratio of "
+"at least 4.5:1 against white."
+
+#: inc/customizer.php:191
+msgid "Màu nhấn"
+msgstr "Accent colour"
+
+#: inc/customizer.php:191
+msgid ""
+"Dùng cho điểm nhấn trang trí và nút phụ (chữ màu tối trên nền màu nhấn)."
+msgstr ""
+"Used for decorative highlights and secondary buttons (dark text on the "
+"accent colour)."
+
+#: inc/enqueue.php:46
+msgid "Mở menu"
+msgstr "Open menu"
+
+#: inc/enqueue.php:47
+msgid "Đóng menu"
+msgstr "Close menu"
+
+#: inc/enqueue.php:48
+msgid "Mở menu con"
+msgstr "Open submenu"
+
+#: inc/enqueue.php:49
+msgid "Đóng menu con"
+msgstr "Close submenu"
+
+#: inc/helpers.php:105 patterns/cta-panel.php:27 patterns/home-hero.php:33
+msgid "Đăng ký tư vấn"
+msgstr "Book a consultation"
+
+#: inc/helpers.php:221
+msgid "Ghi chú nội bộ (khách truy cập không nhìn thấy):"
+msgstr "Internal note (not visible to visitors):"
+
+#: inc/meta-boxes.php:20
+msgid "Độ tuổi"
+msgstr "Age"
+
+#: inc/meta-boxes.php:20
+msgid "Ví dụ: 4 – 6 tuổi"
+msgstr "e.g. 4 – 6 years"
+
+#: inc/meta-boxes.php:21
+msgid "Nội dung chính"
+msgstr "Main content"
+
+#: inc/meta-boxes.php:21
+msgid "Ví dụ: Nghe – nói, từ vựng theo chủ đề, dự án STEAM"
+msgstr "e.g. Listening and speaking, topic vocabulary, STEAM projects"
+
+#: inc/meta-boxes.php:22
+msgid "Hình thức học"
+msgstr "Format"
+
+#: inc/meta-boxes.php:22
+msgid "Ví dụ: Lớp trực tiếp tại trung tâm"
+msgstr "e.g. In-person classes at the centre"
+
+#: inc/meta-boxes.php:23
+msgid "Thời lượng"
+msgstr "Duration"
+
+#: inc/meta-boxes.php:23
+msgid "Ví dụ: 90 phút/buổi, 2 buổi/tuần"
+msgstr "e.g. 90 minutes per session, 2 sessions per week"
+
+#: inc/meta-boxes.php:24
+msgid "Lịch học"
+msgstr "Schedule"
+
+#: inc/meta-boxes.php:24
+msgid "Ví dụ: Thứ Bảy, Chủ Nhật 9:00 – 10:30"
+msgstr "e.g. Saturday and Sunday 9:00 – 10:30"
+
+#: inc/meta-boxes.php:25
+msgid "Sĩ số lớp"
+msgstr "Class size"
+
+#: inc/meta-boxes.php:25
+msgid "Ví dụ: Tối đa … học viên"
+msgstr "e.g. Up to … students"
+
+#: inc/meta-boxes.php:26 patterns/product-detail-layout.php:22
+msgid "Giáo viên"
+msgstr "Teacher"
+
+#: inc/meta-boxes.php:26
+msgid "Chỉ ghi thông tin đã được xác nhận"
+msgstr "Only enter confirmed information"
+
+#: inc/meta-boxes.php:27
+msgid "Học phí"
+msgstr "Fee"
+
+#: inc/meta-boxes.php:27
+msgid "Chỉ điền mức phí đã được duyệt công bố"
+msgstr "Only enter fees approved for publication"
+
+#: inc/meta-boxes.php:28
+msgid "Cần chuẩn bị"
+msgstr "What to bring"
+
+#: inc/meta-boxes.php:28
+msgid "Ví dụ: Dụng cụ vẽ do trung tâm cung cấp"
+msgstr "e.g. Drawing materials provided by the centre"
+
+#: inc/meta-boxes.php:39
+msgid "— Không hiển thị trạng thái —"
+msgstr "— No status shown —"
+
+#: inc/meta-boxes.php:40
+msgid "Đang mở lớp"
+msgstr "Now enrolling"
+
+#: inc/meta-boxes.php:41
+msgid "Sắp khai giảng"
+msgstr "Starting soon"
+
+#: inc/meta-boxes.php:42
+msgid "Lớp thử nghiệm"
+msgstr "Pilot class"
+
+#: inc/meta-boxes.php:43
+msgid "Tạm ngưng tuyển sinh"
+msgstr "Enrolment paused"
+
+#: inc/meta-boxes.php:56
+msgid "Tiếng Anh"
+msgstr "English"
+
+#: inc/meta-boxes.php:57
+msgid "Mỹ thuật"
+msgstr "Art"
+
+#: inc/meta-boxes.php:58
+msgid "Âm nhạc"
+msgstr "Music"
+
+#: inc/meta-boxes.php:59
+msgid "Nhảy"
+msgstr "Dance"
+
+#: inc/meta-boxes.php:60 page-templates/template-program.php:124
+msgid "Chương trình khác"
+msgstr "Other programs"
+
+#: inc/meta-boxes.php:118
+msgid "SEO cơ bản (Play2Grow)"
+msgstr "Basic SEO (Play2Grow)"
+
+#: inc/meta-boxes.php:122
+msgid "Thông tin chương trình / lớp học"
+msgstr "Program / class details"
+
+#: inc/meta-boxes.php:138
+msgid "Mô tả meta (meta description)"
+msgstr "Meta description"
+
+#: inc/meta-boxes.php:140
+msgid ""
+"Khoảng 120–160 ký tự, mô tả đúng nội dung trang. Để trống thì theme dùng "
+"phần Tóm tắt (Excerpt)."
+msgstr ""
+"About 120–160 characters that accurately describe the page. If empty, the "
+"theme uses the Excerpt."
+
+#: inc/meta-boxes.php:143
+msgid "Không cho công cụ tìm kiếm lập chỉ mục trang này (noindex)"
+msgstr "Ask search engines not to index this page (noindex)"
+
+#: inc/meta-boxes.php:145
+msgid ""
+"Hộp này tự ẩn khi bạn cài Yoast SEO, Rank Math hoặc plugin SEO tương tự."
+msgstr ""
+"This box hides itself when Yoast SEO, Rank Math or a similar SEO plugin is "
+"installed."
+
+#: inc/meta-boxes.php:156
+msgid ""
+"Dùng cho trang có mẫu \"Chi tiết chương trình\". Trường để trống sẽ hiển thị"
+" \"Đang cập nhật\" hoặc được ẩn. Chỉ điền thông tin đã được xác nhận."
+msgstr ""
+"For pages using the \"Program details\" template. Empty fields show \"Being "
+"updated\" or are hidden. Only enter confirmed information."
+
+#: inc/meta-boxes.php:159
+msgid "Trạng thái"
+msgstr "Status"
+
+#: inc/meta-boxes.php:165
+msgid "Nhóm chương trình"
+msgstr "Program group"
+
+#: inc/meta-boxes.php:165
+msgid "— Chưa phân nhóm —"
+msgstr "— Not grouped —"
+
+#: inc/multilingual.php:117
+msgid "Ngôn ngữ"
+msgstr "Language"
+
+#. translators: %s: menu item title.
+#: inc/navigation.php:24
+#, php-format
+msgid "Mở menu con của %s"
+msgstr "Open the %s submenu"
+
+#: inc/navigation.php:60 inc/template-tags.php:92
+msgid "Trang chủ"
+msgstr "Home"
+
+#: inc/navigation.php:68
+msgid "Gán menu cho vị trí \"Menu chính\""
+msgstr "Assign a menu to the \"Main menu\" location"
+
+#: inc/patterns.php:19
+msgid "Các khối nội dung dựng sẵn theo nhận diện Play2Grow."
+msgstr "Ready-made content blocks in the Play2Grow style."
+
+#: inc/plugin-bridge.php:89
+msgid ""
+"Plugin <strong>Play2Grow Core</strong> chưa được kích hoạt nên form liên hệ,"
+" thông tin doanh nghiệp và mạng xã hội đang bị ẩn. Cài file play2grow-"
+"core.zip tại Plugin → Cài mới → Tải plugin lên, rồi kích hoạt."
+msgstr ""
+"The <strong>Play2Grow Core</strong> plugin is not active, so the contact "
+"form, company details and social links are hidden. Upload play2grow-core.zip"
+" under Plugins → Add New → Upload Plugin, then activate it."
+
+#: inc/programs.php:72
+msgid "Thông tin các chương trình học đang được cập nhật."
+msgstr "Program details are being updated."
+
+#: inc/programs.php:74
+msgid ""
+"Anh/chị vui lòng để lại thông tin để được tư vấn về lớp học phù hợp với con."
+msgstr ""
+"Please leave your details and we will advise you on a suitable class for "
+"your child."
+
+#: inc/programs.php:78
+msgid ""
+"Chưa có trang chương trình nào được xuất bản với mẫu \"Chi tiết chương "
+"trình\". Mở trang lớp học (ví dụ /steam-english/), chọn Mẫu = \"Chi tiết "
+"chương trình\", điền hộp \"Thông tin chương trình / lớp học\" rồi cập nhật."
+msgstr ""
+"No program page using the \"Program details\" template has been published "
+"yet. Open a class page (e.g. /steam-english/), set Template = \"Program "
+"details\", fill in the \"Program / class details\" box and update."
+
+#: inc/programs.php:144
+msgid "Bài viết đang được biên soạn và sẽ sớm ra mắt."
+msgstr "Articles are being written and will be published soon."
+
+#. translators: %d: number of articles.
+#: inc/programs.php:219
+#, php-format
+msgid "%d bài viết"
+msgid_plural "%d bài viết"
+msgstr[0] "%d article"
+msgstr[1] "%d articles"
+
+#. translators: %s: topic names.
+#: inc/programs.php:229
+#, php-format
+msgid ""
+"Các chủ đề chưa có bài viết nên đang được ẩn: %s. Chúng sẽ tự hiện khi có "
+"bài viết được xuất bản trong chuyên mục tương ứng."
+msgstr ""
+"These topics have no articles yet, so they are hidden: %s. They will appear "
+"automatically once an article is published in the matching category."
+
+#: inc/setup.php:43
+msgid "Xanh Play2Grow"
+msgstr "Play2Grow green"
+
+#: inc/setup.php:48
+msgid "Xanh đậm"
+msgstr "Deep green"
+
+#: inc/setup.php:53
+msgid "Vàng nắng"
+msgstr "Sun yellow"
+
+#: inc/setup.php:58
+msgid "Cam san hô"
+msgstr "Coral"
+
+#: inc/setup.php:63
+msgid "Xanh bạc hà nhạt"
+msgstr "Light mint"
+
+#: inc/setup.php:68
+msgid "Xanh trời nhạt"
+msgstr "Light sky"
+
+#: inc/setup.php:73
+msgid "Kem"
+msgstr "Cream"
+
+#: inc/setup.php:78
+msgid "Trắng"
+msgstr "White"
+
+#: inc/setup.php:83
+msgid "Mực"
+msgstr "Ink"
+
+#: inc/setup.php:93
+msgid "Nhỏ"
+msgstr "Small"
+
+#: inc/setup.php:98
+msgid "Thường"
+msgstr "Normal"
+
+#: inc/setup.php:103
+msgid "Lớn"
+msgstr "Large"
+
+#: inc/setup.php:108
+msgid "Rất lớn"
+msgstr "Extra large"
+
+#: inc/setup.php:119
+msgid "Thanh trên cùng (liên kết nhanh)"
+msgstr "Top bar (quick links)"
+
+#: inc/setup.php:120
+msgid "Menu chính (đầu trang)"
+msgstr "Main menu (header)"
+
+#: inc/setup.php:121
+msgid "Chân trang – Khám phá"
+msgstr "Footer – Explore"
+
+#: inc/setup.php:122
+msgid "Chân trang – Hỗ trợ"
+msgstr "Footer – Support"
+
+#: inc/setup.php:123
+msgid "Chân trang – Chính sách (dòng cuối)"
+msgstr "Footer – Policies (bottom line)"
+
+#: inc/setup.php:147
+msgid "Thẻ (3:2)"
+msgstr "Card (3:2)"
+
+#: inc/setup.php:148
+msgid "Ảnh rộng (2:1)"
+msgstr "Wide image (2:1)"
+
+#: inc/setup.php:160
+msgid "Thanh bên bài viết"
+msgstr "Blog sidebar"
+
+#: inc/setup.php:162
+msgid ""
+"Hiển thị bên cạnh danh sách bài viết và trang chi tiết bài viết trên màn "
+"hình lớn. Để trống nếu không cần."
+msgstr ""
+"Shown next to the article list and on single articles on large screens. "
+"Leave empty if not needed."
+
+#: inc/starter-content.php:755
+msgid "Bạn không có quyền thực hiện thao tác này."
+msgstr "You do not have permission to do this."
+
+#: inc/starter-content.php:795
+msgid "Kết quả:"
+msgstr "Result:"
+
+#: inc/starter-content.php:800
+msgid "Bỏ qua:"
+msgstr "Skipped:"
+
+#: inc/starter-content.php:814
+msgid "Nội dung khởi đầu (tùy chọn)"
+msgstr "Starter content (optional)"
+
+#: inc/starter-content.php:815
+msgid ""
+"Tạo các trang và bài viết tiếng Việt đã biên soạn sẵn cho Play2Grow. Thao "
+"tác này KHÔNG ghi đè hay xóa nội dung hiện có: trang/bài nào trùng đường dẫn"
+" sẽ được bỏ qua. Các đoạn cần chủ sở hữu xác nhận được đánh dấu bằng ghi chú"
+" nội bộ (chỉ người đăng nhập mới thấy)."
+msgstr ""
+"Create the ready-written Vietnamese pages and articles for Play2Grow. This "
+"does NOT overwrite or delete existing content: any page or article with the "
+"same slug is skipped. Passages that need the owner’s confirmation are marked"
+" with internal notes (only visible to logged-in users)."
+
+#: inc/starter-content.php:816
+msgid "Danh sách sẽ được tạo"
+msgstr "Items that will be created"
+
+#: inc/starter-content.php:831
+msgid "Tạo dưới dạng bản nháp (khuyến nghị – rà soát rồi xuất bản từng trang)"
+msgstr "Create as drafts (recommended – review, then publish each page)"
+
+#: inc/starter-content.php:832
+msgid "Xuất bản ngay (chỉ dùng trên website thử nghiệm/staging)"
+msgstr "Publish immediately (only on a test/staging site)"
+
+#: inc/starter-content.php:834
+msgid "Bước 1: Tạo nội dung khởi đầu"
+msgstr "Step 1: Create starter content"
+
+#: inc/starter-content.php:836
+msgid "Bản tiếng Anh"
+msgstr "English version"
+
+#: inc/starter-content.php:842
+msgid ""
+"Tạo trang, bài viết và chuyên mục tiếng Anh, liên kết làm bản dịch của nội "
+"dung tiếng Việt tương ứng (cần chạy Bước 1 trước). Mục nào đã có bản tiếng "
+"Anh sẽ được giữ nguyên."
+msgstr ""
+"Create English pages, articles and categories, linked as translations of the"
+" matching Vietnamese content (run Step 1 first). Items that already have an "
+"English version are left unchanged."
+
+#: inc/starter-content.php:844
+msgid "Bản nháp (khuyến nghị)"
+msgstr "Drafts (recommended)"
+
+#: inc/starter-content.php:845
+msgid "Xuất bản ngay (chỉ dùng trên staging)"
+msgstr "Publish immediately (staging only)"
+
+#: inc/starter-content.php:847
+msgid "Bước 1b: Tạo bản tiếng Anh"
+msgstr "Step 1b: Create the English version"
+
+#: inc/starter-content.php:850
+msgid ""
+"Để tạo bản tiếng Anh, cần WPML hoặc Polylang đang kích hoạt và đã thêm ngôn "
+"ngữ English (website hiện tại đang dùng WPML)."
+msgstr ""
+"To create the English version, WPML or Polylang must be active with English "
+"added as a language (the current site uses WPML)."
+
+#: inc/starter-content.php:856
+msgid ""
+"Sau khi đã xuất bản các trang: tạo menu (chỉ cho vị trí chưa có menu), đặt "
+"Trang chủ / Góc học tập trong Cài đặt → Đọc và chọn trang Chính sách quyền "
+"riêng tư. Chỉ dùng các trang đã xuất bản."
+msgstr ""
+"After publishing the pages: create menus (only for empty locations), set the"
+" Home page / Learning Corner in Settings → Reading and select the Privacy "
+"policy page. Only published pages are used."
+
+#: inc/starter-content.php:857
+msgid "Bước 2: Tạo menu & cài đặt trang chủ"
+msgstr "Step 2: Create menus & home page settings"
+
+#: inc/template-tags.php:98
+msgid "Bài viết"
+msgstr "Articles"
+
+#: inc/template-tags.php:157
+msgid "Kết quả tìm kiếm"
+msgstr "Search results"
+
+#: inc/template-tags.php:159
+msgid "Không tìm thấy trang"
+msgstr "Page not found"
+
+#. translators: %d: page number.
+#: inc/template-tags.php:173
+#, php-format
+msgid "Trang %d"
+msgstr "Page %d"
+
+#: inc/template-tags.php:188 inc/template-tags.php:192
+#: inc/template-tags.php:203
+msgid "Đường dẫn"
+msgstr "Breadcrumb"
+
+#: inc/template-tags.php:239
+msgid "Ngày đăng:"
+msgstr "Published:"
+
+#: inc/template-tags.php:248
+msgid "Cập nhật:"
+msgstr "Updated:"
+
+#. translators: %d: minutes.
+#: inc/template-tags.php:258
+#, php-format
+msgid "%d phút đọc"
+msgstr "%d min read"
+
+#: inc/template-tags.php:282
+msgid "← Trang trước"
+msgstr "← Previous page"
+
+#: inc/template-tags.php:283
+msgid "Trang sau →"
+msgstr "Next page →"
+
+#: inc/template-tags.php:284
+msgid "Phân trang bài viết"
+msgstr "Articles navigation"
+
+#: inc/template-tags.php:285
+msgid "Phân trang"
+msgstr "Pagination"
+
+#. translators: %s: network name.
+#: inc/template-tags.php:305
+#, php-format
+msgid "%s của Play2Grow (mở trong thẻ mới)"
+msgstr "Play2Grow on %s (opens in a new tab)"
+
+#. Template Name of the theme
+msgid "Liên hệ"
+msgstr "Contact"
+
+#: page-templates/template-contact.php:42
+msgid "Gửi thông tin cho Play2Grow"
+msgstr "Send your details to Play2Grow"
+
+#. Template Name of the theme
+msgid "Toàn chiều rộng (không tiêu đề)"
+msgstr "Full width (no title)"
+
+#. Template Name of the theme
+msgid "Chi tiết chương trình"
+msgstr "Program details"
+
+#: page-templates/template-program.php:32
+msgid "Đang cập nhật – liên hệ để được tư vấn"
+msgstr "Being updated – contact us for advice"
+
+#: page-templates/template-program.php:74
+#: page-templates/template-program.php:76
+msgid "Thông tin nhanh"
+msgstr "Key facts"
+
+#: page-templates/template-program.php:87
+msgid "Thông tin chi tiết đang được cập nhật."
+msgstr "Details are being updated."
+
+#. translators: %s: list of empty fields.
+#: page-templates/template-program.php:92
+#, php-format
+msgid ""
+"Chưa điền: %s. Điền trong hộp \"Thông tin chương trình / lớp học\" bên dưới "
+"trình soạn thảo."
+msgstr ""
+"Not filled in: %s. Fill them in the \"Program / class details\" box below "
+"the editor."
+
+#. Template Name of the theme
+#: page-templates/template-programs.php:24
+msgid "Danh sách chương trình"
+msgstr "Program overview"
+
+#: page.php:36
+msgid "Các trang của nội dung"
+msgstr "Pages"
+
+#: page.php:36 single.php:51
+msgid "Trang:"
+msgstr "Pages:"
+
+#: patterns/cta-panel.php
+msgctxt "Pattern title"
+msgid "Kêu gọi hành động – Đăng ký nhận thông tin"
+msgstr "Call to action – Enquiry"
+
+#: patterns/cta-panel.php:17
+msgid "Cùng Play2Grow tìm lớp học phù hợp cho con"
+msgstr "Let’s find the right class for your child together"
+
+#: patterns/cta-panel.php:21
+msgid ""
+"Để lại thông tin, Play2Grow sẽ liên hệ tư vấn về chương trình, lịch học và "
+"học phí phù hợp với độ tuổi và sở thích của con."
+msgstr ""
+"Leave your details and Play2Grow will get in touch to advise on programs, "
+"schedules and fees that suit your child’s age and interests."
+
+#: patterns/home-example-activity.php
+msgctxt "Pattern title"
+msgid "Ví dụ hoạt động – Giờ ăn sáng bằng tiếng Anh"
+msgstr "Activity example – Breakfast in English"
+
+#: patterns/home-example-activity.php:18
+msgid "Ví dụ minh họa"
+msgstr "Example"
+
+#: patterns/home-example-activity.php:22
+msgid "Một bữa sáng cũng có thể là một hoạt động tiếng Anh"
+msgstr "Breakfast can be an English activity too"
+
+#: patterns/home-example-activity.php:26
+msgid ""
+"Không cần bàn học hay sách bài tập: chỉ cần vài phút quanh bàn ăn, trẻ đã có"
+" thể nghe, nhìn, chạm và nói về những thứ rất cụ thể trước mặt."
+msgstr ""
+"No desk or workbook needed: a few minutes around the table give children "
+"plenty to hear, see, touch and talk about."
+
+#: patterns/home-example-activity.php:30
+msgid ""
+"Đây là gợi ý để phụ huynh tham khảo và tự thực hiện tại nhà, không phải mô "
+"tả nội dung của một lớp học cụ thể tại Play2Grow."
+msgstr ""
+"This is a suggestion for parents to try at home. It is not a description of "
+"a specific Play2Grow class."
+
+#: patterns/home-example-activity.php:36
+msgid "Xem thêm hoạt động tại nhà"
+msgstr "More home activities"
+
+#: patterns/home-example-activity.php:46
+msgid "Gợi ý cho phụ huynh"
+msgstr "Ideas for parents"
+
+#: patterns/home-example-activity.php:50
+msgid "Breakfast time – Giờ ăn sáng"
+msgstr "Breakfast time"
+
+#: patterns/home-example-activity.php:54
+msgid ""
+"<strong>Thời gian:</strong> 5–10 phút trong bữa sáng. <strong>Phù "
+"hợp:</strong> trẻ đang bắt đầu làm quen với tiếng Anh."
+msgstr ""
+"<strong>Time:</strong> 5–10 minutes during breakfast. <strong>Good "
+"for:</strong> children who are just starting with English."
+
+#: patterns/home-example-activity.php:59
+msgid "What’s this?"
+msgstr "What’s this?"
+
+#: patterns/home-example-activity.php:63
+msgid "It’s an egg."
+msgstr "It’s an egg."
+
+#: patterns/home-example-activity.php:67
+msgid "Do you like milk?"
+msgstr "Do you like milk?"
+
+#: patterns/home-example-activity.php:71
+msgid "It’s hot!"
+msgstr "It’s hot!"
+
+#: patterns/home-example-activity.php:75
+msgid "More, please."
+msgstr "More, please."
+
+#: patterns/home-example-activity.php:81
+msgid "Chỉ vào 3–4 món trên bàn và gọi tên từng món thật chậm."
+msgstr "Point to 3–4 things on the table and name each one slowly."
+
+#: patterns/home-example-activity.php:85
+msgid ""
+"Hỏi “Do you like…?” và chấp nhận mọi cách trả lời: “Yes”, “No”, gật đầu hay "
+"lắc đầu."
+msgstr ""
+"Ask “Do you like…?” and accept any answer: “Yes”, “No”, a nod or a shake of "
+"the head."
+
+#: patterns/home-example-activity.php:89
+msgid ""
+"Thêm một tính từ đơn giản khi con chạm vào món ăn: <em>hot, cold, soft, "
+"yummy</em>."
+msgstr ""
+"Add a simple adjective when your child touches the food: <em>hot, cold, "
+"soft, yummy</em>."
+
+#: patterns/home-example-activity.php:93
+msgid ""
+"Kết thúc bằng một câu quen thuộc mà con có thể nói lại vào ngày mai: “Thank "
+"you!”."
+msgstr ""
+"Finish with a familiar phrase your child can say again tomorrow: “Thank "
+"you!”."
+
+#: patterns/home-faq.php
+msgctxt "Pattern title"
+msgid "Câu hỏi thường gặp (rút gọn)"
+msgstr "FAQ (short)"
+
+#: patterns/home-faq.php:21
+msgid "Hỏi đáp"
+msgstr "Questions"
+
+#: patterns/home-faq.php:25 patterns/product-detail-layout.php:42
+msgid "Câu hỏi thường gặp"
+msgstr "Frequently asked questions"
+
+#: patterns/home-faq.php:31
+msgid "Play2Grow là gì?"
+msgstr "What is Play2Grow?"
+
+#: patterns/home-faq.php:32
+msgid ""
+"Play2Grow là trung tâm dành cho trẻ với các lớp STEAM English, mỹ thuật, âm "
+"nhạc và nhảy. Chúng tôi tập trung vào việc giúp trẻ học qua hoạt động thực "
+"tế, vui chơi, khám phá và những trải nghiệm gắn với đời sống hằng ngày."
+msgstr ""
+"Play2Grow is a centre for children with STEAM English, art, music and dance "
+"classes. We focus on helping children learn through hands-on activities, "
+"play, exploration and experiences connected to everyday life."
+
+#: patterns/home-faq.php:37
+msgid "Học qua trải nghiệm có thay thế việc học từ vựng, ngữ pháp không?"
+msgstr "Does experiential learning replace learning vocabulary and grammar?"
+
+#: patterns/home-faq.php:38
+msgid ""
+"Không. Từ vựng và ngữ pháp vẫn là nền tảng. Học qua trải nghiệm bổ sung thêm"
+" cơ hội để trẻ dùng những gì đã học trong tình huống có ý nghĩa, nhờ đó "
+"tiếng Anh trở nên gần gũi và dễ vận dụng hơn."
+msgstr ""
+"No. Vocabulary and grammar are still the foundation. Experiential learning "
+"adds more chances for children to use what they have learnt in meaningful "
+"situations, so English feels closer and easier to use."
+
+#: patterns/home-faq.php:43
+msgid "Phụ huynh không giỏi tiếng Anh có đồng hành cùng con được không?"
+msgstr "Can parents who are not fluent in English still support their child?"
+
+#. translators: %s: link to an article for parents.
+#: patterns/home-faq.php:48
+#, php-format
+msgid ""
+"Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần "
+"cùng khám phá. %s có những gợi ý cụ thể dành cho phụ huynh."
+msgstr ""
+"Yes. What children need most from their parents is time, attention and a "
+"shared sense of discovery. %s has practical ideas for parents."
+
+#. translators: %s: link to an article for parents.
+#: patterns/home-faq.php:48
+msgid "Bài viết này"
+msgstr "This article"
+
+#: patterns/home-faq.php:49
+msgid ""
+"Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần "
+"cùng khám phá. Góc học tập có những gợi ý cụ thể dành cho phụ huynh."
+msgstr ""
+"Yes. What children need most from their parents is time, attention and a "
+"shared sense of discovery. The Learning Corner has practical ideas for "
+"parents."
+
+#: patterns/home-faq.php:56
+msgid "Các lớp dành cho độ tuổi nào, học phí ra sao?"
+msgstr "Which ages are the classes for, and what are the fees?"
+
+#: patterns/home-faq.php:58
+msgid ""
+"Mỗi lớp có độ tuổi, lịch học và học phí riêng, được ghi trên trang của từng "
+"chương trình."
+msgstr ""
+"Each class has its own age range, schedule and fee, shown on the page for "
+"that program."
+
+#. translators: %s: link to the contact page.
+#: patterns/home-faq.php:61
+#, php-format
+msgid "Anh/chị có thể %s để được tư vấn lớp phù hợp với con."
+msgstr "You can %s and we will advise you on a suitable class for your child."
+
+#. translators: %s: link to the contact page.
+#: patterns/home-faq.php:61
+msgid "để lại thông tin"
+msgstr "leave your details"
+
+#: patterns/home-faq.php:68
+msgid "Play2Grow có sử dụng AI không?"
+msgstr "Does Play2Grow use AI?"
+
+#: patterns/home-faq.php:69
+msgid ""
+"Hiện website chưa giới thiệu tính năng AI nào. Play2Grow xem AI là một công "
+"cụ có thể hỗ trợ việc học – chẳng hạn gợi ý hoạt động hay mẫu câu theo ngữ "
+"cảnh – chứ không phải giá trị cốt lõi. Mọi tính năng như vậy, nếu có, sẽ "
+"được giới thiệu rõ ràng khi thực sự sẵn sàng."
+msgstr ""
+"The website does not currently offer any AI features. Play2Grow sees AI as a"
+" tool that may support learning – for example suggesting activities or "
+"phrases for a situation – not as a core value. Any such feature will be "
+"clearly introduced only when it is genuinely ready."
+
+#: patterns/home-faq.php:77
+msgid "Xem tất cả câu hỏi"
+msgstr "See all questions"
+
+#: patterns/home-hero.php
+msgctxt "Pattern title"
+msgid "Trang chủ – Mở đầu (hero)"
+msgstr "Home – Hero"
+
+#: patterns/home-hero.php:18 patterns/home-quicklinks.php:18
+msgid "Học tiếng Anh qua trải nghiệm"
+msgstr "Learning English through experience"
+
+#: patterns/home-hero.php:22
+msgid ""
+"Học tiếng Anh từ những điều trẻ <mark>nhìn thấy, chạm vào</mark> và yêu "
+"thích"
+msgstr "Learning English from what children <mark>see, touch</mark> and love"
+
+#: patterns/home-hero.php:26
+msgid ""
+"Play2Grow là trung tâm dành cho trẻ với lớp STEAM English cùng các lớp mỹ "
+"thuật, âm nhạc và nhảy. Chúng tôi tập trung vào việc học qua vui chơi, khám "
+"phá và thực hành – để tiếng Anh và năng khiếu không chỉ nằm trên trang vở mà"
+" xuất hiện trong chính những gì trẻ đang trải nghiệm."
+msgstr ""
+"Play2Grow is a centre for children offering STEAM English alongside art, "
+"music and dance classes. We focus on learning through play, exploration and "
+"practice – so English and creative skills don’t stay on the page but show up"
+" in what children are actually experiencing."
+
+#: patterns/home-hero.php:32
+msgid "Xem các chương trình"
+msgstr "See our programs"
+
+#: patterns/home-hero.php:39
+msgid "Explore the world. Play with English. Grow every day."
+msgstr "Explore the world. Play with English. Grow every day."
+
+#: patterns/home-hero.php:45
+msgid ""
+"Minh họa: kính lúp soi chiếc lá, mặt trời, cây xanh và các bong bóng hội "
+"thoại tiếng Anh"
+msgstr ""
+"Illustration: a magnifying glass over a leaf, the sun, a tree and English "
+"speech bubbles"
+
+#: patterns/home-latest-posts.php
+msgctxt "Pattern title"
+msgid "Góc học tập – Bài viết mới"
+msgstr "Learning Corner – Latest articles"
+
+#. translators: %s: link to the learning corner (blog).
+#: patterns/home-latest-posts.php:17 patterns/home-quicklinks.php:20
+#: patterns/home-steps.php:48
+msgid "Góc học tập"
+msgstr "Learning Corner"
+
+#: patterns/home-latest-posts.php:21
+msgid "Ý tưởng để tiếng Anh có mặt mỗi ngày"
+msgstr "Ideas to bring English into every day"
+
+#: patterns/home-latest-posts.php:25
+msgid ""
+"Hoạt động tại nhà, trò chơi ngôn ngữ và kinh nghiệm đồng hành cùng con – "
+"được viết để phụ huynh có thể áp dụng ngay."
+msgstr ""
+"Home activities, language games and tips for learning alongside your child –"
+" written so parents can use them straight away."
+
+#: patterns/home-latest-posts.php:36
+msgid "Xem tất cả bài viết"
+msgstr "See all articles"
+
+#: patterns/home-learning-ways.php
+msgctxt "Pattern title"
+msgid "Định hướng – Những cách tiếng Anh bước vào ngày của trẻ"
+msgstr "Approach – How English enters a child’s day"
+
+#: patterns/home-learning-ways.php:15
+msgid ""
+"Quan sát chiếc lá, con kiến hay đám mây rồi gọi tên, mô tả chúng bằng tiếng "
+"Anh. Sự tò mò là động lực tự nhiên để trẻ muốn biết thêm một từ mới."
+msgstr ""
+"Look at a leaf, an ant or a cloud, then name and describe it in English. "
+"Curiosity is a natural reason for children to want one more new word."
+
+#: patterns/home-learning-ways.php:16
+msgid "Vui chơi"
+msgstr "Play"
+
+#: patterns/home-learning-ways.php:16
+msgid ""
+"Trò chơi tạo ra lý do để nói: đến lượt ai, tìm thấy gì, ai về đích trước. "
+"Trẻ lặp lại câu chữ nhiều lần mà không cảm thấy đó là bài tập."
+msgstr ""
+"Games create reasons to speak: whose turn it is, what we found, who got "
+"there first. Children repeat words many times without it feeling like an "
+"exercise."
+
+#: patterns/home-learning-ways.php:17
+msgid "Đời sống hằng ngày"
+msgstr "Everyday life"
+
+#: patterns/home-learning-ways.php:17
+msgid ""
+"Ăn sáng, mặc quần áo, dọn đồ chơi… những việc lặp lại mỗi ngày là cơ hội để "
+"dùng đi dùng lại cùng một mẫu câu một cách tự nhiên."
+msgstr ""
+"Breakfast, getting dressed, tidying toys… everyday routines are chances to "
+"use the same phrases again and again, naturally."
+
+#: patterns/home-learning-ways.php:18
+msgid "Giao tiếp"
+msgstr "Communication"
+
+#: patterns/home-learning-ways.php:18
+msgid ""
+"Hỏi – đáp, kể lại, đóng vai người bán và người mua. Trẻ dùng tiếng Anh để "
+"làm một việc cụ thể, không chỉ để trả lời câu hỏi trong bài."
+msgstr ""
+"Asking and answering, retelling, playing shopkeeper and customer. Children "
+"use English to get something done, not just to answer a question in a "
+"lesson."
+
+#: patterns/home-learning-ways.php:19
+msgid "Sáng tạo"
+msgstr "Creativity"
+
+#: patterns/home-learning-ways.php:19
+msgid ""
+"Vẽ, cắt dán, làm mô hình rồi giới thiệu sản phẩm của mình. Khi tự tay làm ra"
+" một thứ, trẻ có rất nhiều điều muốn nói về nó."
+msgstr ""
+"Drawing, cutting and sticking, building models and then presenting their "
+"work. When children make something themselves, they have a lot to say about "
+"it."
+
+#: patterns/home-learning-ways.php:20
+msgid "Lớn lên từng ngày"
+msgstr "Growing every day"
+
+#: patterns/home-learning-ways.php:20
+msgid ""
+"Ngôn ngữ cần thời gian để nảy mầm. Những trải nghiệm nhỏ, đều đặn và vui vẻ "
+"có giá trị hơn những buổi học dài nhưng căng thẳng."
+msgstr ""
+"Language needs time to grow. Small, regular, happy experiences are worth "
+"more than long, stressful lessons."
+
+#: patterns/home-learning-ways.php:26
+msgid "Định hướng học tập"
+msgstr "Our approach"
+
+#: patterns/home-learning-ways.php:30
+msgid "Những cách tiếng Anh bước vào ngày của trẻ"
+msgstr "How English enters a child’s day"
+
+#: patterns/home-learning-ways.php:34
+msgid ""
+"Đây là những hướng tiếp cận định hình cách Play2Grow suy nghĩ về việc học "
+"tiếng Anh, trong lớp học cũng như ở nhà."
+msgstr ""
+"These are the ideas that shape how Play2Grow thinks about learning English, "
+"in class and at home."
+
+#: patterns/home-philosophy.php
+msgctxt "Pattern title"
+msgid "Triết lý – Học thụ động và học qua trải nghiệm"
+msgstr "Philosophy – Passive learning vs experiential learning"
+
+#: patterns/home-philosophy.php:17
+msgid "Triết lý của Play2Grow"
+msgstr "The Play2Grow philosophy"
+
+#: patterns/home-philosophy.php:21
+msgid "Tiếng Anh trở nên gần gũi khi trẻ có lý do để dùng nó"
+msgstr "English feels closer when children have a reason to use it"
+
+#: patterns/home-philosophy.php:25
+msgid ""
+"Ghi nhớ từ vựng và cấu trúc câu là một phần cần thiết của việc học ngoại "
+"ngữ, nhưng chưa đủ. Một từ mới chỉ thật sự trở thành “của trẻ” khi trẻ nghe "
+"thấy nó trong một tình huống có ý nghĩa, thử nói ra, được phản hồi và dùng "
+"lại nhiều lần. Vì vậy, Play2Grow lấy trải nghiệm làm điểm xuất phát."
+msgstr ""
+"Memorising vocabulary and sentence patterns is a necessary part of learning "
+"a language, but it is not enough. A new word only truly becomes “theirs” "
+"when a child hears it in a meaningful situation, tries saying it, gets a "
+"response and uses it again many times. That is why Play2Grow starts from "
+"experience."
+
+#: patterns/home-philosophy.php:32
+msgid "Khi tiếng Anh chỉ nằm trên trang giấy"
+msgstr "When English stays on the page"
+
+#: patterns/home-philosophy.php:37
+msgid "Học thuộc danh sách từ rời rạc, ít gắn với sự vật cụ thể"
+msgstr "Memorising lists of separate words, rarely linked to real things"
+
+#: patterns/home-philosophy.php:41
+msgid "Phần lớn thời gian là ngồi nghe và chép lại"
+msgstr "Most of the time is spent listening and copying"
+
+#: patterns/home-philosophy.php:45
+msgid "Hiếm khi có cơ hội nói trong một tình huống thật"
+msgstr "Few chances to speak in a real situation"
+
+#: patterns/home-philosophy.php:49
+msgid "Tiếng Anh tách biệt khỏi sinh hoạt hằng ngày của trẻ"
+msgstr "English is separate from the child’s daily life"
+
+#: patterns/home-philosophy.php:56
+msgid "Khi tiếng Anh đi vào trải nghiệm"
+msgstr "When English becomes part of experience"
+
+#: patterns/home-philosophy.php:61
+msgid "Từ vựng gắn với đồ vật, hành động và cảm xúc cụ thể"
+msgstr "Words are linked to real objects, actions and feelings"
+
+#: patterns/home-philosophy.php:65
+msgid "Trẻ quan sát, đặt câu hỏi, thử và tự nói ra"
+msgstr "Children observe, ask questions, try and speak for themselves"
+
+#: patterns/home-philosophy.php:69
+msgid "Nói sai được xem là một phần tự nhiên của quá trình học"
+msgstr "Mistakes are seen as a natural part of learning"
+
+#: patterns/home-philosophy.php:73
+msgid "Tiếng Anh xuất hiện trong bữa ăn, giờ chơi và những buổi đi dạo"
+msgstr "English appears at mealtimes, playtime and on walks"
+
+#: patterns/home-philosophy.php:80
+msgid ""
+"Đây không phải lựa chọn “một trong hai”. Việc học có hệ thống vẫn giữ vai "
+"trò quan trọng; học qua trải nghiệm tạo thêm cơ hội để trẻ sử dụng những gì "
+"đã học."
+msgstr ""
+"This is not an “either/or” choice. Structured learning still matters; "
+"experiential learning gives children more chances to use what they have "
+"learnt."
+
+#: patterns/home-products.php
+msgctxt "Pattern title"
+msgid "Chương trình học – thẻ các lớp đang mở"
+msgstr "Programs – Class cards"
+
+#: patterns/home-products.php:17 patterns/home-quicklinks.php:17
+msgid "Chương trình học"
+msgstr "Programs"
+
+#: patterns/home-products.php:21
+msgid "Các lớp học tại Play2Grow"
+msgstr "Classes at Play2Grow"
+
+#: patterns/home-products.php:25
+msgid ""
+"Tiếng Anh qua hoạt động STEAM, cùng các lớp vẽ, thủ công, đàn và nhảy – để "
+"con được khám phá nhiều niềm yêu thích trong cùng một môi trường."
+msgstr ""
+"English through STEAM activities, plus drawing, crafts, piano/keyboard and "
+"dance classes – so your child can explore many interests in one place."
+
+#: patterns/home-products.php:36
+msgid "Xem tất cả chương trình"
+msgstr "See all programs"
+
+#: patterns/home-quicklinks.php
+msgctxt "Pattern title"
+msgid "Truy cập nhanh (dưới phần mở đầu)"
+msgstr "Quick links (below the hero)"
+
+#: patterns/home-quicklinks.php:17
+msgid "STEAM English, mỹ thuật, âm nhạc, nhảy"
+msgstr "STEAM English, art, music, dance"
+
+#: patterns/home-quicklinks.php:18
+msgid "Phương pháp"
+msgstr "Our approach"
+
+#: patterns/home-quicklinks.php:19
+msgid "Phụ huynh"
+msgstr "For parents"
+
+#: patterns/home-quicklinks.php:19 patterns/home-steps.php:46
+msgid "Đồng hành cùng con tại nhà"
+msgstr "Learning together at home"
+
+#: patterns/home-quicklinks.php:20
+msgid "Ý tưởng hoạt động và trò chơi"
+msgstr "Activity and game ideas"
+
+#: patterns/home-steps.php
+msgctxt "Pattern title"
+msgid "Bắt đầu từ đâu – 3 bước"
+msgstr "Getting started – 3 steps"
+
+#: patterns/home-steps.php:22
+msgid "Cách bắt đầu"
+msgstr "Getting started"
+
+#: patterns/home-steps.php:26
+msgid "Ba bước nhỏ để cùng con khám phá tiếng Anh"
+msgstr "Three small steps to explore English with your child"
+
+#: patterns/home-steps.php:32
+msgid "Chọn chương trình con yêu thích"
+msgstr "Choose a program your child will love"
+
+#. translators: 1: link to programs page, 2: link to method page.
+#: patterns/home-steps.php:34
+#, php-format
+msgid "Xem %1$s và đọc %2$s của Play2Grow."
+msgstr "See %1$s and read about the Play2Grow %2$s."
+
+#. translators: 1: link to programs page, 2: link to method page.
+#: patterns/home-steps.php:34
+msgid "các chương trình học"
+msgstr "our programs"
+
+#. translators: 1: link to programs page, 2: link to method page.
+#: patterns/home-steps.php:34
+msgid "phương pháp"
+msgstr "approach"
+
+#: patterns/home-steps.php:39
+msgid "Để lại thông tin tư vấn"
+msgstr "Leave your details for a consultation"
+
+#. translators: %s: link to the contact page.
+#: patterns/home-steps.php:41
+#, php-format
+msgid ""
+"%s về độ tuổi và sở thích của con; Play2Grow sẽ liên hệ để tư vấn lớp, lịch "
+"học và học phí."
+msgstr ""
+"%s about your child’s age and interests; Play2Grow will contact you to "
+"advise on classes, schedules and fees."
+
+#. translators: %s: link to the contact page.
+#: patterns/home-steps.php:41
+msgid "Gửi thông tin"
+msgstr "Send your details"
+
+#. translators: %s: link to the learning corner (blog).
+#: patterns/home-steps.php:48
+#, php-format
+msgid ""
+"Chọn một gợi ý trong %s để cùng con tiếp tục dùng tiếng Anh trong sinh hoạt "
+"hằng ngày."
+msgstr ""
+"Pick an idea from the %s to keep using English with your child in everyday "
+"life."
+
+#: patterns/home-topics.php
+msgctxt "Pattern title"
+msgid "Khám phá theo chủ đề"
+msgstr "Explore by topic"
+
+#: patterns/home-topics.php:19
+msgid "Khám phá theo chủ đề"
+msgstr "Explore by topic"
+
+#: patterns/home-topics.php:23
+msgid "Thế giới quanh con là một cuốn sách tiếng Anh"
+msgstr "The world around your child is an English book"
+
+#: patterns/home-topics.php:27
+msgid ""
+"Chọn một chủ đề con đang yêu thích – thiên nhiên, con vật, đồ ăn, sinh hoạt "
+"hằng ngày hay những nơi con thường đến – để tìm hoạt động và mẫu câu phù "
+"hợp."
+msgstr ""
+"Choose a topic your child loves right now – nature, animals, food, daily "
+"routines or places they often go – to find suitable activities and phrases."
+
+#: patterns/home-values.php
+msgctxt "Pattern title"
+msgid "Giá trị – Dành cho trẻ và phụ huynh"
+msgstr "Values – For children and parents"
+
+#: patterns/home-values.php:17
+msgid "Điều Play2Grow hướng đến"
+msgstr "What Play2Grow aims for"
+
+#: patterns/home-values.php:21
+msgid "Một hành trình học vui với trẻ, rõ ràng với cha mẹ"
+msgstr "A learning journey that’s fun for children and clear for parents"
+
+#: patterns/home-values.php:28
+msgid "Với trẻ"
+msgstr "For children"
+
+#: patterns/home-values.php:33
+msgid "Được hỏi “What’s this?” và tự đi tìm câu trả lời"
+msgstr "Being asked “What’s this?” and finding the answer themselves"
+
+#: patterns/home-values.php:37
+msgid "Dùng tiếng Anh trong chính việc mình đang làm, không chỉ trong giờ học"
+msgstr "Using English in what they are actually doing, not only in lessons"
+
+#: patterns/home-values.php:41
+msgid "Được thử, được nói sai và nói lại mà không sợ bị chấm điểm"
+msgstr "Trying, making mistakes and trying again without fear of being marked"
+
+#: patterns/home-values.php:45
+msgid "Gắn tiếng Anh với những kỷ niệm vui cùng gia đình"
+msgstr "Linking English with happy memories with their family"
+
+#: patterns/home-values.php:52
+msgid "Với phụ huynh"
+msgstr "For parents"
+
+#: patterns/home-values.php:57
+msgid "Hiểu rõ cách tiếp cận trước khi quyết định cho con tham gia"
+msgstr "Understanding the approach before deciding to enrol"
+
+#: patterns/home-values.php:61
+msgid "Có ý tưởng hoạt động cụ thể để cùng con thực hành tại nhà"
+msgstr "Practical activity ideas to practise with your child at home"
+
+#: patterns/home-values.php:65
+msgid "Không cần giỏi tiếng Anh vẫn có thể đồng hành cùng con"
+msgstr "Being able to support your child without being fluent in English"
+
+#: patterns/home-values.php:69
+msgid "Thông tin minh bạch về lớp học, lịch học và học phí"
+msgstr "Clear information about classes, schedules and fees"
+
+#: patterns/product-detail-layout.php
+msgctxt "Pattern title"
+msgid "Bố cục trang chi tiết chương trình"
+msgstr "Program detail page layout"
+
+#: patterns/product-detail-layout.php:19
+msgid "Lớp học này dành cho ai?"
+msgstr "Who is this class for?"
+
+#: patterns/product-detail-layout.php:20
+msgid "Con sẽ học gì?"
+msgstr "What will your child learn?"
+
+#: patterns/product-detail-layout.php:21
+msgid "Một buổi học diễn ra thế nào?"
+msgstr "What does a session look like?"
+
+#: patterns/product-detail-layout.php:23
+msgid "Lịch học, sĩ số và học phí"
+msgstr "Schedule, class size and fees"
+
+#: patterns/product-detail-layout.php:24
+msgid "Đăng ký và học thử"
+msgstr "Enrolment and trial class"
+
+#: patterns/product-detail-layout.php:46
+msgid "Câu hỏi"
+msgstr "Question"
+
+#: patterns/product-detail-layout.php:47
+msgid "Câu trả lời đã được xác nhận."
+msgstr "Confirmed answer."
+
+#. translators: 1: number of results, 2: search term.
+#: search.php:16
+#, php-format
+msgid "Tìm thấy %1$s kết quả cho \"%2$s\"."
+msgid_plural "Tìm thấy %1$s kết quả cho \"%2$s\"."
+msgstr[0] "Found %1$s result for \"%2$s\"."
+msgstr[1] "Found %1$s results for \"%2$s\"."
+
+#: search.php:17
+msgid "Nhập từ khóa để tìm bài viết và trang trên website."
+msgstr "Enter a keyword to search articles and pages on this site."
+
+#: searchform.php:14
+msgid "Tìm bài viết, hoạt động, chủ đề…"
+msgstr "Search articles, activities, topics…"
+
+#: searchform.php:15
+msgid "Tìm"
+msgstr "Search"
+
+#: single.php:51
+msgid "Các trang của bài viết"
+msgstr "Article pages"
+
+#: single.php:62
+msgid "Thẻ:"
+msgstr "Tags:"
+
+#: single.php:68
+msgid "Về tác giả"
+msgstr "About the author"
+
+#: single.php:80
+msgid "Bài trước"
+msgstr "Previous article"
+
+#: single.php:81
+msgid "Bài tiếp theo"
+msgstr "Next article"
+
+#: single.php:82
+msgid "Điều hướng bài viết"
+msgstr "Article navigation"
+
+#: single.php:83
+msgid "Bài viết khác"
+msgstr "More articles"
+
+#: template-parts/card-program.php:52
+msgid "Xem chi tiết"
+msgstr "View details"
+
+#: template-parts/category-filter.php:25
+msgid "Lọc theo chủ đề"
+msgstr "Filter by topic"
+
+#: template-parts/category-filter.php:27
+msgid "Tất cả"
+msgstr "All"
+
+#: template-parts/content-none.php:12
+msgid "Chưa tìm thấy nội dung phù hợp."
+msgstr "No matching content found."
+
+#: template-parts/content-none.php:13
+msgid ""
+"Hãy thử từ khóa ngắn hơn, kiểm tra chính tả hoặc dùng từ đồng nghĩa (ví dụ: "
+"\"trò chơi\" thay vì \"game\")."
+msgstr ""
+"Try a shorter keyword, check the spelling or use a synonym (for example "
+"\"game\" instead of \"play\")."
+
+#: template-parts/content-none.php:16
+msgid "Chuyên mục này chưa có bài viết."
+msgstr "This category has no articles yet."
+
+#: template-parts/content-none.php:17
+msgid ""
+"Bài viết mới sẽ được cập nhật tại đây. Trong lúc chờ, bạn có thể tìm kiếm "
+"nội dung khác."
+msgstr ""
+"New articles will appear here. In the meantime, you can search for other "
+"content."
+
+#: template-parts/cta-band.php:17
+msgid "Tìm lớp học phù hợp cho con"
+msgstr "Find the right class for your child"
+
+#: template-parts/cta-band.php:18
+msgid ""
+"Để lại thông tin, Play2Grow sẽ liên hệ tư vấn về chương trình, lịch học và "
+"học phí."
+msgstr ""
+"Leave your details and Play2Grow will contact you to advise on programs, "
+"schedules and fees."
+
+#: template-parts/floating-contact.php:22
+msgid "Liên hệ nhanh"
+msgstr "Quick contact"
+
+#: template-parts/floating-contact.php:24
+msgid "Nhắn tin Zalo cho Play2Grow (mở trong thẻ mới)"
+msgstr "Message Play2Grow on Zalo (opens in a new tab)"
+
+#. translators: %s: phone.
+#: template-parts/floating-contact.php:27
+#, php-format
+msgid "Gọi %s"
+msgstr "Call %s"
+
+#: template-parts/post-list.php:38
+msgid "Thanh bên"
+msgstr "Sidebar"
+
+#: template-parts/related-posts.php:46
+msgid "Bài viết liên quan"
+msgstr "Related articles"

@@ -1,0 +1,645 @@
+# Copyright (C) 2026 Play2Grow
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Play2Grow Core 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/play2grow-core\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-11T08:11:49+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: play2grow-core\n"
+
+#. Plugin Name of the plugin
+#: play2grow-core.php
+msgid "Play2Grow Core"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: play2grow-core.php
+msgid "https://play2grow.edu.vn/"
+msgstr ""
+
+#. Description of the plugin
+#: play2grow-core.php
+msgid "Chức năng dữ liệu cho website Play2Grow, độc lập với giao diện: form liên hệ / đăng ký nhận thông tin (chống spam, lưu trữ có thời hạn, xuất/xóa dữ liệu cá nhân), thông tin doanh nghiệp, liên kết mạng xã hội và các shortcode nội dung [p2g_…]."
+msgstr ""
+
+#. Author of the plugin
+#: play2grow-core.php
+#: includes/admin.php:16
+msgid "Play2Grow"
+msgstr ""
+
+#: includes/admin.php:15
+msgid "Play2Grow – Form liên hệ"
+msgstr ""
+
+#: includes/admin.php:78
+msgid "Play2Grow – Form liên hệ và dữ liệu đăng ký"
+msgstr ""
+
+#: includes/admin.php:79
+msgid "Form liên hệ / đăng ký nhận thông tin"
+msgstr ""
+
+#: includes/admin.php:80
+msgid "Chèn form vào bất kỳ trang nào bằng shortcode <code>[p2g_contact_form]</code>. Trang dùng mẫu \"Liên hệ\" tự hiển thị form."
+msgstr ""
+
+#: includes/admin.php:85
+msgid "Email nhận thông báo"
+msgstr ""
+
+#: includes/admin.php:88
+msgid "Có thể nhập nhiều email, cách nhau bằng dấu phẩy. Nên cài plugin SMTP để email không vào thư rác; hãy gửi thử một đăng ký sau khi cài đặt."
+msgstr ""
+
+#: includes/admin.php:92
+msgid "Lưu đăng ký trong trang quản trị"
+msgstr ""
+
+#: includes/admin.php:94
+msgid "Lưu vào mục \"Đăng ký liên hệ\" (chỉ quản trị viên xem được). Khuyến nghị bật để không mất đăng ký khi email gặp sự cố."
+msgstr ""
+
+#: includes/admin.php:98
+msgid "Thời gian lưu trữ (ngày)"
+msgstr ""
+
+#: includes/admin.php:101
+msgid "Đăng ký cũ hơn số ngày này sẽ tự động bị xóa vĩnh viễn. Nhập 0 để không tự xóa. Hãy thống nhất con số này với nội dung Chính sách quyền riêng tư."
+msgstr ""
+
+#: includes/admin.php:105
+msgid "Trường nhóm tuổi của trẻ"
+msgstr ""
+
+#: includes/admin.php:107
+msgid "Hiển thị trường \"Nhóm tuổi của trẻ\" (không bắt buộc, chỉ chọn khoảng tuổi)"
+msgstr ""
+
+#: includes/admin.php:111
+msgid "Lựa chọn \"Anh/chị quan tâm đến\""
+msgstr ""
+
+#: includes/admin.php:114
+msgid "Mỗi dòng một lựa chọn. Để trống để dùng danh sách mặc định (tên các trang chương trình đã xuất bản + các lựa chọn chung)."
+msgstr ""
+
+#: includes/admin.php:118
+msgid "Thông báo gửi thành công"
+msgstr ""
+
+#: includes/admin.php:122
+msgid "Nội dung ô đồng ý"
+msgstr ""
+
+#: includes/admin.php:125
+msgid "Để trống để dùng nội dung mặc định có liên kết tới Chính sách quyền riêng tư."
+msgstr ""
+
+#: includes/admin.php:129
+msgid "Lưu cài đặt"
+msgstr ""
+
+#: includes/admin.php:132
+msgid "Thông tin doanh nghiệp"
+msgstr ""
+
+#: includes/admin.php:133
+msgid "Mở Tùy biến → Play2Grow – Thông tin doanh nghiệp"
+msgstr ""
+
+#. translators: %s: settings URL.
+#: includes/admin.php:154
+#, php-format
+msgid "<strong>Play2Grow:</strong> Form liên hệ chưa có kênh nhận thông tin nên đang bị ẩn với khách truy cập. <a href=\"%s\">Cấu hình ngay</a>."
+msgstr ""
+
+#. translators: %s: settings URL.
+#: includes/admin.php:162
+#, php-format
+msgid "<strong>Play2Grow:</strong> Đăng ký mới đang được lưu trong mục \"Đăng ký liên hệ\" nhưng chưa có email nhận thông báo. <a href=\"%s\">Thêm email</a> để không bỏ lỡ yêu cầu."
+msgstr ""
+
+#: includes/contact-form.php:39
+msgid "Cần tư vấn chọn lớp phù hợp cho con"
+msgstr ""
+
+#: includes/contact-form.php:40
+msgid "Hỏi về lịch học và học phí"
+msgstr ""
+
+#: includes/contact-form.php:41
+msgid "Hợp tác / tuyển dụng"
+msgstr ""
+
+#: includes/contact-form.php:42
+msgid "Nội dung khác"
+msgstr ""
+
+#: includes/contact-form.php:54
+msgid "Dưới 4 tuổi"
+msgstr ""
+
+#: includes/contact-form.php:55
+msgid "4 – 6 tuổi"
+msgstr ""
+
+#: includes/contact-form.php:56
+msgid "7 – 9 tuổi"
+msgstr ""
+
+#: includes/contact-form.php:57
+msgid "10 – 12 tuổi"
+msgstr ""
+
+#: includes/contact-form.php:58
+msgid "Trên 12 tuổi"
+msgstr ""
+
+#: includes/contact-form.php:147
+msgid "Vui lòng nhập họ và tên."
+msgstr ""
+
+#: includes/contact-form.php:149
+msgid "Họ và tên cần từ 2 đến 80 ký tự và chỉ gồm chữ cái."
+msgstr ""
+
+#: includes/contact-form.php:154
+#: includes/contact-form.php:600
+msgid "Vui lòng nhập số điện thoại hoặc email để Play2Grow có thể liên hệ lại."
+msgstr ""
+
+#: includes/contact-form.php:159
+msgid "Số điện thoại chưa đúng định dạng Việt Nam (ví dụ: 0912 345 678)."
+msgstr ""
+
+#: includes/contact-form.php:165
+#: includes/contact-form.php:602
+msgid "Email chưa đúng định dạng (ví dụ: ten@email.com)."
+msgstr ""
+
+#: includes/contact-form.php:176
+#: includes/contact-form.php:603
+msgid "Vui lòng đồng ý để Play2Grow xử lý thông tin để liên hệ lại."
+msgstr ""
+
+#. translators: 1: site name, 2: person name.
+#: includes/contact-form.php:212
+#, php-format
+msgid "[%1$s] Đăng ký liên hệ mới từ %2$s"
+msgstr ""
+
+#: includes/contact-form.php:216
+#: includes/leads.php:100
+msgid "Họ và tên"
+msgstr ""
+
+#: includes/contact-form.php:217
+#: includes/contact-form.php:501
+#: includes/leads.php:101
+msgid "Số điện thoại"
+msgstr ""
+
+#: includes/contact-form.php:218
+#: includes/contact-form.php:506
+#: includes/leads.php:102
+msgid "Email"
+msgstr ""
+
+#: includes/contact-form.php:219
+#: includes/leads.php:103
+msgid "Nội dung quan tâm"
+msgstr ""
+
+#: includes/contact-form.php:220
+#: includes/leads.php:104
+msgid "Nhóm tuổi của trẻ"
+msgstr ""
+
+#: includes/contact-form.php:221
+msgid "Nội dung"
+msgstr ""
+
+#: includes/contact-form.php:229
+#: includes/leads.php:106
+msgid "Gửi từ trang"
+msgstr ""
+
+#: includes/contact-form.php:233
+msgid "Xem trong trang quản trị"
+msgstr ""
+
+#: includes/contact-form.php:236
+msgid "Email này chứa dữ liệu cá nhân. Vui lòng không chuyển tiếp cho người không có trách nhiệm xử lý."
+msgstr ""
+
+#: includes/contact-form.php:293
+msgid "Phiên làm việc của trang đã hết hạn. Vui lòng tải lại trang và gửi lại thông tin."
+msgstr ""
+
+#: includes/contact-form.php:299
+msgid "Biểu mẫu được gửi quá nhanh hoặc đã quá hạn. Vui lòng tải lại trang và thử lại."
+msgstr ""
+
+#: includes/contact-form.php:308
+msgid "Bạn đã gửi khá nhiều lần trong thời gian ngắn. Vui lòng thử lại sau ít phút."
+msgstr ""
+
+#: includes/contact-form.php:315
+msgid "Vui lòng kiểm tra lại các trường được đánh dấu."
+msgstr ""
+
+#: includes/contact-form.php:319
+msgid "Biểu mẫu chưa được cấu hình để nhận thông tin. Vui lòng liên hệ Play2Grow qua các kênh khác trên website."
+msgstr ""
+
+#: includes/contact-form.php:341
+msgid "Rất tiếc, hệ thống chưa ghi nhận được thông tin do lỗi kỹ thuật. Vui lòng thử lại sau hoặc liên hệ Play2Grow qua các kênh khác trên website."
+msgstr ""
+
+#: includes/contact-form.php:357
+msgid "Cảm ơn anh/chị! Play2Grow đã nhận được thông tin và sẽ liên hệ lại qua số điện thoại hoặc email anh/chị đã cung cấp."
+msgstr ""
+
+#: includes/contact-form.php:372
+msgid "Tôi là phụ huynh/người giám hộ hoặc người liên hệ từ đủ 18 tuổi, và đồng ý để Play2Grow sử dụng thông tin trên để liên hệ phản hồi và gửi thông tin liên quan đến nội dung tôi quan tâm."
+msgstr ""
+
+#. translators: %s: privacy policy link.
+#: includes/contact-form.php:377
+#, php-format
+msgid "Xem %s."
+msgstr ""
+
+#: includes/contact-form.php:378
+msgid "Chính sách quyền riêng tư"
+msgstr ""
+
+#. translators: %s: settings URL.
+#: includes/contact-form.php:433
+#, php-format
+msgid "Form đang bị ẩn với khách truy cập vì chưa có kênh nhận thông tin: hãy bật \"Lưu đăng ký\" hoặc nhập email nhận thông báo tại <a href=\"%s\">Cài đặt → Play2Grow</a>."
+msgstr ""
+
+#: includes/contact-form.php:475
+msgid "Để trống trường này"
+msgstr ""
+
+#: includes/contact-form.php:482
+msgid "Các trường có dấu <span class=\"req\" aria-hidden=\"true\">*</span> là bắt buộc."
+msgstr ""
+
+#: includes/contact-form.php:494
+msgid "Họ và tên phụ huynh / người liên hệ"
+msgstr ""
+
+#: includes/contact-form.php:511
+msgid "Chỉ cần điền một trong hai: số điện thoại hoặc email."
+msgstr ""
+
+#: includes/contact-form.php:515
+msgid "Anh/chị quan tâm đến"
+msgstr ""
+
+#: includes/contact-form.php:517
+msgid "— Chọn nội dung —"
+msgstr ""
+
+#: includes/contact-form.php:525
+msgid "Nhóm tuổi của trẻ (không bắt buộc)"
+msgstr ""
+
+#: includes/contact-form.php:527
+msgid "— Không chọn —"
+msgstr ""
+
+#: includes/contact-form.php:537
+msgid "Anh/chị cần Play2Grow hỗ trợ điều gì? (không bắt buộc)"
+msgstr ""
+
+#: includes/contact-form.php:539
+msgid "Vui lòng không ghi họ tên đầy đủ, ảnh hay thông tin nhận dạng của trẻ."
+msgstr ""
+
+#: includes/contact-form.php:549
+msgid "Gửi thông tin"
+msgstr ""
+
+#: includes/contact-form.php:596
+msgid "Đang gửi…"
+msgstr ""
+
+#: includes/contact-form.php:597
+msgid "Không gửi được do lỗi kết nối. Vui lòng kiểm tra mạng và thử lại."
+msgstr ""
+
+#: includes/contact-form.php:598
+msgid "Vui lòng điền thông tin này."
+msgstr ""
+
+#: includes/contact-form.php:599
+msgid "Họ và tên cần từ 2 đến 80 ký tự."
+msgstr ""
+
+#: includes/contact-form.php:601
+msgid "Số điện thoại chưa đúng định dạng (ví dụ: 0912 345 678)."
+msgstr ""
+
+#: includes/customizer.php:20
+msgid "Play2Grow – Thông tin doanh nghiệp"
+msgstr ""
+
+#: includes/customizer.php:21
+msgid "Chỉ điền thông tin đã được xác minh bằng giấy tờ chính thức. Trường để trống sẽ được ẩn khỏi website. Xem COMPANY_INFO_REQUIRED.md."
+msgstr ""
+
+#: includes/customizer.php:61
+msgid "Play2Grow – Mạng xã hội"
+msgstr ""
+
+#: includes/customizer.php:62
+msgid "Dán đường dẫn đầy đủ (https://…) của tài khoản chính thức. Trường để trống sẽ không hiển thị."
+msgstr ""
+
+#: includes/functions.php:48
+msgid "Tên pháp nhân đầy đủ"
+msgstr ""
+
+#: includes/functions.php:48
+msgid "Ghi đúng như trên Giấy chứng nhận đăng ký doanh nghiệp. Không điền tên \"dự kiến\"."
+msgstr ""
+
+#: includes/functions.php:49
+msgid "Mã số doanh nghiệp / Mã số thuế"
+msgstr ""
+
+#: includes/functions.php:50
+msgid "Thông tin cấp đăng ký"
+msgstr ""
+
+#: includes/functions.php:50
+msgid "Ví dụ: \"Do Sở … cấp lần đầu ngày …\". Chỉ điền khi đã đối chiếu giấy tờ."
+msgstr ""
+
+#: includes/functions.php:51
+msgid "Địa chỉ trụ sở đăng ký"
+msgstr ""
+
+#: includes/functions.php:52
+msgid "Địa chỉ cơ sở / lớp học"
+msgstr ""
+
+#: includes/functions.php:52
+msgid "Địa chỉ nơi học viên đến học. Mỗi cơ sở một dòng."
+msgstr ""
+
+#: includes/functions.php:53
+msgid "Người đại diện theo pháp luật"
+msgstr ""
+
+#: includes/functions.php:53
+msgid "Chỉ điền nếu đồng ý công bố."
+msgstr ""
+
+#: includes/functions.php:54
+msgid "Người liên hệ"
+msgstr ""
+
+#: includes/functions.php:54
+msgid "Ví dụ: tên người sáng lập hoặc người phụ trách tư vấn."
+msgstr ""
+
+#: includes/functions.php:55
+msgid "Hotline / Số điện thoại"
+msgstr ""
+
+#: includes/functions.php:56
+msgid "Email liên hệ"
+msgstr ""
+
+#: includes/functions.php:57
+msgid "Giấy phép hoạt động / giấy phép chuyên ngành"
+msgstr ""
+
+#: includes/functions.php:57
+msgid "Chỉ điền khi đã được cấp và còn hiệu lực."
+msgstr ""
+
+#: includes/functions.php:58
+msgid "Thời gian làm việc"
+msgstr ""
+
+#: includes/functions.php:58
+msgid "Ví dụ: Thứ Hai – Thứ Sáu, 8:00 – 17:30"
+msgstr ""
+
+#: includes/functions.php:59
+msgid "Liên kết bản đồ"
+msgstr ""
+
+#: includes/functions.php:59
+msgid "Chỉ là liên kết; không nhúng bản đồ để tránh tải script bên thứ ba."
+msgstr ""
+
+#: includes/functions.php:129
+msgid "Ghi chú nội bộ (khách truy cập không nhìn thấy):"
+msgstr ""
+
+#: includes/functions.php:246
+msgid "Mã số doanh nghiệp:"
+msgstr ""
+
+#: includes/functions.php:250
+msgid "Người đại diện:"
+msgstr ""
+
+#: includes/functions.php:254
+msgid "Người liên hệ:"
+msgstr ""
+
+#: includes/functions.php:258
+msgid "Trụ sở:"
+msgstr ""
+
+#: includes/functions.php:262
+msgid "Địa chỉ:"
+msgstr ""
+
+#: includes/functions.php:266
+msgid "Hotline:"
+msgstr ""
+
+#: includes/functions.php:270
+msgid "Email:"
+msgstr ""
+
+#: includes/functions.php:274
+msgid "Giờ làm việc:"
+msgstr ""
+
+#: includes/functions.php:278
+msgid "Giấy phép:"
+msgstr ""
+
+#: includes/functions.php:282
+msgid "Xem chỉ đường trên bản đồ"
+msgstr ""
+
+#: includes/functions.php:282
+msgid "(mở trong thẻ mới)"
+msgstr ""
+
+#. translators: %s: Customizer URL.
+#: includes/functions.php:289
+#, php-format
+msgid "Chưa có thông tin doanh nghiệp nào được nhập. Vào <a href=\"%s\">Giao diện → Tùy biến → Play2Grow – Thông tin doanh nghiệp</a> để điền các thông tin đã xác minh."
+msgstr ""
+
+#: includes/leads.php:32
+msgid "Mới"
+msgstr ""
+
+#: includes/leads.php:33
+msgid "Đã liên hệ"
+msgstr ""
+
+#: includes/leads.php:34
+msgid "Đã trao đổi xong"
+msgstr ""
+
+#: includes/leads.php:35
+msgid "Đã đóng"
+msgstr ""
+
+#: includes/leads.php:49
+#: includes/leads.php:50
+#: includes/leads.php:51
+#: includes/leads.php:396
+msgid "Đăng ký liên hệ"
+msgstr ""
+
+#: includes/leads.php:52
+msgid "Tất cả đăng ký"
+msgstr ""
+
+#: includes/leads.php:53
+msgid "Chi tiết đăng ký"
+msgstr ""
+
+#: includes/leads.php:54
+msgid "Tìm đăng ký"
+msgstr ""
+
+#: includes/leads.php:55
+msgid "Chưa có đăng ký nào."
+msgstr ""
+
+#: includes/leads.php:56
+msgid "Thùng rác trống."
+msgstr ""
+
+#: includes/leads.php:105
+msgid "Nội dung cần hỗ trợ"
+msgstr ""
+
+#: includes/leads.php:107
+msgid "Thời điểm đồng ý xử lý dữ liệu"
+msgstr ""
+
+#. translators: 1: name, 2: date.
+#: includes/leads.php:123
+#, php-format
+msgid "%1$s – %2$s"
+msgstr ""
+
+#: includes/leads.php:151
+msgid "Đăng ký"
+msgstr ""
+
+#: includes/leads.php:152
+msgid "Liên hệ"
+msgstr ""
+
+#: includes/leads.php:153
+msgid "Quan tâm"
+msgstr ""
+
+#: includes/leads.php:154
+msgid "Trạng thái"
+msgstr ""
+
+#: includes/leads.php:155
+msgid "Email thông báo"
+msgstr ""
+
+#: includes/leads.php:156
+msgid "Ngày gửi"
+msgstr ""
+
+#: includes/leads.php:190
+msgid "Đã gửi"
+msgstr ""
+
+#: includes/leads.php:192
+msgid "Gửi thất bại"
+msgstr ""
+
+#: includes/leads.php:194
+msgid "Không gửi (chưa cấu hình)"
+msgstr ""
+
+#: includes/leads.php:221
+msgid "Thông tin đăng ký"
+msgstr ""
+
+#: includes/leads.php:247
+msgid "Trạng thái xử lý"
+msgstr ""
+
+#: includes/leads.php:252
+msgid "Bấm \"Cập nhật\" để lưu trạng thái. Đăng ký được tự động xóa sau thời gian lưu trữ đã cấu hình."
+msgstr ""
+
+#: includes/leads.php:365
+#: includes/leads.php:416
+msgid "Đăng ký liên hệ Play2Grow"
+msgstr ""
+
+#: includes/leads.php:452
+msgid "Form liên hệ / đăng ký nhận thông tin của plugin Play2Grow Core thu thập thông tin của phụ huynh hoặc người liên hệ: họ và tên, số điện thoại và/hoặc email, nội dung quan tâm, nhóm tuổi của trẻ (không bắt buộc, chỉ là khoảng tuổi) và nội dung tin nhắn. Form không yêu cầu họ tên, ảnh hay thông tin định danh của trẻ. Dữ liệu được lưu trong cơ sở dữ liệu của website, chỉ quản trị viên xem được, và được gửi tới email nhận thông báo do quản trị viên cấu hình. Giao diện không lưu địa chỉ IP hay thông tin trình duyệt cùng đăng ký. Dữ liệu tự động bị xóa sau thời gian lưu trữ được cấu hình trong Cài đặt → Play2Grow."
+msgstr ""
+
+#: includes/shortcodes.php:69
+msgid "Thông tin các chương trình học đang được cập nhật."
+msgstr ""
+
+#: includes/shortcodes.php:145
+msgid "Đăng ký nhận thông tin"
+msgstr ""
+
+#: includes/shortcodes.php:149
+msgid "Nút đăng ký đang bị ẩn vì chưa có trang Liên hệ được xuất bản (đường dẫn /lien-he/ hoặc trang chứa form [p2g_contact_form])."
+msgstr ""
+
+#: includes/shortcodes.php:190
+msgid "thời hạn cần thiết cho mục đích đã nêu"
+msgstr ""
+
+#. translators: %d: number of days.
+#: includes/shortcodes.php:194
+#, php-format
+msgid "%d ngày"
+msgid_plural "%d ngày"
+msgstr[0] ""
+msgstr[1] ""
+
+#: play2grow-core.php:63
+msgid "Cài đặt"
+msgstr ""
