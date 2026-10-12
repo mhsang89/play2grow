@@ -81,7 +81,7 @@
 "Play2Grow – Social media"
 "Paste the full URL (https://…) of the official account. Empty fields are not shown."
 "Full legal entity name"
-"Exactly as on the Enterprise Registration Certificate. Do not enter a \"proposed\" name."
+"Exactly as on the registration documents (enterprise or household business registration certificate). Do not enter a \"proposed\" name."
 "Enterprise code / Tax code"
 "Registration details"
 "For example: \"Issued for the first time by the Department of … on …\". Only fill in after checking the documents."

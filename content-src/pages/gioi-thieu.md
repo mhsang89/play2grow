@@ -114,5 +114,5 @@ Thông tin về đơn vị vận hành được cập nhật dưới đây.
 [[p2g_company_info]]
 
 :::note
-Tên doanh nghiệp dự kiến là “Công ty TNHH Giáo dục Play2Grow” nhưng CHƯA được xác minh đăng ký. Chỉ nhập tên pháp nhân, mã số doanh nghiệp, địa chỉ trụ sở vào Giao diện → Tùy biến → Play2Grow → Thông tin doanh nghiệp sau khi có Giấy chứng nhận đăng ký doanh nghiệp. Xem COMPANY_INFO_REQUIRED.md.
+Chủ sở hữu xác nhận đơn vị vận hành là “BÙI THỦY” (12/10/2026) – tên này đã được nhập sẵn ở mục Tên pháp nhân. Chưa có mã số doanh nghiệp/mã số thuế, nơi cấp đăng ký, giấy phép: chỉ nhập khi đã đối chiếu giấy tờ. Tên “Công ty TNHH Giáo dục Play2Grow” chỉ là dự kiến, KHÔNG dùng. Nếu giấy đăng ký ghi khác (ví dụ “Hộ kinh doanh …”), sửa ở Giao diện → Tùy biến → Play2Grow – Thông tin doanh nghiệp. Xem COMPANY_INFO_REQUIRED.md.
 :::

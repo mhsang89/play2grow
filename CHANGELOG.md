@@ -9,7 +9,7 @@ Chủ sở hữu cung cấp người sáng lập/người liên hệ, email, đ�
 - Theme tự dùng logo, biểu tượng trang (favicon) và ảnh chia sẻ mặc định khi chưa tải lên logo/biểu tượng riêng (tắt bằng filter `p2g_use_default_logo`).
 
 ### Thông tin liên hệ
-- Nội dung khởi đầu điền sẵn: người liên hệ **Bùi Thủy**, email **buithuy@play2grow.edu.vn**, địa chỉ **Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Tân Sơn Nhì, quận Tân Phú, TP. Hồ Chí Minh** (Bước 2 chỉ điền vào trường còn trống, không ghi đè).
+- Nội dung khởi đầu điền sẵn: người liên hệ **Bùi Thủy**, email **buithuy@play2grow.edu.vn**, tên pháp nhân/đơn vị vận hành **BÙI THỦY**, hotline **+84982534460**, địa chỉ **Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Tân Sơn Nhì, TP. Hồ Chí Minh** (Bước 2 chỉ điền vào trường còn trống, không ghi đè).
 - Plugin: trường mới "Người liên hệ"; nhãn "Địa chỉ cơ sở / lớp học" hiển thị là "Địa chỉ:".
 - Trang Giới thiệu có phần người sáng lập.
 

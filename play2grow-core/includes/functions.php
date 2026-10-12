@@ -45,7 +45,7 @@ function p2gc_setting( $key ) {
  */
 function p2gc_company_fields() {
 	return array(
-		'legal_name'        => array( __( 'Tên pháp nhân đầy đủ', 'play2grow-core' ), 'text', __( 'Ghi đúng như trên Giấy chứng nhận đăng ký doanh nghiệp. Không điền tên "dự kiến".', 'play2grow-core' ) ),
+		'legal_name'        => array( __( 'Tên pháp nhân đầy đủ', 'play2grow-core' ), 'text', __( 'Ghi đúng như trên giấy tờ đăng ký (Giấy chứng nhận đăng ký doanh nghiệp hoặc đăng ký hộ kinh doanh). Không điền tên "dự kiến".', 'play2grow-core' ) ),
 		'tax_code'          => array( __( 'Mã số doanh nghiệp / Mã số thuế', 'play2grow-core' ), 'text', '' ),
 		'registration'      => array( __( 'Thông tin cấp đăng ký', 'play2grow-core' ), 'text', __( 'Ví dụ: "Do Sở … cấp lần đầu ngày …". Chỉ điền khi đã đối chiếu giấy tờ.', 'play2grow-core' ) ),
 		'hq_address'        => array( __( 'Địa chỉ trụ sở đăng ký', 'play2grow-core' ), 'textarea', '' ),

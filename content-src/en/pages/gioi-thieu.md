@@ -100,7 +100,7 @@ Xác nhận cách viết tên, chức danh, tiểu sử ngắn (bản tiếng An
 ## Classrooms and teachers
 
 :::note
-Bổ sung ảnh lớp học thật và thông tin giáo viên được phép công bố (bản tiếng Anh).
+Bổ sung ảnh lớp học thật và thông tin giáo viên được phép công bố (bản tiếng Anh). Tên đơn vị vận hành “BÙI THỦY” lấy từ mục Thông tin doanh nghiệp; sửa ở đó nếu giấy đăng ký ghi khác.
 :::
 
 To visit our classrooms or learn more about our teachers, please [contact Play2Grow]({{contact}}).
