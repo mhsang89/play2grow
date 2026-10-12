@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="P2G">
+  <rule ref="WordPress-Extra"/>
+  <rule ref="WordPress.WP.I18n"/>
+  <config name="minimum_wp_version" value="6.4"/>
+  <exclude-pattern>*/starter-content/*.html</exclude-pattern>
+</ruleset>
