@@ -1,6 +1,6 @@
 # Play2Grow – WordPress theme
 
-Phiên bản **1.1.0** · Giấy phép GPLv2+ · Text domain `play2grow-theme`
+Phiên bản **1.2.0** · Giấy phép GPLv2+ · Text domain `play2grow-theme`
 
 Giao diện cổ điển (classic theme) độc lập cho website Play2Grow – học tiếng Anh qua trải nghiệm dành cho trẻ. Không cần Elementor hay plugin trả phí. Không tải font, script hay CSS từ bên thứ ba.
 

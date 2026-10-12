@@ -13,17 +13,26 @@ Nơi nhập sau khi xác minh: **Giao diện → Tùy biến → Play2Grow – T
 | Mã số doanh nghiệp / MST | — | — | Cần bổ sung | Đối chiếu giấy chứng nhận ĐKDN |
 | Nơi cấp, ngày cấp | — | — | Cần bổ sung | Đối chiếu giấy chứng nhận ĐKDN |
 | Địa chỉ trụ sở đăng ký | — | — | Cần bổ sung | Theo giấy chứng nhận ĐKDN |
-| Địa chỉ cơ sở hoạt động | "1442/29, đường 3/2, P2, Q11, TPHCM" | Footer website hiện tại | **Đã công bố, chưa xác minh** | Xác nhận còn hoạt động; kiểm tra tên phường/quận theo đơn vị hành chính hiện hành |
+| Địa chỉ cơ sở / lớp học | "Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Sơn Kỳ, quận Tân Phú, TP. Hồ Chí Minh" | **Chủ sở hữu cung cấp (11/10/2026)** | **Đã xác nhận** – đã đưa vào nội dung khởi đầu (Bước 2 tự điền nếu trường còn trống) | (1) Cho biết đây là **địa chỉ lớp học** hay **trụ sở đăng ký** (hiện chỉ hiển thị là "Địa chỉ", không ghi là trụ sở). (2) Từ 01/07/2025 TP.HCM bỏ cấp quận và sắp xếp lại phường: kiểm tra tên phường mới để ghi địa chỉ theo đơn vị hành chính hiện hành (giữ tên cũ trong ngoặc nếu muốn). |
+| Địa chỉ cũ trên website hiện tại | "1442/29, đường 3/2, P2, Q11, TPHCM" | Footer website hiện tại | **Bị thay thế** | Không dùng trong theme mới. Gỡ khỏi website cũ nếu không còn hoạt động. |
 | Người đại diện theo pháp luật | — | — | Cần bổ sung (nếu muốn công bố) | Chỉ công bố khi đồng ý |
-| Người sáng lập | "THUY BUI" | Brief | Đã biết tên, **chưa rõ cách viết có dấu và chức danh** | Xác nhận tên đầy đủ có dấu, chức danh, tiểu sử ngắn được phép công bố, ảnh (nếu có) |
-| Hotline | 0982534460 | Footer website hiện tại | **Đã công bố, chưa xác minh** | Xác nhận số đang dùng để tư vấn |
-| Email liên hệ | play2grow9@gmail.com | Footer website hiện tại | **Đã công bố, chưa xác minh** | Xác nhận; cân nhắc email theo tên miền (ví dụ lienhe@play2grow.edu.vn) |
-| Email nhận thông báo form | — | — | Cần bổ sung | Nhập tại **Cài đặt → Play2Grow** |
+| Người sáng lập & người liên hệ | "Bui Thuy" (chủ sở hữu viết "BUI THUY") | **Chủ sở hữu cung cấp (11/10/2026)** | **Đã xác nhận** – hiển thị ở trang Giới thiệu và ô "Người liên hệ" | Cho biết cách viết có dấu (ví dụ "Bùi Thủy" hay "Bùi Thuỳ"?) và có muốn ghi chức danh, tiểu sử ngắn, ảnh không. Sửa một lần trong Tùy biến → Thông tin doanh nghiệp và trang Giới thiệu. |
+| Hotline | 0982534460 | Footer website hiện tại | **Chưa xác minh – chưa đưa vào theme** | Cho biết số điện thoại/Zalo đang dùng để tư vấn. Khi có, nhập ở Tùy biến → Thông tin doanh nghiệp (nút gọi/Zalo sẽ tự hiện). |
+| Email liên hệ | buithuy@play2grow.edu.vn | **Chủ sở hữu cung cấp (11/10/2026)** | **Đã xác nhận** – đã đưa vào nội dung khởi đầu và thanh trên cùng | Email cũ play2grow9@gmail.com không dùng nữa. Nên dùng cùng email này (hoặc một hộp thư chung) làm email nhận thông báo form. |
+| Email nhận thông báo form | — | — | Cần bổ sung | Nhập tại **Cài đặt → Play2Grow** (gợi ý: buithuy@play2grow.edu.vn). Cần cấu hình SMTP/hộp thư tên miền để email không vào thư rác. |
 | Giờ làm việc | T2–T6 8:00–19:00; T7 9:00–16:00; CN nghỉ | Footer website hiện tại | Đã công bố, chưa xác minh | Xác nhận |
 | Mạng xã hội (Facebook, Zalo, YouTube, TikTok…) | — | Không thấy trên website | Cần bổ sung | Cung cấp đường dẫn tài khoản chính thức |
-| Logo chính thức (SVG hoặc PNG nền trong suốt) | — | Không lấy được bản gốc | Cần bổ sung | Tải lên tại Tùy biến → Nhận diện website |
+| Logo | Logo mới do chúng tôi thiết kế (thư mục `brand/`) | Chủ sở hữu yêu cầu sáng tác (11/10/2026) | **Chờ duyệt** | Theme tự dùng logo này khi chưa tải logo khác. Nên kiểm tra nhãn hiệu trùng/tương tự trước khi đăng ký bảo hộ hoặc in ấn số lượng lớn. |
 | Giấy phép giáo dục / chuyên ngành | — | — | **Cần đánh giá – ưu tiên cao** | Play2Grow là trung tâm có lớp học trực tiếp (tiếng Anh và năng khiếu). Pháp luật Việt Nam có thể yêu cầu quyết định cho phép hoạt động giáo dục / thành lập trung tâm từ cơ quan quản lý giáo dục có thẩm quyền. Cần người có chuyên môn pháp lý xác định; chỉ hiển thị số quyết định khi đã có. |
 | Thông báo/đăng ký website với Bộ Công Thương | — | — | Cần đánh giá | Áp dụng nếu website có chức năng thương mại điện tử (đặt hàng, thanh toán trực tuyến) |
+
+### Câu hỏi còn mở (ưu tiên)
+
+1. Tên người sáng lập viết có dấu thế nào?
+2. Số điện thoại / Zalo dùng để tư vấn?
+3. Địa chỉ Tân Phú là nơi học hay trụ sở đăng ký? Tên phường theo đơn vị hành chính mới?
+4. Tên pháp nhân và giấy chứng nhận ĐKDN (hiện chỉ là "Công ty TNHH Giáo dục Play2Grow" **dự kiến**, chưa hiển thị).
+5. Duyệt logo mới.
 
 ## 2. Thông tin sản phẩm cần xác nhận (xem PRODUCT_AUDIT.md)
 

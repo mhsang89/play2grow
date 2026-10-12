@@ -100,6 +100,20 @@ Phân loại: ✅ **Kiểm thử thực tế** (chạy trên WordPress thật) �
 7. Thứ tự heading (h3 ngay sau h1) ở thẻ truy cập nhanh → đổi thành h2.
 8. Theme Check bắt buộc: shortcode/CPT trong theme → tách sang plugin Play2Grow Core; thêm readme.txt, screenshot.
 
+### Bổ sung 1.2.0 – logo, thông tin liên hệ, tiếng Anh
+
+Đã kiểm thử với **Polylang 3.8** (vi mặc định + en) trên WordPress 7.1.3 / PHP 8.3 thử nghiệm:
+- Nhập nội dung: 32 mục tiếng Việt + 32 mục tiếng Anh (17 trang + 6 bài + 9 chuyên mục) liên kết làm bản dịch; 5 menu tiếng Anh gán đúng vị trí.
+- Bộ chuyển ngôn ngữ, logo/breadcrumbs/tìm kiếm trỏ đúng trang chủ theo ngôn ngữ; `<html lang>` `vi` / `en-US`.
+- Quét văn bản: trang tiếng Anh không còn chữ tiếng Việt ngoài tên ngôn ngữ "Tiếng Việt" và địa chỉ; trang tiếng Việt không còn chữ Anh ngoài khẩu hiệu thương hiệu.
+- Form `/en/contact/`: thông báo lỗi/thành công, xác thực, gửi AJAX và không JavaScript hoạt động bằng tiếng Anh.
+- Mọi trang/bài (cả hai ngôn ngữ) 0 khối không hợp lệ; không lỗi console, không tràn ngang ở 390 px và 1366 px.
+- Kiểm tra tĩnh: `php -l` sạch; PHPCS (WordPress-Extra + I18n) 0 lỗi.
+
+Chưa kiểm thử: **WPML thật** (plugin trả phí: dùng API `wpml_*` đã viết nhưng chưa chạy), WPML Menu Sync, và trường hợp website cũ đã có trang `/en/` do WPML sinh. Nội dung tiếng Anh chưa được người bản ngữ hoặc chủ sở hữu rà soát.
+
+Lỗi phát hiện và sửa khi thêm tiếng Anh: (1) thư viện bản dịch của plugin không tải do thiếu `Domain Path`; (2) liên kết logo/breadcrumb trỏ về trang chủ tiếng Việt → `p2g_home_url()`; (3) bộ nhập tiếng Việt render pattern theo ngôn ngữ của site → nay luôn dùng chuỗi gốc tiếng Việt (`p2g_force_source_strings()`); (4) 10 lỗi định dạng PHPCS trong hai pattern.
+
 ## 8. Lỗi/giới hạn còn tồn tại
 
 - Ngày tháng hiển thị theo định dạng trong Cài đặt → Tổng quan; môi trường thử nghiệm chưa có gói tiếng Việt nên ảnh chụp hiển thị "October 11, 2026" và tiêu đề 404 "Page not found" (chuỗi của WordPress core). Trên website dùng tiếng Việt sẽ hiển thị tiếng Việt.

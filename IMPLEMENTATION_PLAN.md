@@ -29,6 +29,7 @@
 
 ```
 play2grow-theme/
+  languages/        en_US.po/.mo (+ en_GB.mo) · play2grow-theme.pot
   style.css, functions.php, readme.txt, README.md, screenshot.png
   header.php, footer.php, index.php, front-page.php, page.php, single.php,
   archive.php, search.php, searchform.php, 404.php, comments.php
@@ -41,7 +42,7 @@ play2grow-theme/
   inc/              helpers · setup · enqueue · customizer · template-tags · navigation
                     meta-boxes (SEO + thông tin sản phẩm) · seo · plugin-bridge · programs
                     patterns · admin (danh sách kiểm tra) · starter-content (trình nhập) · compat
-  starter-content/  manifest.php + pages/*.html + posts/*.html (block markup, sinh từ content-src/)
+  starter-content/  manifest.php + pages/*.html + posts/*.html + en/pages|posts/*.html (block markup, sinh từ content-src/)
   assets/css/main.css, editor.css · assets/js/main.js · assets/fonts/*.woff2 + OFL.txt
   assets/images/*.svg (minh họa nguyên bản)
 
@@ -52,7 +53,8 @@ play2grow-core/
   assets/js/form.js
 
 content-src/   Nội dung gốc dạng Markdown (nguồn để biên tập)
-tools/         md2blocks.py (Markdown → block markup) · build.sh (đóng gói ZIP)
+tools/         md2blocks.py (Markdown → block markup) · build.sh (đóng gói ZIP) · make_logo.py · i18n/build_po.py (+ danh sách chuỗi en)
+brand/         Logo, favicon, ảnh chia sẻ (SVG/PNG)
 dist/          ZIP cài đặt
 ```
 
@@ -62,4 +64,4 @@ dist/          ZIP cài đặt
 2. Rà soát pháp lý Chính sách quyền riêng tư và Điều khoản.
 3. Cài đặt trên staging, chạy INSTALLATION_CHECKLIST.md, rồi mới chuyển production.
 4. Bổ sung chi tiết 7 lớp học (độ tuổi, lịch, học phí, giáo viên) và ảnh lớp học thật; với Giáo viên, Cơ sở vật chất, Tuyển dụng: viết nội dung thật hoặc đặt `noindex`/ẩn khỏi menu; tạo chuyển hướng 301 cho `/contacts/`, `/blog-grid/`.
-5. Phiên bản tiếng Anh (WPML): nội dung khởi đầu chỉ có tiếng Việt; cần dịch bằng WPML nếu muốn giữ `/en/`.
+5. Phiên bản tiếng Anh: đã có nội dung khởi đầu tiếng Anh (17 trang, 6 bài, 9 chuyên mục, 5 menu) và bản dịch giao diện `en_US`. Cần chủ sở hữu rà soát nội dung, đặc biệt Chính sách quyền riêng tư và Điều khoản; chạy Bước 1b trên website có WPML (xem INSTALLATION_CHECKLIST.md).

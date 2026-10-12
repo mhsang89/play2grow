@@ -14,6 +14,19 @@ defined( 'ABSPATH' ) || exit;
 $p2g_faq_page = p2g_page_link( 'cau-hoi-thuong-gap' );
 $p2g_contact  = p2g_contact_url_any();
 $p2g_parent   = p2g_post_link( 'cha-me-khong-gioi-tieng-anh-giup-con-hoc' );
+
+if ( $p2g_parent ) {
+	/* translators: %s: link to an article for parents. */
+	$p2g_faq_parent = sprintf( __( 'Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần cùng khám phá. %s có những gợi ý cụ thể dành cho phụ huynh.', 'play2grow-theme' ), p2g_maybe_link( $p2g_parent, __( 'Bài viết này', 'play2grow-theme' ) ) );
+} else {
+	$p2g_faq_parent = __( 'Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần cùng khám phá. Góc học tập có những gợi ý cụ thể dành cho phụ huynh.', 'play2grow-theme' );
+}
+
+$p2g_faq_fees = __( 'Mỗi lớp có độ tuổi, lịch học và học phí riêng, được ghi trên trang của từng chương trình.', 'play2grow-theme' );
+if ( $p2g_contact ) {
+	/* translators: %s: link to the contact page. */
+	$p2g_faq_fees .= ' ' . sprintf( __( 'Anh/chị có thể %s để được tư vấn lớp phù hợp với con.', 'play2grow-theme' ), p2g_maybe_link( $p2g_contact, __( 'để lại thông tin', 'play2grow-theme' ) ) );
+}
 ?>
 <!-- wp:group {"align":"full","className":"p2g-section p2g-section--sky","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull p2g-section p2g-section--sky"><!-- wp:group {"className":"p2g-section__head p2g-section__head--center","layout":{"type":"default"}} -->
@@ -41,26 +54,22 @@ $p2g_parent   = p2g_post_link( 'cha-me-khong-gioi-tieng-anh-giup-con-hoc' );
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary><?php esc_html_e( 'Phụ huynh không giỏi tiếng Anh có đồng hành cùng con được không?', 'play2grow-theme' ); ?></summary><!-- wp:paragraph -->
-<p><?php
+<p>
+<?php
 echo wp_kses_post(
 	$p2g_parent
 		/* translators: %s: link to an article for parents. */
 		? sprintf( __( 'Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần cùng khám phá. %s có những gợi ý cụ thể dành cho phụ huynh.', 'play2grow-theme' ), p2g_maybe_link( $p2g_parent, __( 'Bài viết này', 'play2grow-theme' ) ) )
 		: __( 'Có. Điều trẻ cần nhiều nhất ở cha mẹ là thời gian, sự quan tâm và tinh thần cùng khám phá. Góc học tập có những gợi ý cụ thể dành cho phụ huynh.', 'play2grow-theme' )
 );
-?></p>
+?>
+</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary><?php esc_html_e( 'Các lớp dành cho độ tuổi nào, học phí ra sao?', 'play2grow-theme' ); ?></summary><!-- wp:paragraph -->
-<p><?php
-esc_html_e( 'Mỗi lớp có độ tuổi, lịch học và học phí riêng, được ghi trên trang của từng chương trình.', 'play2grow-theme' );
-if ( $p2g_contact ) {
-	/* translators: %s: link to the contact page. */
-	echo ' ' . wp_kses_post( sprintf( __( 'Anh/chị có thể %s để được tư vấn lớp phù hợp với con.', 'play2grow-theme' ), p2g_maybe_link( $p2g_contact, __( 'để lại thông tin', 'play2grow-theme' ) ) ) );
-}
-?></p>
+<p><?php echo wp_kses_post( $p2g_faq_fees ); ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 

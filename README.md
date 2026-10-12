@@ -14,6 +14,10 @@ Bộ bàn giao giao diện mới cho **play2grow.edu.vn**: học tiếng Anh qua
 
 **Trước khi cài:** sao lưu website và database, ưu tiên làm trên staging. Theme ZIP không phải bản sao lưu. Làm theo [INSTALLATION_CHECKLIST.md](INSTALLATION_CHECKLIST.md).
 
+## Logo và thương hiệu
+
+Thư mục [`brand/`](brand/) có logo ngang, logo nền tối, biểu tượng vuông, favicon, apple-touch-icon và ảnh chia sẻ 1200×630 (SVG + PNG). Tạo lại bằng `python3 tools/make_logo.py` (cần fontTools và font Be Vietnam Pro).
+
 ## Vì sao có cả theme và plugin
 
 Website hiện tại dùng LittleDino + Elementor Pro + Revolution Slider + WPML + LiteSpeed Cache, và còn nhiều nội dung demo (xem [INITIAL_AUDIT.md](INITIAL_AUDIT.md)). Bộ bàn giao gồm:
@@ -51,4 +55,6 @@ tools/build.sh      # sinh lại block markup + dist/*.zip + SHA256SUMS.txt
 
 - Không có quyền truy cập WP Admin, database hay hosting của website thật: **chưa có thay đổi nào trên production**.
 - Chưa kiểm thử thực tế với Elementor Pro, WPML, LiteSpeed Cache, Revolution Slider (plugin trả phí) và gửi email thật.
-- Đã xác nhận: Play2Grow là trung tâm có lớp học (7 chương trình đang hoạt động). Chi tiết từng lớp, thông tin pháp lý và giấy phép giáo dục vẫn cần bổ sung – xem COMPANY_INFO_REQUIRED.md.
+- Đã xác nhận: Play2Grow là trung tâm có lớp học (7 chương trình đang hoạt động); người sáng lập/liên hệ Bui Thuy, email buithuy@play2grow.edu.vn, địa chỉ Tân Phú. Chi tiết từng lớp, hotline, thông tin pháp lý và giấy phép giáo dục vẫn cần bổ sung – xem COMPANY_INFO_REQUIRED.md.
+- Bản tiếng Anh (WPML/Polylang) đã được thử với **Polylang** trên WordPress thử nghiệm; **chưa thử với WPML** (plugin trả phí). Nội dung tiếng Anh là bản dịch/viết mới từ nội dung tiếng Việt, cần chủ sở hữu rà soát.
+- Logo do chúng tôi thiết kế (`brand/`), chưa kiểm tra trùng lặp nhãn hiệu.

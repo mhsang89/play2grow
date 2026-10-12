@@ -27,6 +27,27 @@
 
 Các trang lớp **giữ nguyên URL ở gốc** như website cũ (`/steam-english/`, `/lop-ve/`); breadcrumbs vẫn hiển thị "Trang chủ / Chương trình học / Tên lớp". Trang lớp nào đã tồn tại sẽ được nhập thành bản nháp "[Bản mới] …" để chủ sở hữu sao chép nội dung vào trang gốc, sau đó đặt mẫu "Chi tiết chương trình". `/co-so-vat-chat/`, `/giao-vien/`, `/tuyen-dung/` (chỉ có tiêu đề): bổ sung nội dung thật hoặc ẩn khỏi menu và đặt noindex. Chuyển hướng 301 đề xuất: `/contacts/` → `/lien-he/` (hoặc `/dang-ki/`), `/blog-grid/` → `/goc-hoc-tap/`. Theme không tự tạo chuyển hướng; dùng plugin Redirection hoặc cấu hình máy chủ.
 
+### Sitemap tiếng Anh (`/en/`)
+
+Mỗi trang/bài/chuyên mục tiếng Việt có một bản tiếng Anh liên kết làm bản dịch (Bước 1b). URL tiếng Anh dùng slug tiếng Anh dưới `/en/` (cấu hình thư mục ngôn ngữ trong WPML/Polylang):
+
+| Tiếng Việt | Tiếng Anh |
+|---|---|
+| `/` | `/en/` (trang "Home") |
+| `/gioi-thieu/` | `/en/about-play2grow/` |
+| `/phuong-phap-hoc/` | `/en/our-approach/` |
+| `/chuong-trinh/` | `/en/programs/` |
+| `/steam-english/`, `/lop-ve/`, `/lop-thu-cong/` | `/en/steam-english-program/`, `/en/drawing-class/`, `/en/arts-and-crafts-class/` |
+| `/lop-dan-piano/`, `/lop-dan-keyboard/` | `/en/piano-class/`, `/en/keyboard-class/` |
+| `/tiktok-dance/`, `/nhay-hien-dai/` | `/en/tiktok-dance-class/`, `/en/modern-dance-class/` |
+| `/phu-huynh/`, `/goc-hoc-tap/`, `/cau-hoi-thuong-gap/` | `/en/for-parents/`, `/en/learning-corner/`, `/en/faq/` |
+| `/lien-he/` | `/en/contact/` |
+| `/chinh-sach-quyen-rieng-tu/`, `/dieu-khoan-su-dung/` | `/en/privacy/`, `/en/terms-of-use/` |
+| 6 bài viết | `/en/what-is-experiential-english-learning/`, `/en/english-activities-at-home/`, `/en/english-games-for-kids-no-devices/`, `/en/exploring-nature-in-english/`, `/en/parents-who-are-not-fluent-in-english/`, `/en/screen-time-and-learning-english/` |
+| 9 chuyên mục | `/en/category/<slug>/` (ví dụ `exploring-nature`, `english-games`, `everyday-english`) |
+
+Menu tiếng Anh: **Explore · English activities · Programs · Parents · Contact** (khớp bản tóm tắt: Explore / English Activities / Learning Paths → ở đây là *Programs* vì là lớp học thật / For Parents). Nội dung tiếng Anh nằm trong `content-src/en/` và cũng là **bản nháp cần chủ sở hữu rà soát**; Chính sách quyền riêng tư và Điều khoản tiếng Anh là bản dịch, bản tiếng Việt là bản chính.
+
 ## 2. Menu
 
 | Vị trí | Mục |

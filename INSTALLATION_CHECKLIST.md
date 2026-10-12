@@ -30,8 +30,8 @@
 
 ## D. Thông tin doanh nghiệp và form
 
-- [ ] Tùy biến → **Play2Grow – Thông tin doanh nghiệp**: chỉ nhập thông tin đã xác minh (COMPANY_INFO_REQUIRED.md). Ví dụ hotline 0982534460, email play2grow9@gmail.com, địa chỉ Q11 **sau khi xác nhận còn đúng**.
-- [ ] Tùy biến → Nhận diện website → **Logo**.
+- [ ] Tùy biến → **Play2Grow – Thông tin doanh nghiệp**: chỉ nhập thông tin đã xác minh (COMPANY_INFO_REQUIRED.md). Đã có (chủ sở hữu cung cấp 11/10/2026): người liên hệ Bui Thuy, email buithuy@play2grow.edu.vn, địa chỉ Tân Phú – Bước 2 tự điền nếu trường còn trống. Hotline: nhập khi đã xác nhận số đang dùng.
+- [ ] Logo: theme đã có logo, biểu tượng trang và ảnh chia sẻ mặc định (thư mục `brand/`). Chỉ cần tải lên tại Tùy biến → Nhận diện website nếu muốn thay bằng logo chính thức khác; có thể tải thêm **Biểu tượng trang** (`brand/site-icon-512.png`).
 - [ ] Tùy biến → Play2Grow – Mạng xã hội: đường dẫn tài khoản chính thức (Zalo sẽ hiện nút nổi).
 - [ ] **Cài đặt → Play2Grow**: email nhận thông báo, thời gian lưu trữ (mặc định 180 ngày, khớp với chính sách).
 - [ ] Cài/kiểm tra plugin SMTP; **gửi thử 1 đăng ký** từ trang Liên hệ trên điện thoại và máy tính → kiểm tra email đến (cả thư rác) và mục **Đăng ký liên hệ**.
@@ -43,7 +43,8 @@
 - [ ] Cài đặt → Tổng quan → **Định dạng ngày**: `d/m/Y`.
 - [ ] **LiteSpeed Cache**: xóa toàn bộ cache sau khi đổi theme; nên loại trừ trang Liên hệ khỏi cache (không bắt buộc vì form tự làm mới mã).
 - [ ] Nếu dùng CDN/Cloudflare: đảm bảo máy chủ nhận IP thật của khách (giới hạn tần suất của form dựa trên IP).
-- [ ] **WPML**: kiểm tra trang `/en/`; dịch các trang mới hoặc ẩn ngôn ngữ English nếu chưa có nội dung; đặt menu cho từng ngôn ngữ.
+- [ ] **Bản tiếng Anh (WPML)**: (1) WPML → Languages: Tiếng Việt là ngôn ngữ mặc định, thêm English. (2) Giao diện → Play2Grow → **Bước 1b: Tạo bản tiếng Anh** (tạo bản nháp, liên kết làm bản dịch của trang/bài/chuyên mục tiếng Việt; trang đã có bản dịch được giữ nguyên). (3) Rà soát và xuất bản các trang tiếng Anh. (4) Bước 2 tạo menu tiếng Anh; nếu menu chưa hiện ở `/en/`, vào WPML → WP Menus Sync. (5) Kiểm tra bộ chuyển VI/EN, form `/en/contact/`, Chính sách `/en/privacy/`. Nếu dùng Polylang thay cho WPML, các bước tương tự.
+- [ ] Trang tiếng Anh đã có sẵn trên website cũ (`/en/`): Bước 1b **không ghi đè**; trang trùng đường dẫn được tạo thành bản nháp mới để so sánh.
 - [ ] **Elementor**: mở từng trang cũ dựng bằng Elementor; nếu dùng widget riêng của LittleDino và bị vỡ, dựng lại bằng khối Gutenberg/pattern Play2Grow hoặc bằng widget Elementor chuẩn.
 - [ ] Sau khi chạy ổn định ít nhất 1–2 tuần: cân nhắc tắt Revolution Slider (không còn dùng), giữ LittleDino để có thể quay lại.
 - [ ] Cài đặt → Đọc: **bỏ chọn** "Ngăn chặn các công cụ tìm kiếm…" (nếu đang bật trên production).

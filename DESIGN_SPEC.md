@@ -60,6 +60,18 @@ Nút (primary, outline, accent, secondary, light), chip lọc chủ đề, badge
 - Chỉ có hiệu ứng hover nhẹ (nâng thẻ 2–3px); tôn trọng `prefers-reduced-motion`.
 - Focus ring vàng + viền tối; skip link; menu dùng `aria-expanded`; form có label, thông báo lỗi `aria-describedby`, vùng trạng thái `aria-live`.
 
+### Logo và nhận diện (bổ sung 1.2.0)
+
+Logo do chúng tôi thiết kế nguyên bản theo yêu cầu của chủ sở hữu (không dựa trên logo của ILA hay đơn vị khác). Các tệp ở `brand/`, sinh bằng `tools/make_logo.py`.
+
+| Thành phần | Ý nghĩa / thông số |
+|---|---|
+| Biểu tượng | Bong bóng hội thoại (tiếng Anh, giao tiếp) màu xanh Play2Grow, trong đó là mầm cây hai lá (lá vàng = "grow") trên nụ cười (vui chơi). |
+| Chữ | "Play" mực #17282B · "2" cam san hô #E2553A · "Grow" xanh đậm #0E6B5C; font Be Vietnam Pro Bold, đã chuyển thành đường nét (không phụ thuộc font). |
+| Biến thể | `logo.svg` (nền sáng), `logo-white.svg` (nền tối: ô trắng, số "2" vàng), `logo-mark.svg`, `site-icon.svg`, PNG 1200/512/180/32, ảnh chia sẻ 1200×630. |
+| Cách dùng | Theme tự hiển thị logo ở header/footer và dùng biểu tượng trang, ảnh chia sẻ mặc định khi chưa tải lên bản riêng. |
+| Lưu ý | Chưa kiểm tra trùng lặp nhãn hiệu; nên tra cứu trước khi đăng ký bảo hộ. |
+
 ## 4. Các mục trong brief chưa triển khai và lý do
 
 | Mục trong brief | Quyết định |

@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.2.0 – 2026-10-11
+
+Chủ sở hữu cung cấp người sáng lập/người liên hệ, email, địa chỉ; yêu cầu logo và phiên bản tiếng Anh.
+
+### Thương hiệu
+- Logo mới (biểu tượng bong bóng hội thoại + mầm cây + nụ cười, chữ "Play2Grow" đã chuyển thành đường nét): `brand/` có SVG/PNG, bản nền tối, biểu tượng vuông, favicon, apple-touch-icon và ảnh chia sẻ mạng xã hội 1200×630.
+- Theme tự dùng logo, biểu tượng trang (favicon) và ảnh chia sẻ mặc định khi chưa tải lên logo/biểu tượng riêng (tắt bằng filter `p2g_use_default_logo`).
+
+### Thông tin liên hệ
+- Nội dung khởi đầu điền sẵn: người liên hệ **Bui Thuy**, email **buithuy@play2grow.edu.vn**, địa chỉ **Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Sơn Kỳ, quận Tân Phú, TP. Hồ Chí Minh** (Bước 2 chỉ điền vào trường còn trống, không ghi đè).
+- Plugin: trường mới "Người liên hệ"; nhãn "Địa chỉ cơ sở / lớp học" hiển thị là "Địa chỉ:".
+- Trang Giới thiệu có phần người sáng lập.
+
+### Phiên bản tiếng Anh
+- Hỗ trợ WPML (website hiện tại) và Polylang: bộ chuyển ngôn ngữ VI/EN ở thanh trên cùng và menu mobile, liên kết nội bộ/menu/thẻ chủ đề/thẻ chương trình theo đúng ngôn ngữ, `og:locale` và `inLanguage` theo ngôn ngữ.
+- **Bước 1b** trong Giao diện → Play2Grow: tạo 17 trang + 6 bài viết + 9 chuyên mục tiếng Anh, liên kết làm bản dịch của nội dung tiếng Việt (bản nháp mặc định, bỏ qua mục đã có bản dịch). Bước 2 tạo thêm 5 menu tiếng Anh.
+- Bản dịch giao diện `en_US` (và `en_GB`) cho theme (345 chuỗi) và plugin (148 chuỗi), gồm cả các block pattern và form liên hệ.
+- Hàm `p2g_home_url()` để logo, breadcrumbs và tìm kiếm trỏ về trang chủ đúng ngôn ngữ. Thêm `Domain Path: /languages`.
+
 ## 1.1.0 – 2026-10-11
 
 Chủ sở hữu xác nhận Play2Grow là **trung tâm có lớp học**, các chương trình đang hoạt động thật.

@@ -245,8 +245,12 @@ function p2g_run_starter_import( $status ) {
 		$report['created'][] = sprintf( '%1$s "%2$s"', 'page' === $item['type'] ? 'Trang' : 'Bài viết', $item['title'] );
 	}
 
-	// Second pass: fill content now that every link target exists.
-	$GLOBALS['p2g_importing'] = true;
+	// Second pass: fill content now that every link target exists. Patterns are
+	// written in Vietnamese, so render them with the Vietnamese locale even when
+	// the site or admin language is English.
+	$GLOBALS['p2g_importing']   = true;
+	$GLOBALS['p2g_import_lang'] = 'vi';
+	p2g_force_source_strings( true );
 	foreach ( $created as $id => $file ) {
 		$content = p2g_starter_tokens( (string) file_get_contents( $file ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents -- local theme file.
 		wp_update_post(
@@ -258,12 +262,48 @@ function p2g_run_starter_import( $status ) {
 			)
 		);
 	}
-	$GLOBALS['p2g_importing'] = false;
+	p2g_force_source_strings( false );
+	$GLOBALS['p2g_importing']   = false;
+	$GLOBALS['p2g_import_lang'] = '';
 
 	$log = (array) get_option( 'p2g_starter_ids', array() );
 	update_option( 'p2g_starter_ids', array_values( array_unique( array_merge( $log, array_keys( $created ) ) ) ), false );
 
 	return $report;
+}
+
+/**
+ * Make theme and plugin strings return their source text (Vietnamese) while the
+ * Vietnamese starter content is generated, whatever language the site or the
+ * admin user is using. switch_to_locale() cannot do this: it refuses locales
+ * whose language pack is not installed.
+ *
+ * @param bool $on Turn the override on or off.
+ */
+function p2g_force_source_strings( $on ) {
+	$domains = array( 'play2grow-theme', 'play2grow-core' );
+	$text    = static function ( $translation, $original, $domain ) use ( $domains ) {
+		return in_array( $domain, $domains, true ) ? $original : $translation;
+	};
+	$context = static function ( $translation, $original, $ctx, $domain ) use ( $domains ) {
+		return in_array( $domain, $domains, true ) ? $original : $translation;
+	};
+	$plural  = static function ( $translation, $single, $plural_text, $number, $domain ) use ( $domains ) {
+		return in_array( $domain, $domains, true ) ? ( 1 === (int) $number ? $single : $plural_text ) : $translation;
+	};
+	static $hooks = null;
+
+	if ( $on ) {
+		$hooks = array( $text, $context, $plural );
+		add_filter( 'gettext', $hooks[0], 999, 3 );
+		add_filter( 'gettext_with_context', $hooks[1], 999, 4 );
+		add_filter( 'ngettext', $hooks[2], 999, 5 );
+	} elseif ( $hooks ) {
+		remove_filter( 'gettext', $hooks[0], 999 );
+		remove_filter( 'gettext_with_context', $hooks[1], 999 );
+		remove_filter( 'ngettext', $hooks[2], 999 );
+		$hooks = null;
+	}
 }
 
 /**

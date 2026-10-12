@@ -3,7 +3,7 @@
  * Plugin Name:       Play2Grow Core
  * Plugin URI:        https://play2grow.edu.vn/
  * Description:       Chức năng dữ liệu cho website Play2Grow, độc lập với giao diện: form liên hệ / đăng ký nhận thông tin (chống spam, lưu trữ có thời hạn, xuất/xóa dữ liệu cá nhân), thông tin doanh nghiệp, liên kết mạng xã hội và các shortcode nội dung [p2g_…].
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            Play2Grow
@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'P2GC_VERSION', '1.1.0' );
+define( 'P2GC_VERSION', '1.2.0' );
 define( 'P2GC_FILE', __FILE__ );
 define( 'P2GC_DIR', plugin_dir_path( __FILE__ ) );
 define( 'P2GC_URL', plugin_dir_url( __FILE__ ) );
