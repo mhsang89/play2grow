@@ -114,5 +114,5 @@ Thông tin về đơn vị vận hành được cập nhật dưới đây.
 [[p2g_company_info]]
 
 :::note
-Chủ sở hữu xác nhận đơn vị vận hành là “BÙI THỦY” (12/10/2026) – tên này đã được nhập sẵn ở mục Tên pháp nhân. Chưa có mã số doanh nghiệp/mã số thuế, nơi cấp đăng ký, giấy phép: chỉ nhập khi đã đối chiếu giấy tờ. Tên “Công ty TNHH Giáo dục Play2Grow” chỉ là dự kiến, KHÔNG dùng. Nếu giấy đăng ký ghi khác (ví dụ “Hộ kinh doanh …”), sửa ở Giao diện → Tùy biến → Play2Grow – Thông tin doanh nghiệp. Xem COMPANY_INFO_REQUIRED.md.
+Theo yêu cầu của chủ sở hữu (12/10/2026), tên đơn vị vận hành hiển thị là “Công ty TNHH Giáo dục Play2Grow”; Bùi Thủy là người sáng lập và người liên hệ. Chưa có mã số doanh nghiệp, nơi cấp đăng ký, người đại diện theo pháp luật hay giấy phép: chỉ nhập khi đã đối chiếu Giấy chứng nhận đăng ký doanh nghiệp (Giao diện → Tùy biến → Play2Grow – Thông tin doanh nghiệp). Tên phải khớp đúng giấy chứng nhận; nếu công ty chưa được đăng ký thì không nên hiển thị tên này. Xem COMPANY_INFO_REQUIRED.md.
 :::

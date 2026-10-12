@@ -12,7 +12,7 @@ return array(
 	// Owner-provided contact details (11/10/2026). Written only into EMPTY fields of
 	// Tùy biến → Play2Grow – Thông tin doanh nghiệp when "Bước 2" runs.
 	'company'    => array(
-		'legal_name'        => 'BÙI THỦY',
+		'legal_name'        => 'Công ty TNHH Giáo dục Play2Grow',
 		'contact_person'    => 'Bùi Thủy',
 		'email'             => 'buithuy@play2grow.edu.vn',
 		'phone'             => '+84982534460',

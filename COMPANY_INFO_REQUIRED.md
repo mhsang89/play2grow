@@ -9,7 +9,7 @@ Nơi nhập sau khi xác minh: **Giao diện → Tùy biến → Play2Grow – T
 | Trường thông tin | Giá trị hiện có | Nguồn | Trạng thái | Hành động cần làm |
 |---|---|---|---|---|
 | Tên thương hiệu | Play2Grow | Website, brief | Đã biết | Giữ nguyên |
-| Tên pháp nhân / đơn vị vận hành | "BÙI THỦY" | **Chủ sở hữu cung cấp (12/10/2026)** | **Đã xác nhận theo lời chủ sở hữu, chưa đối chiếu giấy tờ** – đang **hiển thị** ở trang Giới thiệu, Chính sách quyền riêng tư và dữ liệu có cấu trúc (`legalName`) | Gửi giấy chứng nhận đăng ký để đối chiếu cách ghi chính xác (ví dụ nếu là hộ kinh doanh thì tên đăng ký có thể là "Hộ kinh doanh …"). "Công ty TNHH Giáo dục Play2Grow" chỉ là tên dự kiến, **không dùng**. |
+| Tên pháp nhân / đơn vị vận hành | "Công ty TNHH Giáo dục Play2Grow" (trước đó chủ sở hữu từng gửi "BÙI THỦY") | **Chủ sở hữu yêu cầu hiển thị (12/10/2026)** | **Đang hiển thị, CHƯA đối chiếu giấy tờ** – ở trang Giới thiệu, Chính sách quyền riêng tư và dữ liệu có cấu trúc (`legalName`) | **Gửi Giấy chứng nhận đăng ký doanh nghiệp** để đối chiếu tên, mã số doanh nghiệp, người đại diện. Nếu công ty chưa được đăng ký hoặc tên khác giấy chứng nhận thì phải gỡ/sửa ngay (hiển thị sai tên doanh nghiệp có thể gây rủi ro pháp lý). Bùi Thủy hiển thị là người sáng lập và người liên hệ. |
 | Mã số doanh nghiệp / MST | — | — | Chưa cung cấp (không hiển thị) | Bổ sung khi có giấy tờ; sẽ hiện cùng tên pháp nhân và vào dữ liệu có cấu trúc |
 | Nơi cấp, ngày cấp | — | — | Cần bổ sung | Đối chiếu giấy chứng nhận ĐKDN |
 | Địa chỉ trụ sở đăng ký | — | — | Cần bổ sung | Theo giấy chứng nhận ĐKDN |
@@ -29,7 +29,7 @@ Nơi nhập sau khi xác minh: **Giao diện → Tùy biến → Play2Grow – T
 ### Câu hỏi còn mở (ưu tiên)
 
 1. Địa chỉ Tân Sơn Nhì là nơi học hay trụ sở đăng ký?
-2. Giấy tờ đăng ký (đối chiếu tên "BÙI THỦY", mã số thuế/mã số doanh nghiệp, nơi cấp) và giấy phép hoạt động giáo dục nếu có.
+2. Giấy chứng nhận đăng ký doanh nghiệp (đối chiếu tên "Công ty TNHH Giáo dục Play2Grow", mã số doanh nghiệp, nơi cấp, người đại diện) và giấy phép hoạt động giáo dục nếu có.
 3. Chức danh/tiểu sử/ảnh người sáng lập (không bắt buộc).
 
 ## 2. Thông tin sản phẩm cần xác nhận (xem PRODUCT_AUDIT.md)
