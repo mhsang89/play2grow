@@ -14,6 +14,7 @@ return array(
 	'company'    => array(
 		'contact_person'    => 'Bùi Thủy',
 		'email'             => 'buithuy@play2grow.edu.vn',
+		'phone'             => '+84982534460',
 		'operating_address' => 'Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Tân Sơn Nhì, quận Tân Phú, TP. Hồ Chí Minh',
 	),
 

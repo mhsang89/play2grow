@@ -17,7 +17,7 @@ Nơi nhập sau khi xác minh: **Giao diện → Tùy biến → Play2Grow – T
 | Địa chỉ cũ trên website hiện tại | "1442/29, đường 3/2, P2, Q11, TPHCM" | Footer website hiện tại | **Bị thay thế** | Không dùng trong theme mới. Gỡ khỏi website cũ nếu không còn hoạt động. |
 | Người đại diện theo pháp luật | — | — | Cần bổ sung (nếu muốn công bố) | Chỉ công bố khi đồng ý |
 | Người sáng lập & người liên hệ | "Bùi Thủy" | **Chủ sở hữu cung cấp (11/10/2026)** | **Đã xác nhận có dấu (12/10/2026)** – hiển thị ở trang Giới thiệu và ô "Người liên hệ" | Có muốn ghi chức danh, tiểu sử ngắn, ảnh không (không thêm khi chưa có xác nhận). |
-| Hotline | Chủ sở hữu gửi "+8" (12/10/2026) – **chưa đầy đủ** | Chủ sở hữu | **Chưa nhập vào theme** | Gửi lại đầy đủ số điện thoại. Số cũ 0982534460 trên website hiện tại chưa được xác nhận. Cho biết số điện thoại/Zalo đang dùng để tư vấn. Khi có, nhập ở Tùy biến → Thông tin doanh nghiệp (nút gọi/Zalo sẽ tự hiện). |
+| Hotline / Zalo | +84982534460 | **Chủ sở hữu cung cấp (12/10/2026)** | **Đã xác nhận** – đã đưa vào nội dung khởi đầu (Bước 2 điền nếu trường còn trống); nút Gọi hiện trên điện thoại | Xác nhận số này cũng dùng cho Zalo; nếu Zalo là tài khoản khác, nhập đường dẫn ở Tùy biến → Mạng xã hội. |
 | Email liên hệ | buithuy@play2grow.edu.vn | **Chủ sở hữu cung cấp (11/10/2026)** | **Đã xác nhận** – đã đưa vào nội dung khởi đầu và thanh trên cùng | Email cũ play2grow9@gmail.com không dùng nữa. Nên dùng cùng email này (hoặc một hộp thư chung) làm email nhận thông báo form. |
 | Email nhận thông báo form | — | — | Cần bổ sung | Nhập tại **Cài đặt → Play2Grow** (gợi ý: buithuy@play2grow.edu.vn). Cần cấu hình SMTP/hộp thư tên miền để email không vào thư rác. |
 | Giờ làm việc | T2–T6 8:00–19:00; T7 9:00–16:00; CN nghỉ | Footer website hiện tại | Đã công bố, chưa xác minh | Xác nhận |
@@ -28,10 +28,9 @@ Nơi nhập sau khi xác minh: **Giao diện → Tùy biến → Play2Grow – T
 
 ### Câu hỏi còn mở (ưu tiên)
 
-1. Số điện thoại / Zalo dùng để tư vấn (bản gửi ngày 12/10 mới là "+8", chưa đầy đủ).
-2. Địa chỉ Tân Phú là nơi học hay trụ sở đăng ký? Có bỏ "quận Tân Phú" theo đơn vị hành chính mới không?
-3. Tên pháp nhân và giấy chứng nhận ĐKDN (hiện chỉ là "Công ty TNHH Giáo dục Play2Grow" **dự kiến**, chưa hiển thị).
-4. Chức danh/tiểu sử/ảnh người sáng lập (không bắt buộc).
+1. Địa chỉ Tân Phú là nơi học hay trụ sở đăng ký? Có bỏ "quận Tân Phú" theo đơn vị hành chính mới không?
+2. Tên pháp nhân và giấy chứng nhận ĐKDN (hiện chỉ là "Công ty TNHH Giáo dục Play2Grow" **dự kiến**, chưa hiển thị).
+3. Chức danh/tiểu sử/ảnh người sáng lập (không bắt buộc).
 
 ## 2. Thông tin sản phẩm cần xác nhận (xem PRODUCT_AUDIT.md)
 
