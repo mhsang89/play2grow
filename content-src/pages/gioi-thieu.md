@@ -93,10 +93,10 @@ Các nguyên tắc công nghệ là cam kết của doanh nghiệp. Vui lòng x�
 
 ## Người sáng lập
 
-Play2Grow được sáng lập bởi **Bui Thuy**, đồng thời là người phụ trách liên hệ của trung tâm. Anh/chị có thể gửi email trực tiếp tới [buithuy@play2grow.edu.vn](mailto:buithuy@play2grow.edu.vn).
+Play2Grow được sáng lập bởi **Bùi Thủy**, đồng thời là người phụ trách liên hệ của trung tâm. Anh/chị có thể gửi email trực tiếp tới [buithuy@play2grow.edu.vn](mailto:buithuy@play2grow.edu.vn).
 
 :::note
-Tên được ghi theo thông tin chủ sở hữu cung cấp ("BUI THUY"). Vui lòng xác nhận cách viết có dấu, chức danh, tiểu sử ngắn và ảnh chân dung nếu muốn bổ sung. Không thêm kinh nghiệm, bằng cấp hay thành tích khi chưa có xác nhận.
+Tên và cách viết có dấu do chủ sở hữu xác nhận ("BÙI THỦY"). Có thể bổ sung chức danh, tiểu sử ngắn và ảnh chân dung nếu muốn. Không thêm kinh nghiệm, bằng cấp hay thành tích khi chưa có xác nhận.
 :::
 
 ## Cơ sở vật chất và giáo viên

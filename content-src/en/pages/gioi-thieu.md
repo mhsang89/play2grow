@@ -91,7 +91,7 @@ Nguyên tắc công nghệ là cam kết của doanh nghiệp – cần xác nh�
 
 ## Our founder
 
-Play2Grow was founded by **Bui Thuy**, who is also the centre’s main contact. You can email directly at [buithuy@play2grow.edu.vn](mailto:buithuy@play2grow.edu.vn).
+Play2Grow was founded by **Bùi Thủy**, who is also the centre’s main contact. You can email directly at [buithuy@play2grow.edu.vn](mailto:buithuy@play2grow.edu.vn).
 
 :::note
 Xác nhận cách viết tên, chức danh, tiểu sử ngắn (bản tiếng Anh) và ảnh chân dung nếu muốn bổ sung.

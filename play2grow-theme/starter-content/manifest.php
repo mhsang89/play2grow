@@ -12,9 +12,9 @@ return array(
 	// Owner-provided contact details (11/10/2026). Written only into EMPTY fields of
 	// Tùy biến → Play2Grow – Thông tin doanh nghiệp when "Bước 2" runs.
 	'company'    => array(
-		'contact_person'    => 'Bui Thuy',
+		'contact_person'    => 'Bùi Thủy',
 		'email'             => 'buithuy@play2grow.edu.vn',
-		'operating_address' => 'Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Sơn Kỳ, quận Tân Phú, TP. Hồ Chí Minh',
+		'operating_address' => 'Khối đế P1, Khu A5 Diamond, số 3 đường Tân Thạnh, phường Tân Sơn Nhì, quận Tân Phú, TP. Hồ Chí Minh',
 	),
 
 	'categories' => array(

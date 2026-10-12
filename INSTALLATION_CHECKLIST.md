@@ -30,7 +30,7 @@
 
 ## D. Thông tin doanh nghiệp và form
 
-- [ ] Tùy biến → **Play2Grow – Thông tin doanh nghiệp**: chỉ nhập thông tin đã xác minh (COMPANY_INFO_REQUIRED.md). Đã có (chủ sở hữu cung cấp 11/10/2026): người liên hệ Bui Thuy, email buithuy@play2grow.edu.vn, địa chỉ Tân Phú – Bước 2 tự điền nếu trường còn trống. Hotline: nhập khi đã xác nhận số đang dùng.
+- [ ] Tùy biến → **Play2Grow – Thông tin doanh nghiệp**: chỉ nhập thông tin đã xác minh (COMPANY_INFO_REQUIRED.md). Đã có (chủ sở hữu cung cấp 11/10/2026): người liên hệ Bùi Thủy, email buithuy@play2grow.edu.vn, địa chỉ Tân Phú – Bước 2 tự điền nếu trường còn trống. Hotline: nhập khi đã xác nhận số đang dùng.
 - [ ] Logo: theme đã có logo, biểu tượng trang và ảnh chia sẻ mặc định (thư mục `brand/`). Chỉ cần tải lên tại Tùy biến → Nhận diện website nếu muốn thay bằng logo chính thức khác; có thể tải thêm **Biểu tượng trang** (`brand/site-icon-512.png`).
 - [ ] Tùy biến → Play2Grow – Mạng xã hội: đường dẫn tài khoản chính thức (Zalo sẽ hiện nút nổi).
 - [ ] **Cài đặt → Play2Grow**: email nhận thông báo, thời gian lưu trữ (mặc định 180 ngày, khớp với chính sách).
